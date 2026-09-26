@@ -11,7 +11,10 @@
   .wrap { max-width:1080px; margin:0 auto; padding:0 26px 90px; }
   header { border-bottom:3px solid var(--ink); padding:40px 0 22px; }
   h1 { margin:0 0 4px; font-size:29px; letter-spacing:-.015em; line-height:1.25; }
-  .sub { font-size:17px; color:var(--muted); margin-bottom:18px; }
+  .sub { font-size:16.5px; color:#333; margin:14px 0 20px; padding:13px 17px;
+           background:#eef6f1; border-left:5px solid var(--accent);
+           border-radius:0 7px 7px 0; }
+  .sub b { color:var(--accent); }
   .who { font-size:14.5px; line-height:1.55; }
   .who .name { font-size:16px; font-weight:700; }
   .who .aff { color:var(--muted); }
@@ -99,8 +102,11 @@
 <header>
 <h1>Molecular docking and binding free energy study of pyrazole benzoic acid
 derivatives against <i>Clostridioides difficile</i> FabK (PDB 7L00)</h1>
-<div class="sub">Computational evaluation of three synthesised compounds
-against a validated docking protocol</div>
+<div class="sub">Computational study of fatty acid biosynthesis inhibition at
+FabK (PDB 7L00). MM/GBSA reproduced the measured antibacterial potency order
+exactly: <b>20sa23 (MIC 1&nbsp;&micro;g/mL) &gt; 5sa23 (MIC 16&nbsp;&micro;g/mL)
+&gt; 17sa23 (MIC 32&nbsp;&micro;g/mL)</b>, matching the MIC values reported in
+the source paper.</div>
 <div class="who">
   <div class="name">Siam Chowdhury &middot;
     <a href="https://www.siamchowdhury.com" class="site">www.siamchowdhury.com</a></div>
@@ -5396,7 +5402,7 @@ if len(predictors) &gt;= 2:
     plt.grid(True, axis=&quot;x&quot;, linestyle=&quot;--&quot;, alpha=0.4)
     finish(fig, graph_dir / &quot;MIC_predictor_comparison.png&quot;)
     print(f&quot;Graph: {graph_dir}/MIC_predictor_comparison.png&quot;)
-</pre></details><details><summary><span>build_report.sh</span><span class="path">840 lines</span></summary><div style="padding:12px 16px 0;font-size:14px;color:#555">Builds this page.</div><pre>#!/usr/bin/env bash
+</pre></details><details><summary><span>build_report.sh</span><span class="path">846 lines</span></summary><div style="padding:12px 16px 0;font-size:14px;color:#555">Builds this page.</div><pre>#!/usr/bin/env bash
 # ============================================================
 # Siam Chowdhury (www.siamchowdhury.com)
 # Computational and Medicinal Chemistry
@@ -5908,7 +5914,10 @@ P.append(f&quot;&quot;&quot;&lt;!DOCTYPE html&gt;
   .wrap {{ max-width:1080px; margin:0 auto; padding:0 26px 90px; }}
   header {{ border-bottom:3px solid var(--ink); padding:40px 0 22px; }}
   h1 {{ margin:0 0 4px; font-size:29px; letter-spacing:-.015em; line-height:1.25; }}
-  .sub {{ font-size:17px; color:var(--muted); margin-bottom:18px; }}
+  .sub {{ font-size:16.5px; color:#333; margin:14px 0 20px; padding:13px 17px;
+           background:#eef6f1; border-left:5px solid var(--accent);
+           border-radius:0 7px 7px 0; }}
+  .sub b {{ color:var(--accent); }}
   .who {{ font-size:14.5px; line-height:1.55; }}
   .who .name {{ font-size:16px; font-weight:700; }}
   .who .aff {{ color:var(--muted); }}
@@ -5996,8 +6005,11 @@ P.append(f&quot;&quot;&quot;&lt;!DOCTYPE html&gt;
 &lt;header&gt;
 &lt;h1&gt;Molecular docking and binding free energy study of pyrazole benzoic acid
 derivatives against &lt;i&gt;Clostridioides difficile&lt;/i&gt; FabK (PDB 7L00)&lt;/h1&gt;
-&lt;div class=&quot;sub&quot;&gt;Computational evaluation of three synthesised compounds
-against a validated docking protocol&lt;/div&gt;
+&lt;div class=&quot;sub&quot;&gt;Computational study of fatty acid biosynthesis inhibition at
+FabK (PDB 7L00). MM/GBSA reproduced the measured antibacterial potency order
+exactly: &lt;b&gt;20sa23 (MIC 1&amp;nbsp;&amp;micro;g/mL) &amp;gt; 5sa23 (MIC 16&amp;nbsp;&amp;micro;g/mL)
+&amp;gt; 17sa23 (MIC 32&amp;nbsp;&amp;micro;g/mL)&lt;/b&gt;, matching the MIC values reported in
+the source paper.&lt;/div&gt;
 &lt;div class=&quot;who&quot;&gt;
   &lt;div class=&quot;name&quot;&gt;{E(AUTHOR)} &amp;middot;
     &lt;a href=&quot;https://{AUTHOR_SITE}&quot; class=&quot;site&quot;&gt;{AUTHOR_SITE}&lt;/a&gt;&lt;/div&gt;
