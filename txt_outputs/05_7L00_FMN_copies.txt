@@ -1,0 +1,87 @@
+============================================================
+siam chowdhury
+Computational and Medicinal Chemistry
+[Dr. Alam's Research Team] www.alamresearch.org
+Arkansas State University
+Date: 2026-09-25 01:43:19
+============================================================
+
+05 FMN COFACTOR COPIES: 7L00
+------------------------------------------------------------
+
+RESNAME FMN   CHAIN A   RESIDUE 401
+ATOM_COUNT 31
+CENTER_X 5.909
+CENTER_Y 10.611
+CENTER_Z 35.443
+X_MIN -0.729   X_MAX 11.284
+Y_MIN 8.068   Y_MAX 11.419
+Z_MIN 30.144   Z_MAX 39.995
+SIZE_X 12.013 A
+SIZE_Y 3.351 A
+SIZE_Z 9.851 A
+BOUNDING_BOX_DIAGONAL 15.893 A
+NEAREST PROTEIN CHAINS (min atom distance):
+   chain A: 2.545 A
+   chain B: 6.394 A
+   chain C: 22.286 A
+
+FILE 7L00_FMN_chainA_res401.pdb
+
+RESNAME FMN   CHAIN B   RESIDUE 401
+ATOM_COUNT 31
+CENTER_X -20.308
+CENTER_Y 26.191
+CENTER_Z 37.282
+X_MIN -22.778   X_MAX -16.813
+Y_MIN 21.081   Y_MAX 30.404
+Z_MIN 32.976   Z_MAX 42.719
+SIZE_X 5.965 A
+SIZE_Y 9.323 A
+SIZE_Z 9.743 A
+BOUNDING_BOX_DIAGONAL 14.745 A
+NEAREST PROTEIN CHAINS (min atom distance):
+   chain B: 2.574 A
+   chain A: 6.400 A
+   chain C: 17.317 A
+
+FILE 7L00_FMN_chainB_res401.pdb
+
+RESNAME FMN   CHAIN C   RESIDUE 401
+ATOM_COUNT 31
+CENTER_X -24.923
+CENTER_Y -0.410
+CENTER_Z -0.681
+X_MIN -27.393   X_MAX -21.762
+Y_MIN -5.139   Y_MAX 3.611
+Z_MIN -5.834   Z_MAX 5.619
+SIZE_X 5.631 A
+SIZE_Y 8.750 A
+SIZE_Z 11.453 A
+BOUNDING_BOX_DIAGONAL 15.474 A
+NEAREST PROTEIN CHAINS (min atom distance):
+   chain C: 2.569 A
+   chain D: 6.371 A
+   chain A: 17.778 A
+
+FILE 7L00_FMN_chainC_res401.pdb
+
+RESNAME FMN   CHAIN D   RESIDUE 401
+ATOM_COUNT 31
+CENTER_X -45.672
+CENTER_Y -7.894
+CENTER_Z 20.411
+X_MIN -50.567   X_MAX -42.354
+Y_MIN -11.894   Y_MAX -5.717
+Z_MIN 13.798   Z_MAX 25.643
+SIZE_X 8.213 A
+SIZE_Y 6.177 A
+SIZE_Z 11.845 A
+BOUNDING_BOX_DIAGONAL 15.682 A
+NEAREST PROTEIN CHAINS (min atom distance):
+   chain D: 2.490 A
+   chain C: 6.395 A
+   chain B: 17.364 A
+
+FILE 7L00_FMN_chainD_res401.pdb
+

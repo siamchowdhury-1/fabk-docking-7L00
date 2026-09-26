@@ -1,0 +1,32 @@
+============================================================
+siam chowdhury
+Computational and Medicinal Chemistry
+[Dr. Alam's Research Team] www.alamresearch.org
+Arkansas State University
+Date: 2026-09-25 04:44:36
+============================================================
+
+38 RUN TIMINGS
+------------------------------------------------------------
+Settings: MAXCYC=500, NCYC=200, igb=5, chains A
+
+compound 5sa23
+  AM1-BCC charges  0s
+  tleap            1s
+  minimisation     7m 45s (500 cycles)
+  MM/GBSA          15s
+  total            8m 02s
+compound 17sa23
+  AM1-BCC charges  2m 15s
+  tleap            1s
+  minimisation     8m 30s (500 cycles)
+  MM/GBSA          15s
+  total            11m 02s
+compound 20sa23
+  AM1-BCC charges  2m 30s
+  tleap            0s
+  minimisation     6m 00s (500 cycles)
+  MM/GBSA          15s
+  total            8m 47s
+
+total run     27m 51s

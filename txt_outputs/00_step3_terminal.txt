@@ -1,0 +1,224 @@
+============================================================
+STEP 3: DOCKING 3 COMPOUND(S) INTO 7L00_AB
+Compounds: 5sa23 17sa23 20sa23
+Center: 8.438, 15.490, 31.671   Box: 22.0 x 22.0 x 22.0 A
+============================================================
+
+------------------------------------------------------------
+COMPOUND: 5sa23
+------------------------------------------------------------
+AutoDock Vina v1.2.5
+#################################################################
+# If you used AutoDock Vina in your work, please cite:          #
+#                                                               #
+# J. Eberhardt, D. Santos-Martins, A. F. Tillack, and S. Forli  #
+# AutoDock Vina 1.2.0: New Docking Methods, Expanded Force      #
+# Field, and Python Bindings, J. Chem. Inf. Model. (2021)       #
+# DOI 10.1021/acs.jcim.1c00203                                  #
+#                                                               #
+# O. Trott, A. J. Olson,                                        #
+# AutoDock Vina: improving the speed and accuracy of docking    #
+# with a new scoring function, efficient optimization and       #
+# multithreading, J. Comp. Chem. (2010)                         #
+# DOI 10.1002/jcc.21334                                         #
+#                                                               #
+# Please see https://github.com/ccsb-scripps/AutoDock-Vina for  #
+# more information.                                             #
+#################################################################
+
+Scoring function : vina
+Rigid receptor: 7L00_AB_receptor.pdbqt
+Ligand: docking_5sa23/5sa23.pdbqt
+Grid center: X 8.438 Y 15.49 Z 31.671
+Grid size  : X 22 Y 22 Z 22
+Grid space : 0.375
+Exhaustiveness: 32
+CPU: 0
+Verbosity: 1
+
+Computing Vina grid ... done.
+Performing docking (random seed: 12345) ... 
+0%   10   20   30   40   50   60   70   80   90   100%
+|----|----|----|----|----|----|----|----|----|----|
+***************************************************
+
+mode |   affinity | dist from best mode
+     | (kcal/mol) | rmsd l.b.| rmsd u.b.
+-----+------------+----------+----------
+   1       -9.122          0          0
+   2       -8.929     0.8441      1.482
+   3       -8.314      5.742      8.447
+   4       -7.668      5.057      8.535
+   5       -7.591      1.944      3.869
+   6       -7.507      5.193      8.761
+   7         -7.4      5.413      8.059
+   8       -7.373      1.508       4.19
+   9       -7.359      3.821      6.093
+  10       -7.338      4.827      8.202
+  11       -7.297      1.745      2.326
+  12       -7.289      5.473      8.004
+  13       -7.264      5.037      8.553
+  14       -7.166      4.038       5.71
+  15       -7.154      5.238      7.942
+  16       -7.139      3.058      5.741
+  17       -7.072        3.8      6.347
+  18       -7.063       4.15      6.535
+  19       -7.037      5.307       7.77
+  20       -7.036      5.135      7.825
+5sa23: best -9.122 kcal/mol, 14 contact residues, FMN contact NO
+
+------------------------------------------------------------
+COMPOUND: 17sa23
+------------------------------------------------------------
+AutoDock Vina v1.2.5
+#################################################################
+# If you used AutoDock Vina in your work, please cite:          #
+#                                                               #
+# J. Eberhardt, D. Santos-Martins, A. F. Tillack, and S. Forli  #
+# AutoDock Vina 1.2.0: New Docking Methods, Expanded Force      #
+# Field, and Python Bindings, J. Chem. Inf. Model. (2021)       #
+# DOI 10.1021/acs.jcim.1c00203                                  #
+#                                                               #
+# O. Trott, A. J. Olson,                                        #
+# AutoDock Vina: improving the speed and accuracy of docking    #
+# with a new scoring function, efficient optimization and       #
+# multithreading, J. Comp. Chem. (2010)                         #
+# DOI 10.1002/jcc.21334                                         #
+#                                                               #
+# Please see https://github.com/ccsb-scripps/AutoDock-Vina for  #
+# more information.                                             #
+#################################################################
+
+Scoring function : vina
+Rigid receptor: 7L00_AB_receptor.pdbqt
+Ligand: docking_17sa23/17sa23.pdbqt
+Grid center: X 8.438 Y 15.49 Z 31.671
+Grid size  : X 22 Y 22 Z 22
+Grid space : 0.375
+Exhaustiveness: 32
+CPU: 0
+Verbosity: 1
+
+Computing Vina grid ... done.
+Performing docking (random seed: 12345) ... 
+0%   10   20   30   40   50   60   70   80   90   100%
+|----|----|----|----|----|----|----|----|----|----|
+***************************************************
+
+mode |   affinity | dist from best mode
+     | (kcal/mol) | rmsd l.b.| rmsd u.b.
+-----+------------+----------+----------
+   1       -9.212          0          0
+   2       -8.383      1.356      1.659
+   3       -8.325      4.781      8.478
+   4        -8.13      5.595      8.426
+   5         -8.1      1.388        2.1
+   6       -7.819      5.089      8.544
+   7       -7.798      4.944      8.669
+   8       -7.731     0.9999      2.024
+   9        -7.67      4.838      8.392
+  10       -7.589      3.827      5.987
+  11       -7.362      4.242      6.234
+  12       -7.272      4.101      6.547
+  13       -7.259      5.687      8.189
+  14       -7.201      3.024      5.401
+  15       -7.131      4.163       5.99
+  16       -7.066      4.279      6.574
+  17       -7.043      5.478      8.127
+  18       -7.032      5.174      8.992
+  19       -7.029      4.684      7.065
+  20       -4.036      3.817      6.247
+17sa23: best -9.212 kcal/mol, 15 contact residues, FMN contact NO
+
+------------------------------------------------------------
+COMPOUND: 20sa23
+------------------------------------------------------------
+AutoDock Vina v1.2.5
+#################################################################
+# If you used AutoDock Vina in your work, please cite:          #
+#                                                               #
+# J. Eberhardt, D. Santos-Martins, A. F. Tillack, and S. Forli  #
+# AutoDock Vina 1.2.0: New Docking Methods, Expanded Force      #
+# Field, and Python Bindings, J. Chem. Inf. Model. (2021)       #
+# DOI 10.1021/acs.jcim.1c00203                                  #
+#                                                               #
+# O. Trott, A. J. Olson,                                        #
+# AutoDock Vina: improving the speed and accuracy of docking    #
+# with a new scoring function, efficient optimization and       #
+# multithreading, J. Comp. Chem. (2010)                         #
+# DOI 10.1002/jcc.21334                                         #
+#                                                               #
+# Please see https://github.com/ccsb-scripps/AutoDock-Vina for  #
+# more information.                                             #
+#################################################################
+
+Scoring function : vina
+Rigid receptor: 7L00_AB_receptor.pdbqt
+Ligand: docking_20sa23/20sa23.pdbqt
+Grid center: X 8.438 Y 15.49 Z 31.671
+Grid size  : X 22 Y 22 Z 22
+Grid space : 0.375
+Exhaustiveness: 32
+CPU: 0
+Verbosity: 1
+
+Computing Vina grid ... done.
+Performing docking (random seed: 12345) ... 
+0%   10   20   30   40   50   60   70   80   90   100%
+|----|----|----|----|----|----|----|----|----|----|
+***************************************************
+
+mode |   affinity | dist from best mode
+     | (kcal/mol) | rmsd l.b.| rmsd u.b.
+-----+------------+----------+----------
+   1       -9.148          0          0
+   2       -9.078     0.2593      1.622
+   3       -8.346      5.917       8.62
+   4       -8.292      4.049      6.312
+   5       -7.937      1.429       2.08
+   6       -7.923      5.211       8.54
+   7       -7.881      5.174      8.455
+   8       -7.645      4.536      6.411
+   9       -7.449      5.503      7.834
+  10       -7.431      5.295      7.914
+  11       -7.386      4.305       6.71
+  12       -7.325      4.974      7.808
+  13       -7.317      4.415      6.815
+  14       -7.297      5.087      8.067
+  15       -7.224      4.877      7.709
+  16       -7.186       4.26      6.462
+  17       -7.112      4.293       6.64
+  18       -7.096      3.825      5.112
+  19       -7.045      5.161      8.459
+  20       -5.694      4.957      8.203
+20sa23: best -9.148 kcal/mol, 14 contact residues, FMN contact NO
+26 DOCKING RANKING: 7L00 FabK (chains A+B + FMN)
+------------------------------------------------------------
+Reference: crystal inhibitor XCJ redocked = -10.11 kcal/mol (RMSD-validated)
+
+RANK COMPOUND     SCORE   dXCJ     LE HEAVY TORS SHIFT_A CONT   SITE  FMN POLAR
+1    17sa23       -9.21  +0.90  0.297    31    6    9.73   15   7/22   NO     3
+2    20sa23       -9.15  +0.96  0.295    31    6    9.84   14   6/22   NO     3
+3    5sa23        -9.12  +0.99  0.304    30    6    9.73   14   7/22   NO     2
+
+COLUMNS
+  SCORE  best Vina score (kcal/mol, more negative = stronger predicted binding)
+  dXCJ   score minus XCJ reference (negative = better than XCJ)
+  LE     ligand efficiency, -score / heavy atoms
+  SHIFT  pose-1 centroid distance from crystal XCJ center
+  CONT   residues within 4 A;  SITE  shared with XCJ pocket residues
+  FMN    pose 1 contacts FMN;  POLAR  N/O pairs within 3.5 A
+
+Vina scores are computational docking scores,
+not experimentally measured binding free energies.
+Traceback (most recent call last):
+  File "<stdin>", line 136, in <module>
+  File "/home/siamchowdhury/miniconda3/envs/docking/lib/python3.10/site-packages/matplotlib/pyplot.py", line 3838, in plot
+    return gca().plot(
+  File "/home/siamchowdhury/miniconda3/envs/docking/lib/python3.10/site-packages/matplotlib/axes/_axes.py", line 1777, in plot
+    lines = [*self._get_lines(self, *args, data=data, **kwargs)]
+  File "/home/siamchowdhury/miniconda3/envs/docking/lib/python3.10/site-packages/matplotlib/axes/_base.py", line 297, in __call__
+    yield from self._plot_args(
+  File "/home/siamchowdhury/miniconda3/envs/docking/lib/python3.10/site-packages/matplotlib/axes/_base.py", line 494, in _plot_args
+    raise ValueError(f"x and y must have same first dimension, but "
+ValueError: x and y must have same first dimension, but have shapes (21,) and (20,)

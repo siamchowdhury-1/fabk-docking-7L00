@@ -1,0 +1,16 @@
+============================================================
+siam chowdhury
+Computational and Medicinal Chemistry
+[Dr. Alam's Research Team] www.alamresearch.org
+Arkansas State University
+Date: 2026-09-25 02:01:32
+============================================================
+
+14 GRID BOX DEFINITION: 7L00_AB
+------------------------------------------------------------
+Reference ligand : crystal XCJ A:402
+Center           : 8.438, 15.490, 31.671
+XCJ span         : 11.527 x 4.744 x 11.906 A
+Padding          : 10.0 A added to the largest span
+Box size         : 22 x 22 x 22 A
+Box file         : 7L00_AB_grid_box.txt

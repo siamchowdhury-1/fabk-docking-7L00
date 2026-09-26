@@ -1,0 +1,1619 @@
+2 channel Terms of Service accepted
+Retrieving notices: - \ | done
+Channels:
+ - conda-forge
+ - defaults
+Platform: linux-64
+Collecting package metadata (repodata.json): - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - done
+Solving environment: | / done
+
+
+==> WARNING: A newer version of conda exists. <==
+    current version: 26.1.1
+    latest version: 26.7.2
+
+Please update conda by running
+
+    $ conda update -n base -c defaults conda
+
+
+
+## Package Plan ##
+
+  environment location: /home/siamchowdhury/miniconda3/envs/docking
+
+  added / updated specs:
+    - ambertools
+
+
+The following packages will be downloaded:
+
+    package                    |            build
+    ---------------------------|-----------------
+    ambertools-24.8            |cuda_None_nompi_py310h834fefc_101        96.0 MB  conda-forge
+    arpack-3.9.1               |nompi_hf03ea27_102         127 KB  conda-forge
+    blosc-1.21.6               |       he440d0b_1          47 KB  conda-forge
+    c-ares-1.34.8              |       hebe6cf0_2         223 KB  conda-forge
+    ca-certificates-2026.7.22  |       hbd8a1cb_0         129 KB  conda-forge
+    certifi-2026.7.22          |     pyhd8ed1ab_0         134 KB  conda-forge
+    cloudpickle-3.1.2          |     pyhcf101f3_1          27 KB  conda-forge
+    fftw-3.3.11                |nompi_h3b011a4_100         2.1 MB  conda-forge
+    hdf4-4.2.15                |       h2a13503_7         739 KB  conda-forge
+    hdf5-1.14.6                |nompi_h19486de_106         3.5 MB  conda-forge
+    intel-openmp-2025.0.0      |    h06a4308_1172        19.3 MB
+    joblib-1.6.0               |     pyhcf101f3_0         223 KB  conda-forge
+    libaec-1.1.5               |       h088129d_0          36 KB  conda-forge
+    libcurl-8.18.0             |       h4e3cde8_0         452 KB  conda-forge
+    libev-4.33                 |       h280c20c_3          42 KB  conda-forge
+    libhwloc-2.12.1            |default_h3d81e11_1000         2.3 MB  conda-forge
+    libnetcdf-4.9.2            |nompi_h21f7587_118         824 KB  conda-forge
+    libnghttp2-1.68.1          |       h877daf1_0         648 KB  conda-forge
+    libssh2-1.11.1             |       hcf80075_0         298 KB  conda-forge
+    libzip-1.11.2              |       h6991a6a_0         106 KB  conda-forge
+    lz4-c-1.10.0               |       hee9eb32_2         178 KB  conda-forge
+    mkl-2025.0.0               |     h6d8faa4_942       113.4 MB
+    netcdf-fortran-4.6.2       |nompi_h5aa5643_101         441 KB  conda-forge
+    openssl-3.6.4              |       h781a0a9_0         3.1 MB  conda-forge
+    parmed-4.3.1               |  py310hc559de4_1        18.5 MB  conda-forge
+    perl-5.32.1                | 7_hd590300_perl5        12.7 MB  conda-forge
+    snappy-1.2.2               |       h34e00bb_2          45 KB  conda-forge
+    tbb-2022.3.0               |       h8d10470_1         177 KB  conda-forge
+    tbb-devel-2022.3.0         |       h74b38a2_1         1.1 MB  conda-forge
+    xorg-libxt-1.3.1           |       hb9d3cd8_0         371 KB  conda-forge
+    ------------------------------------------------------------
+                                           Total:       277.2 MB
+
+The following NEW packages will be INSTALLED:
+
+  ambertools         conda-forge/linux-64::ambertools-24.8-cuda_None_nompi_py310h834fefc_101 
+  arpack             conda-forge/linux-64::arpack-3.9.1-nompi_hf03ea27_102 
+  blosc              conda-forge/linux-64::blosc-1.21.6-he440d0b_1 
+  c-ares             conda-forge/linux-64::c-ares-1.34.8-hebe6cf0_2 
+  cloudpickle        conda-forge/noarch::cloudpickle-3.1.2-pyhcf101f3_1 
+  fftw               conda-forge/linux-64::fftw-3.3.11-nompi_h3b011a4_100 
+  hdf4               conda-forge/linux-64::hdf4-4.2.15-h2a13503_7 
+  hdf5               conda-forge/linux-64::hdf5-1.14.6-nompi_h19486de_106 
+  intel-openmp       pkgs/main/linux-64::intel-openmp-2025.0.0-h06a4308_1172 
+  joblib             conda-forge/noarch::joblib-1.6.0-pyhcf101f3_0 
+  libaec             conda-forge/linux-64::libaec-1.1.5-h088129d_0 
+  libcurl            conda-forge/linux-64::libcurl-8.18.0-h4e3cde8_0 
+  libev              conda-forge/linux-64::libev-4.33-h280c20c_3 
+  libhwloc           conda-forge/linux-64::libhwloc-2.12.1-default_h3d81e11_1000 
+  libnetcdf          conda-forge/linux-64::libnetcdf-4.9.2-nompi_h21f7587_118 
+  libnghttp2         conda-forge/linux-64::libnghttp2-1.68.1-h877daf1_0 
+  libssh2            conda-forge/linux-64::libssh2-1.11.1-hcf80075_0 
+  libzip             conda-forge/linux-64::libzip-1.11.2-h6991a6a_0 
+  lz4-c              conda-forge/linux-64::lz4-c-1.10.0-hee9eb32_2 
+  mkl                pkgs/main/linux-64::mkl-2025.0.0-h6d8faa4_942 
+  netcdf-fortran     conda-forge/linux-64::netcdf-fortran-4.6.2-nompi_h5aa5643_101 
+  parmed             conda-forge/linux-64::parmed-4.3.1-py310hc559de4_1 
+  perl               conda-forge/linux-64::perl-5.32.1-7_hd590300_perl5 
+  snappy             conda-forge/linux-64::snappy-1.2.2-h34e00bb_2 
+  tbb                conda-forge/linux-64::tbb-2022.3.0-h8d10470_1 
+  tbb-devel          conda-forge/linux-64::tbb-devel-2022.3.0-h74b38a2_1 
+  xorg-libxt         conda-forge/linux-64::xorg-libxt-1.3.1-hb9d3cd8_0 
+
+The following packages will be UPDATED:
+
+  ca-certificates                      2026.4.22-hbd8a1cb_0 --> 2026.7.22-hbd8a1cb_0 
+  certifi                            2026.4.22-pyhd8ed1ab_0 --> 2026.7.22-pyhd8ed1ab_0 
+  openssl                                  3.6.2-h35e630c_0 --> 3.6.4-h781a0a9_0 
+
+
+
+Downloading and Extracting Packages: ...working...mkl-2025.0.0         | 113.4 MB  |            |   0% 
+ambertools-24.8      | 96.0 MB   |            |   0% [A
+
+intel-openmp-2025.0. | 19.3 MB   |            |   0% [A[A
+
+
+parmed-4.3.1         | 18.5 MB   |            |   0% [A[A[A
+
+
+
+perl-5.32.1          | 12.7 MB   |            |   0% [A[A[A[A
+
+
+
+
+hdf5-1.14.6          | 3.5 MB    |            |   0% [A[A[A[A[A
+
+
+
+
+
+openssl-3.6.4        | 3.1 MB    |            |   0% [A[A[A[A[A[A
+
+
+
+
+
+
+libhwloc-2.12.1      | 2.3 MB    |            |   0% [A[A[A[A[A[A[A
+
+
+
+
+
+
+
+fftw-3.3.11          | 2.1 MB    |            |   0% [A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+tbb-devel-2022.3.0   | 1.1 MB    |            |   0% [A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+libnetcdf-4.9.2      | 824 KB    |            |   0% [A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+hdf4-4.2.15          | 739 KB    |            |   0% [A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+libnghttp2-1.68.1    | 648 KB    |            |   0% [A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+libcurl-8.18.0       | 452 KB    |            |   0% [A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+netcdf-fortran-4.6.2 | 441 KB    |            |   0% [A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+xorg-libxt-1.3.1     | 371 KB    |            |   0% [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+libssh2-1.11.1       | 298 KB    |            |   0% [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+joblib-1.6.0         | 223 KB    |            |   0% [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+c-ares-1.34.8        | 223 KB    |            |   0% [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ ... (more hidden) ...[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+intel-openmp-2025.0. | 19.3 MB   |            |   0% [A[Amkl-2025.0.0         | 113.4 MB  |            |   0% 
+
+
+parmed-4.3.1         | 18.5 MB   |            |   0% [A[A[A
+
+
+
+perl-5.32.1          | 12.7 MB   |            |   0% [A[A[A[A
+ambertools-24.8      | 96.0 MB   |            |   0% [A
+
+intel-openmp-2025.0. | 19.3 MB   |            |   1% [A[A
+
+
+
+perl-5.32.1          | 12.7 MB   | 1          |   1% [A[A[A[Amkl-2025.0.0         | 113.4 MB  |            |   0% 
+
+
+parmed-4.3.1         | 18.5 MB   | 1          |   1% [A[A[A
+ambertools-24.8      | 96.0 MB   |            |   0% [A
+
+intel-openmp-2025.0. | 19.3 MB   | 1          |   2% [A[A
+
+
+
+perl-5.32.1          | 12.7 MB   | 3          |   3% [A[A[A[Amkl-2025.0.0         | 113.4 MB  |            |   0% 
+
+
+parmed-4.3.1         | 18.5 MB   | 1          |   2% [A[A[A
+ambertools-24.8      | 96.0 MB   |            |   0% [A
+
+intel-openmp-2025.0. | 19.3 MB   | 2          |   3% [A[A
+
+
+
+perl-5.32.1          | 12.7 MB   | 9          |  10% [A[A[A[Amkl-2025.0.0         | 113.4 MB  |            |   1% 
+
+
+parmed-4.3.1         | 18.5 MB   | 2          |   3% [A[A[A
+ambertools-24.8      | 96.0 MB   |            |   1% [A
+
+intel-openmp-2025.0. | 19.3 MB   | 3          |   4% [A[A
+
+
+
+perl-5.32.1          | 12.7 MB   | #6         |  16% [A[A[A[Amkl-2025.0.0         | 113.4 MB  |            |   1% 
+ambertools-24.8      | 96.0 MB   |            |   1% [A
+
+
+parmed-4.3.1         | 18.5 MB   | 3          |   4% [A[A[A
+
+intel-openmp-2025.0. | 19.3 MB   | 5          |   5% [A[A
+
+
+
+perl-5.32.1          | 12.7 MB   | ###        |  31% [A[A[A[Amkl-2025.0.0         | 113.4 MB  | 1          |   1% 
+ambertools-24.8      | 96.0 MB   |            |   1% [A
+
+
+parmed-4.3.1         | 18.5 MB   | 4          |   5% [A[A[A
+
+intel-openmp-2025.0. | 19.3 MB   | 6          |   6% [A[A
+
+
+
+perl-5.32.1          | 12.7 MB   | ####7      |  47% [A[A[A[Amkl-2025.0.0         | 113.4 MB  | 1          |   1% 
+
+
+parmed-4.3.1         | 18.5 MB   | 5          |   6% [A[A[A
+ambertools-24.8      | 96.0 MB   | 1          |   1% [A
+
+intel-openmp-2025.0. | 19.3 MB   | 7          |   7% [A[A
+
+
+
+perl-5.32.1          | 12.7 MB   | ######4    |  64% [A[A[A[Amkl-2025.0.0         | 113.4 MB  | 1          |   2% 
+ambertools-24.8      | 96.0 MB   | 1          |   1% [A
+
+
+parmed-4.3.1         | 18.5 MB   | 7          |   7% [A[A[A
+
+intel-openmp-2025.0. | 19.3 MB   | 8          |   9% [A[A
+
+
+
+perl-5.32.1          | 12.7 MB   | ########2  |  82% [A[A[A[Amkl-2025.0.0         | 113.4 MB  | 2          |   2% 
+ambertools-24.8      | 96.0 MB   | 1          |   1% [A
+
+
+parmed-4.3.1         | 18.5 MB   | 8          |   8% [A[A[A
+
+intel-openmp-2025.0. | 19.3 MB   | 9          |  10% [A[A
+
+
+
+perl-5.32.1          | 12.7 MB   | #########6 |  96% [A[A[A[Amkl-2025.0.0         | 113.4 MB  | 2          |   2% 
+ambertools-24.8      | 96.0 MB   | 1          |   2% [A
+
+
+parmed-4.3.1         | 18.5 MB   | 9          |  10% [A[A[A
+
+intel-openmp-2025.0. | 19.3 MB   | #1         |  11% [A[A
+
+
+
+perl-5.32.1          | 12.7 MB   | ########## | 100% [A[A[A[A
+
+
+
+
+hdf5-1.14.6          | 3.5 MB    |            |   0% [A[A[A[A[Amkl-2025.0.0         | 113.4 MB  | 2          |   3% 
+
+
+parmed-4.3.1         | 18.5 MB   | #          |  11% [A[A[A
+ambertools-24.8      | 96.0 MB   | 2          |   2% [A
+
+intel-openmp-2025.0. | 19.3 MB   | #2         |  13% [A[A
+
+
+
+
+hdf5-1.14.6          | 3.5 MB    | ##8        |  28% [A[A[A[A[Amkl-2025.0.0         | 113.4 MB  | 3          |   3% 
+ambertools-24.8      | 96.0 MB   | 2          |   2% [A
+
+
+parmed-4.3.1         | 18.5 MB   | #2         |  12% [A[A[A
+
+intel-openmp-2025.0. | 19.3 MB   | #3         |  14% [A[Amkl-2025.0.0         | 113.4 MB  | 3          |   3% 
+ambertools-24.8      | 96.0 MB   | 2          |   3% [A
+
+
+
+
+hdf5-1.14.6          | 3.5 MB    | ####4      |  44% [A[A[A[A[A
+
+
+parmed-4.3.1         | 18.5 MB   | #4         |  14% [A[A[A
+
+intel-openmp-2025.0. | 19.3 MB   | #5         |  15% [A[A
+
+
+
+
+hdf5-1.14.6          | 3.5 MB    | ########## | 100% [A[A[A[A[Amkl-2025.0.0         | 113.4 MB  | 3          |   4% 
+ambertools-24.8      | 96.0 MB   | 2          |   3% [A
+
+
+parmed-4.3.1         | 18.5 MB   | #5         |  16% [A[A[A
+
+
+
+
+
+openssl-3.6.4        | 3.1 MB    |            |   1% [A[A[A[A[A[A
+
+intel-openmp-2025.0. | 19.3 MB   | #6         |  17% [A[Amkl-2025.0.0         | 113.4 MB  | 4          |   4% 
+ambertools-24.8      | 96.0 MB   | 3          |   3% [A
+
+
+parmed-4.3.1         | 18.5 MB   | #7         |  17% [A[A[A
+
+intel-openmp-2025.0. | 19.3 MB   | #8         |  18% [A[A
+
+
+
+
+hdf5-1.14.6          | 3.5 MB    | ########## | 100% [A[A[A[A[A
+
+
+
+
+hdf5-1.14.6          | 3.5 MB    | ########## | 100% [A[A[A[A[A
+
+
+parmed-4.3.1         | 18.5 MB   | #8         |  19% [A[A[A
+ambertools-24.8      | 96.0 MB   | 3          |   3% [A
+
+intel-openmp-2025.0. | 19.3 MB   | #9         |  19% [A[Amkl-2025.0.0         | 113.4 MB  | 4          |   5% 
+
+
+
+
+
+openssl-3.6.4        | 3.1 MB    | #2         |  13% [A[A[A[A[A[A
+
+
+
+
+
+openssl-3.6.4        | 3.1 MB    | ########## | 100% [A[A[A[A[A[A
+
+
+parmed-4.3.1         | 18.5 MB   | ##         |  21% [A[A[A
+ambertools-24.8      | 96.0 MB   | 3          |   4% [Amkl-2025.0.0         | 113.4 MB  | 5          |   6% 
+
+intel-openmp-2025.0. | 19.3 MB   | ##1        |  21% [A[A
+
+
+
+
+
+
+libhwloc-2.12.1      | 2.3 MB    |            |   1% [A[A[A[A[A[A[A
+ambertools-24.8      | 96.0 MB   | 4          |   4% [A
+
+
+parmed-4.3.1         | 18.5 MB   | ##2        |  23% [A[A[A
+
+intel-openmp-2025.0. | 19.3 MB   | ##2        |  23% [A[Amkl-2025.0.0         | 113.4 MB  | 6          |   6% 
+
+
+parmed-4.3.1         | 18.5 MB   | ##4        |  24% [A[A[A
+ambertools-24.8      | 96.0 MB   | 4          |   5% [A
+
+
+
+
+
+openssl-3.6.4        | 3.1 MB    | ########## | 100% [A[A[A[A[A[A
+
+
+
+
+
+openssl-3.6.4        | 3.1 MB    | ########## | 100% [A[A[A[A[A[A
+
+intel-openmp-2025.0. | 19.3 MB   | ##4        |  25% [A[Amkl-2025.0.0         | 113.4 MB  | 6          |   7% 
+ambertools-24.8      | 96.0 MB   | 5          |   5% [A
+
+
+parmed-4.3.1         | 18.5 MB   | ##6        |  26% [A[A[A
+
+
+
+
+
+
+libhwloc-2.12.1      | 2.3 MB    | #5         |  15% [A[A[A[A[A[A[A
+
+
+
+
+
+
+libhwloc-2.12.1      | 2.3 MB    | ########## | 100% [A[A[A[A[A[A[A
+
+intel-openmp-2025.0. | 19.3 MB   | ##6        |  26% [A[Amkl-2025.0.0         | 113.4 MB  | 7          |   7% 
+
+
+
+
+
+
+
+fftw-3.3.11          | 2.1 MB    |            |   1% [A[A[A[A[A[A[A[A
+ambertools-24.8      | 96.0 MB   | 5          |   6% [A
+
+
+parmed-4.3.1         | 18.5 MB   | ##8        |  28% [A[A[A
+
+intel-openmp-2025.0. | 19.3 MB   | ##7        |  28% [A[Amkl-2025.0.0         | 113.4 MB  | 7          |   8% 
+
+
+
+
+
+
+
+fftw-3.3.11          | 2.1 MB    | ###3       |  34% [A[A[A[A[A[A[A[A
+
+
+
+perl-5.32.1          | 12.7 MB   | ########## | 100% [A[A[A[A
+
+
+parmed-4.3.1         | 18.5 MB   | ###        |  30% [A[A[A
+ambertools-24.8      | 96.0 MB   | 6          |   6% [A
+
+intel-openmp-2025.0. | 19.3 MB   | ##9        |  30% [A[Amkl-2025.0.0         | 113.4 MB  | 8          |   8% 
+
+
+
+
+
+
+libhwloc-2.12.1      | 2.3 MB    | ########## | 100% [A[A[A[A[A[A[A
+
+
+
+
+
+
+libhwloc-2.12.1      | 2.3 MB    | ########## | 100% [A[A[A[A[A[A[A
+
+
+
+
+
+
+
+fftw-3.3.11          | 2.1 MB    | ######     |  60% [A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+fftw-3.3.11          | 2.1 MB    | ########## | 100% [A[A[A[A[A[A[A[A
+
+
+parmed-4.3.1         | 18.5 MB   | ###2       |  32% [A[A[A
+ambertools-24.8      | 96.0 MB   | 6          |   7% [A
+
+
+
+
+
+
+
+fftw-3.3.11          | 2.1 MB    | ########## | 100% [A[A[A[A[A[A[A[A
+
+intel-openmp-2025.0. | 19.3 MB   | ###1       |  31% [A[A
+
+
+
+
+
+
+
+
+tbb-devel-2022.3.0   | 1.1 MB    | 1          |   1% [A[A[A[A[A[A[A[A[Amkl-2025.0.0         | 113.4 MB  | 8          |   9% 
+
+
+parmed-4.3.1         | 18.5 MB   | ###4       |  35% [A[A[A
+ambertools-24.8      | 96.0 MB   | 7          |   7% [A
+
+intel-openmp-2025.0. | 19.3 MB   | ###3       |  33% [A[A
+
+
+
+
+
+
+
+
+tbb-devel-2022.3.0   | 1.1 MB    | #####1     |  51% [A[A[A[A[A[A[A[A[Amkl-2025.0.0         | 113.4 MB  | 9          |  10% 
+
+
+
+
+
+
+
+
+tbb-devel-2022.3.0   | 1.1 MB    | ########## | 100% [A[A[A[A[A[A[A[A[A
+
+
+parmed-4.3.1         | 18.5 MB   | ###6       |  37% [A[A[A
+ambertools-24.8      | 96.0 MB   | 7          |   8% [A
+
+
+
+
+
+
+
+
+
+libnetcdf-4.9.2      | 824 KB    | 1          |   2% [A[A[A[A[A[A[A[A[A[A
+
+intel-openmp-2025.0. | 19.3 MB   | ###5       |  35% [A[A
+
+
+parmed-4.3.1         | 18.5 MB   | ###8       |  39% [A[A[Amkl-2025.0.0         | 113.4 MB  | #          |  10% 
+
+
+
+
+
+
+
+
+
+libnetcdf-4.9.2      | 824 KB    | #####      |  50% [A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+tbb-devel-2022.3.0   | 1.1 MB    | ########## | 100% [A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+tbb-devel-2022.3.0   | 1.1 MB    | ########## | 100% [A[A[A[A[A[A[A[A[A
+ambertools-24.8      | 96.0 MB   | 8          |   8% [A
+
+intel-openmp-2025.0. | 19.3 MB   | ###7       |  37% [A[A
+
+
+
+
+
+
+
+
+
+libnetcdf-4.9.2      | 824 KB    | ########## | 100% [A[A[A[A[A[A[A[A[A[A
+
+
+parmed-4.3.1         | 18.5 MB   | ####1      |  41% [A[A[A
+
+
+
+
+
+
+
+
+
+libnetcdf-4.9.2      | 824 KB    | ########## | 100% [A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+libnetcdf-4.9.2      | 824 KB    | ########## | 100% [A[A[A[A[A[A[A[A[A[A
+ambertools-24.8      | 96.0 MB   | 8          |   9% [Amkl-2025.0.0         | 113.4 MB  | #          |  11% 
+
+intel-openmp-2025.0. | 19.3 MB   | ###9       |  39% [A[A
+
+
+
+
+
+
+
+
+
+
+hdf4-4.2.15          | 739 KB    | 2          |   2% [A[A[A[A[A[A[A[A[A[A[A
+
+
+parmed-4.3.1         | 18.5 MB   | ####3      |  43% [A[A[A
+
+
+
+
+
+
+
+
+
+
+hdf4-4.2.15          | 739 KB    | ########## | 100% [A[A[A[A[A[A[A[A[A[A[A
+ambertools-24.8      | 96.0 MB   | 9          |  10% [Amkl-2025.0.0         | 113.4 MB  | #1         |  12% 
+
+
+
+
+
+
+
+
+
+
+hdf4-4.2.15          | 739 KB    | ########## | 100% [A[A[A[A[A[A[A[A[A[A[A
+
+intel-openmp-2025.0. | 19.3 MB   | ####1      |  41% [A[A
+
+
+parmed-4.3.1         | 18.5 MB   | ####5      |  45% [A[A[A
+
+
+
+
+
+
+
+
+
+
+
+libnghttp2-1.68.1    | 648 KB    | 2          |   2% [A[A[A[A[A[A[A[A[A[A[A[A
+ambertools-24.8      | 96.0 MB   | #          |  10% [Amkl-2025.0.0         | 113.4 MB  | #2         |  12% 
+
+intel-openmp-2025.0. | 19.3 MB   | ####3      |  43% [A[A
+
+
+
+
+
+
+
+
+
+
+
+libnghttp2-1.68.1    | 648 KB    | ########## | 100% [A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+libnghttp2-1.68.1    | 648 KB    | ########## | 100% [A[A[A[A[A[A[A[A[A[A[A[A
+
+
+parmed-4.3.1         | 18.5 MB   | ####8      |  48% [A[A[A
+
+
+
+
+
+
+
+
+
+
+
+libnghttp2-1.68.1    | 648 KB    | ########## | 100% [A[A[A[A[A[A[A[A[A[A[A[A
+ambertools-24.8      | 96.0 MB   | #          |  11% [Amkl-2025.0.0         | 113.4 MB  | #2         |  13% 
+
+
+
+
+
+
+
+
+
+
+
+
+libcurl-8.18.0       | 452 KB    | 3          |   4% [A[A[A[A[A[A[A[A[A[A[A[A[A
+
+intel-openmp-2025.0. | 19.3 MB   | ####6      |  46% [A[A
+
+
+
+
+
+
+
+
+
+
+
+
+libcurl-8.18.0       | 452 KB    | ########## | 100% [A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+libcurl-8.18.0       | 452 KB    | ########## | 100% [A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+parmed-4.3.1         | 18.5 MB   | #####      |  50% [A[A[A
+ambertools-24.8      | 96.0 MB   | #1         |  12% [Amkl-2025.0.0         | 113.4 MB  | #3         |  14% 
+
+intel-openmp-2025.0. | 19.3 MB   | ####8      |  48% [A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+netcdf-fortran-4.6.2 | 441 KB    | 3          |   4% [A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+netcdf-fortran-4.6.2 | 441 KB    | ########## | 100% [A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+parmed-4.3.1         | 18.5 MB   | #####3     |  53% [A[A[A
+ambertools-24.8      | 96.0 MB   | #2         |  12% [Amkl-2025.0.0         | 113.4 MB  | #4         |  15% 
+
+
+
+
+
+
+
+
+
+
+
+
+
+netcdf-fortran-4.6.2 | 441 KB    | ########## | 100% [A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+intel-openmp-2025.0. | 19.3 MB   | #####      |  51% [A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+xorg-libxt-1.3.1     | 371 KB    | 4          |   4% [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+xorg-libxt-1.3.1     | 371 KB    | ########## | 100% [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+parmed-4.3.1         | 18.5 MB   | #####5     |  56% [A[A[Amkl-2025.0.0         | 113.4 MB  | #5         |  15% 
+ambertools-24.8      | 96.0 MB   | #3         |  13% [A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+xorg-libxt-1.3.1     | 371 KB    | ########## | 100% [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+intel-openmp-2025.0. | 19.3 MB   | #####3     |  54% [A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+libssh2-1.11.1       | 298 KB    | 5          |   5% [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+parmed-4.3.1         | 18.5 MB   | #####8     |  58% [A[A[A
+ambertools-24.8      | 96.0 MB   | #3         |  14% [Amkl-2025.0.0         | 113.4 MB  | #6         |  16% 
+
+intel-openmp-2025.0. | 19.3 MB   | #####5     |  56% [A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+libssh2-1.11.1       | 298 KB    | ########## | 100% [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+parmed-4.3.1         | 18.5 MB   | ######1    |  61% [A[A[A
+ambertools-24.8      | 96.0 MB   | #4         |  15% [A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+joblib-1.6.0         | 223 KB    | 7          |   7% [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[Amkl-2025.0.0         | 113.4 MB  | #7         |  17% 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+libssh2-1.11.1       | 298 KB    | ########## | 100% [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+libssh2-1.11.1       | 298 KB    | ########## | 100% [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+intel-openmp-2025.0. | 19.3 MB   | #####8     |  59% [A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+joblib-1.6.0         | 223 KB    | ########## | 100% [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+joblib-1.6.0         | 223 KB    | ########## | 100% [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+ambertools-24.8      | 96.0 MB   | #5         |  16% [A
+
+
+parmed-4.3.1         | 18.5 MB   | ######3    |  64% [A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+c-ares-1.34.8        | 223 KB    | 7          |   7% [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+intel-openmp-2025.0. | 19.3 MB   | ######1    |  61% [A[Amkl-2025.0.0         | 113.4 MB  | #7         |  18% 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+c-ares-1.34.8        | 223 KB    | ########## | 100% [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+parmed-4.3.1         | 18.5 MB   | ######7    |  67% [A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ ... (more hidden) ...[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+intel-openmp-2025.0. | 19.3 MB   | ######4    |  64% [A[A
+ambertools-24.8      | 96.0 MB   | #6         |  16% [A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ ... (more hidden) ...[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+c-ares-1.34.8        | 223 KB    | ########## | 100% [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+c-ares-1.34.8        | 223 KB    | ########## | 100% [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ ... (more hidden) ...[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[Amkl-2025.0.0         | 113.4 MB  | #8         |  19% 
+
+
+parmed-4.3.1         | 18.5 MB   | #######    |  71% [A[A[A
+
+intel-openmp-2025.0. | 19.3 MB   | ######6    |  67% [A[A
+ambertools-24.8      | 96.0 MB   | #7         |  17% [Amkl-2025.0.0         | 113.4 MB  | #9         |  19% 
+
+intel-openmp-2025.0. | 19.3 MB   | ######9    |  69% [A[A
+
+
+parmed-4.3.1         | 18.5 MB   | #######3   |  74% [A[A[A
+ambertools-24.8      | 96.0 MB   | #7         |  18% [A
+
+intel-openmp-2025.0. | 19.3 MB   | #######2   |  73% [A[A
+
+
+parmed-4.3.1         | 18.5 MB   | #######8   |  78% [A[A[A
+ambertools-24.8      | 96.0 MB   | #8         |  19% [Amkl-2025.0.0         | 113.4 MB  | #9         |  20% 
+
+intel-openmp-2025.0. | 19.3 MB   | #######6   |  76% [A[A
+
+
+parmed-4.3.1         | 18.5 MB   | ########2  |  83% [A[A[A
+ambertools-24.8      | 96.0 MB   | #9         |  20% [Amkl-2025.0.0         | 113.4 MB  | ##1        |  22% 
+
+intel-openmp-2025.0. | 19.3 MB   | #######9   |  79% [A[A
+
+
+parmed-4.3.1         | 18.5 MB   | ########5  |  86% [A[A[A
+ambertools-24.8      | 96.0 MB   | ##         |  21% [Amkl-2025.0.0         | 113.4 MB  | ##2        |  23% 
+
+intel-openmp-2025.0. | 19.3 MB   | ########2  |  82% [A[A
+
+
+parmed-4.3.1         | 18.5 MB   | ########9  |  90% [A[A[A
+
+intel-openmp-2025.0. | 19.3 MB   | ########5  |  85% [A[A
+ambertools-24.8      | 96.0 MB   | ##1        |  22% [Amkl-2025.0.0         | 113.4 MB  | ##3        |  23% 
+
+
+parmed-4.3.1         | 18.5 MB   | #########3 |  93% [A[A[A
+
+intel-openmp-2025.0. | 19.3 MB   | ########8  |  89% [A[A
+ambertools-24.8      | 96.0 MB   | ##2        |  23% [Amkl-2025.0.0         | 113.4 MB  | ##4        |  24% 
+
+
+parmed-4.3.1         | 18.5 MB   | #########8 |  99% [A[A[A
+
+intel-openmp-2025.0. | 19.3 MB   | #########1 |  92% [A[A
+ambertools-24.8      | 96.0 MB   | ##3        |  23% [Amkl-2025.0.0         | 113.4 MB  | ##5        |  25% 
+
+
+parmed-4.3.1         | 18.5 MB   | ########## | 100% [A[A[A
+
+intel-openmp-2025.0. | 19.3 MB   | #########5 |  95% [A[A
+ambertools-24.8      | 96.0 MB   | ##4        |  25% [Amkl-2025.0.0         | 113.4 MB  | ##6        |  26% 
+
+intel-openmp-2025.0. | 19.3 MB   | #########8 |  99% [A[A
+
+
+parmed-4.3.1         | 18.5 MB   | ########## | 100% [A[A[A
+
+intel-openmp-2025.0. | 19.3 MB   | ########## | 100% [A[A
+ambertools-24.8      | 96.0 MB   | ##5        |  26% [Amkl-2025.0.0         | 113.4 MB  | ##7        |  27% 
+ambertools-24.8      | 96.0 MB   | ##6        |  27% [Amkl-2025.0.0         | 113.4 MB  | ##8        |  28% 
+
+intel-openmp-2025.0. | 19.3 MB   | ########## | 100% [A[A
+ambertools-24.8      | 96.0 MB   | ##7        |  28% [Amkl-2025.0.0         | 113.4 MB  | ##9        |  29% 
+ambertools-24.8      | 96.0 MB   | ##8        |  29% [Amkl-2025.0.0         | 113.4 MB  | ###        |  30% 
+ambertools-24.8      | 96.0 MB   | ##9        |  30% [Amkl-2025.0.0         | 113.4 MB  | ###        |  31% 
+ambertools-24.8      | 96.0 MB   | ###        |  31% [Amkl-2025.0.0         | 113.4 MB  | ###2       |  32% 
+ambertools-24.8      | 96.0 MB   | ###2       |  32% [Amkl-2025.0.0         | 113.4 MB  | ###3       |  33% 
+ambertools-24.8      | 96.0 MB   | ###3       |  33% [Amkl-2025.0.0         | 113.4 MB  | ###4       |  34% 
+ambertools-24.8      | 96.0 MB   | ###4       |  34% [Amkl-2025.0.0         | 113.4 MB  | ###5       |  36% 
+ambertools-24.8      | 96.0 MB   | ###5       |  36% [Amkl-2025.0.0         | 113.4 MB  | ###6       |  37% 
+ambertools-24.8      | 96.0 MB   | ###7       |  37% [Amkl-2025.0.0         | 113.4 MB  | ###7       |  38% 
+ambertools-24.8      | 96.0 MB   | ###8       |  38% [Amkl-2025.0.0         | 113.4 MB  | ###8       |  39% 
+ambertools-24.8      | 96.0 MB   | ####       |  40% [Amkl-2025.0.0         | 113.4 MB  | ####1      |  41% 
+ambertools-24.8      | 96.0 MB   | ####1      |  41% [Amkl-2025.0.0         | 113.4 MB  | ####2      |  43% 
+ambertools-24.8      | 96.0 MB   | ####2      |  43% [Amkl-2025.0.0         | 113.4 MB  | ####3      |  44% mkl-2025.0.0         | 113.4 MB  | ####5      |  46% 
+ambertools-24.8      | 96.0 MB   | ####4      |  45% [Amkl-2025.0.0         | 113.4 MB  | ####7      |  47% 
+ambertools-24.8      | 96.0 MB   | ####7      |  47% [Amkl-2025.0.0         | 113.4 MB  | ####8      |  49% 
+ambertools-24.8      | 96.0 MB   | ####8      |  49% [Amkl-2025.0.0         | 113.4 MB  | ####9      |  50% 
+ambertools-24.8      | 96.0 MB   | #####      |  50% [Amkl-2025.0.0         | 113.4 MB  | #####1     |  51% 
+ambertools-24.8      | 96.0 MB   | #####1     |  51% [Amkl-2025.0.0         | 113.4 MB  | #####2     |  53% 
+ambertools-24.8      | 96.0 MB   | #####3     |  53% [A
+ambertools-24.8      | 96.0 MB   | #####4     |  55% [Amkl-2025.0.0         | 113.4 MB  | #####3     |  54% 
+ambertools-24.8      | 96.0 MB   | #####5     |  56% [Amkl-2025.0.0         | 113.4 MB  | #####4     |  55% 
+ambertools-24.8      | 96.0 MB   | #####7     |  57% [Amkl-2025.0.0         | 113.4 MB  | #####5     |  56% 
+ambertools-24.8      | 96.0 MB   | #####9     |  59% [Amkl-2025.0.0         | 113.4 MB  | #####7     |  58% 
+ambertools-24.8      | 96.0 MB   | ######     |  60% [Amkl-2025.0.0         | 113.4 MB  | #####9     |  59% 
+ambertools-24.8      | 96.0 MB   | ######2    |  62% [Amkl-2025.0.0         | 113.4 MB  | ######     |  60% 
+ambertools-24.8      | 96.0 MB   | ######3    |  64% [Amkl-2025.0.0         | 113.4 MB  | ######2    |  62% 
+ambertools-24.8      | 96.0 MB   | ######5    |  65% [Amkl-2025.0.0         | 113.4 MB  | ######3    |  64% 
+ambertools-24.8      | 96.0 MB   | ######6    |  67% [Amkl-2025.0.0         | 113.4 MB  | ######5    |  65% 
+ambertools-24.8      | 96.0 MB   | ######8    |  68% [Amkl-2025.0.0         | 113.4 MB  | ######6    |  66% 
+ambertools-24.8      | 96.0 MB   | ######9    |  70% [Amkl-2025.0.0         | 113.4 MB  | ######7    |  68% 
+ambertools-24.8      | 96.0 MB   | #######1   |  71% [Amkl-2025.0.0         | 113.4 MB  | ######8    |  69% 
+ambertools-24.8      | 96.0 MB   | #######2   |  73% [Amkl-2025.0.0         | 113.4 MB  | ######9    |  70% 
+ambertools-24.8      | 96.0 MB   | #######4   |  74% [Amkl-2025.0.0         | 113.4 MB  | #######1   |  71% 
+ambertools-24.8      | 96.0 MB   | #######5   |  76% [Amkl-2025.0.0         | 113.4 MB  | #######2   |  72% 
+ambertools-24.8      | 96.0 MB   | #######6   |  77% [Amkl-2025.0.0         | 113.4 MB  | #######3   |  73% 
+ambertools-24.8      | 96.0 MB   | #######8   |  78% [Amkl-2025.0.0         | 113.4 MB  | #######4   |  75% 
+ambertools-24.8      | 96.0 MB   | #######9   |  80% [Amkl-2025.0.0         | 113.4 MB  | #######5   |  76% 
+ambertools-24.8      | 96.0 MB   | ########1  |  82% [Amkl-2025.0.0         | 113.4 MB  | #######7   |  77% 
+ambertools-24.8      | 96.0 MB   | ########2  |  83% [Amkl-2025.0.0         | 113.4 MB  | #######8   |  78% 
+ambertools-24.8      | 96.0 MB   | ########4  |  84% [Amkl-2025.0.0         | 113.4 MB  | #######9   |  79% 
+ambertools-24.8      | 96.0 MB   | ########5  |  85% [A
+ambertools-24.8      | 96.0 MB   | ########6  |  87% [A
+ambertools-24.8      | 96.0 MB   | ########7  |  88% [A
+ambertools-24.8      | 96.0 MB   | ########9  |  90% [Amkl-2025.0.0         | 113.4 MB  | ########   |  80% 
+ambertools-24.8      | 96.0 MB   | #########1 |  91% [Amkl-2025.0.0         | 113.4 MB  | ########1  |  81% 
+ambertools-24.8      | 96.0 MB   | #########2 |  93% [Amkl-2025.0.0         | 113.4 MB  | ########2  |  83% 
+ambertools-24.8      | 96.0 MB   | #########4 |  95% [Amkl-2025.0.0         | 113.4 MB  | ########3  |  84% 
+ambertools-24.8      | 96.0 MB   | #########6 |  96% [Amkl-2025.0.0         | 113.4 MB  | ########5  |  85% 
+ambertools-24.8      | 96.0 MB   | #########7 |  98% [Amkl-2025.0.0         | 113.4 MB  | ########6  |  86% 
+ambertools-24.8      | 96.0 MB   | #########9 |  99% [Amkl-2025.0.0         | 113.4 MB  | ########7  |  87% 
+ambertools-24.8      | 96.0 MB   | ########## | 100% [Amkl-2025.0.0         | 113.4 MB  | ########8  |  88% mkl-2025.0.0         | 113.4 MB  | ########9  |  90% mkl-2025.0.0         | 113.4 MB  | #########1 |  91% mkl-2025.0.0         | 113.4 MB  | #########2 |  93% mkl-2025.0.0         | 113.4 MB  | #########4 |  94% mkl-2025.0.0         | 113.4 MB  | #########5 |  96% mkl-2025.0.0         | 113.4 MB  | #########7 |  97% mkl-2025.0.0         | 113.4 MB  | #########9 |  99% mkl-2025.0.0         | 113.4 MB  | ########## | 100% 
+ambertools-24.8      | 96.0 MB   | ########## | 100% [Amkl-2025.0.0         | 113.4 MB  | ########## | 100% 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                      [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A                                                     
+                                                     [A
+
+                                                     [A[A
+
+
+                                                     [A[A[A
+
+
+
+                                                     [A[A[A[A
+
+
+
+
+                                                     [A[A[A[A[A
+
+
+
+
+
+                                                     [A[A[A[A[A[A
+
+
+
+
+
+
+                                                     [A[A[A[A[A[A[A
+
+
+
+
+
+
+
+                                                     [A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+                                                     [A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+                                                     [A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+                                                     [A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+                                                     [A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+                                                     [A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                     [A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                     [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                     [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                     [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                     [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+[A
+
+[A[A
+
+
+[A[A[A
+
+
+
+[A[A[A[A
+
+
+
+
+[A[A[A[A[A
+
+
+
+
+
+[A[A[A[A[A[A
+
+
+
+
+
+
+[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+[A[A[A[A[A[A[A[A[A[A done
+Preparing transaction: \ done
+Verifying transaction: / - \ | / - \ done
+Executing transaction: / - \ | / - \ | / - \ | done
+
+Channel "defaults" has the following notices:
+  [info] -- Thu Aug  6 00:00:00 2026
+  main-x (Anaconda's new authenticated channel) is now generally available, with thousands of additional packages from our secure supply chain. Get started at: https://anaconda.com/docs/getting-started/main-x?utm_source=channel_notices
+

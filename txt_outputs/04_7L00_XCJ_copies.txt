@@ -1,0 +1,87 @@
+============================================================
+siam chowdhury
+Computational and Medicinal Chemistry
+[Dr. Alam's Research Team] www.alamresearch.org
+Arkansas State University
+Date: 2026-09-25 01:43:19
+============================================================
+
+04 XCJ NATIVE-LIGAND COPIES: 7L00
+------------------------------------------------------------
+
+RESNAME XCJ   CHAIN A   RESIDUE 402
+ATOM_COUNT 27
+CENTER_X 8.438
+CENTER_Y 15.490
+CENTER_Z 31.671
+X_MIN 3.528   X_MAX 15.055
+Y_MIN 13.778   Y_MAX 18.522
+Z_MIN 24.989   Z_MAX 36.895
+SIZE_X 11.527 A
+SIZE_Y 4.744 A
+SIZE_Z 11.906 A
+BOUNDING_BOX_DIAGONAL 17.237 A
+NEAREST PROTEIN CHAINS (min atom distance):
+   chain A: 3.047 A
+   chain B: 7.122 A
+   chain C: 22.170 A
+
+FILE 7L00_XCJ_chainA_res402.pdb
+
+RESNAME XCJ   CHAIN B   RESIDUE 402
+ATOM_COUNT 27
+CENTER_X -18.044
+CENTER_Y 29.234
+CENTER_Z 42.734
+X_MIN -21.763   X_MAX -14.860
+Y_MIN 24.995   Y_MAX 36.146
+Z_MIN 38.673   Z_MAX 48.999
+SIZE_X 6.903 A
+SIZE_Y 11.151 A
+SIZE_Z 10.326 A
+BOUNDING_BOX_DIAGONAL 16.692 A
+NEAREST PROTEIN CHAINS (min atom distance):
+   chain B: 3.025 A
+   chain A: 8.997 A
+   chain C: 25.816 A
+
+FILE 7L00_XCJ_chainB_res402.pdb
+
+RESNAME XCJ   CHAIN C   RESIDUE 402
+ATOM_COUNT 27
+CENTER_X -29.471
+CENTER_Y 3.384
+CENTER_Z -3.775
+X_MIN -36.391   X_MAX -23.462
+Y_MIN -0.076   Y_MAX 9.892
+Z_MIN -6.688   Z_MAX -1.639
+SIZE_X 12.929 A
+SIZE_Y 9.968 A
+SIZE_Z 5.049 A
+BOUNDING_BOX_DIAGONAL 17.088 A
+NEAREST PROTEIN CHAINS (min atom distance):
+   chain C: 2.994 A
+   chain D: 7.861 A
+   chain A: 22.082 A
+
+FILE 7L00_XCJ_chainC_res402.pdb
+
+RESNAME XCJ   CHAIN D   RESIDUE 402
+ATOM_COUNT 27
+CENTER_X -43.745
+CENTER_Y -2.575
+CENTER_Z 24.009
+X_MIN -51.673   X_MAX -36.720
+Y_MIN -5.071   Y_MAX 0.520
+Z_MIN 21.753   Z_MAX 26.668
+SIZE_X 14.953 A
+SIZE_Y 5.591 A
+SIZE_Z 4.915 A
+BOUNDING_BOX_DIAGONAL 16.704 A
+NEAREST PROTEIN CHAINS (min atom distance):
+   chain D: 3.040 A
+   chain C: 6.943 A
+   chain B: 8.450 A
+
+FILE 7L00_XCJ_chainD_res402.pdb
+

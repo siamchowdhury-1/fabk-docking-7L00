@@ -1,0 +1,11 @@
+============================================================
+siam chowdhury
+Computational and Medicinal Chemistry
+[Dr. Alam's Research Team] www.alamresearch.org
+Arkansas State University
+Date: 2026-09-25 02:02:11
+============================================================
+
+17b OBRMS CROSS-CHECK (Open Babel, heavy-atom RMSD, symmetry-aware)
+
+RMSD XCJ:XCJ_redock_out 0.819756

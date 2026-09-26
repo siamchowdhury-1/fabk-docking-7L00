@@ -1,0 +1,280 @@
+============================================================
+STEP 2: 7L00 RECEPTOR + XCJ REDOCKING VALIDATION
+============================================================
+Protein atoms (chains AB): 4564
+FMN atoms: 62
+============================================================
+siam chowdhury
+Computational and Medicinal Chemistry
+[Dr. Alam's Research Team] www.alamresearch.org
+Arkansas State University
+Date: 2026-09-25 02:01:24
+============================================================
+
+07 RECEPTOR BUILD: 7L00_AB
+------------------------------------------------------------
+Pocket chain         : A (XCJ A:402, FMN A:401)
+Partner chain        : B (XCJ-B min distance ~7 A)
+Kept                 : protein chains A+B, FMN of both chains
+Removed              : all XCJ, waters (HOH), GOL, NA, chains C and D
+
+Incomplete side chains trimmed (crystal atoms missing):
+    A:254   LYS -> ALA  (had 5/9 heavy atoms, 12.6 A from XCJ A)
+
+7L00_AB_protein.pdb                4564 atoms
+7L00_AB_FMN.pdb                      62 atoms
+7L00_AB_protein_FMN.pdb            4626 atoms
+============================================================
+siam chowdhury
+Computational and Medicinal Chemistry
+[Dr. Alam's Research Team] www.alamresearch.org
+Arkansas State University
+Date: 2026-09-25 02:01:25
+============================================================
+
+12 XCJ CRYSTAL REFERENCE
+------------------------------------------------------------
+Copy         : XCJ A:402
+Source       : RCSB ModelServer (CCD bond orders)
+Heavy atoms  : 27 (expected 27)
+File         : XCJ_A402_crystal.sdf
+
+SMILES (crystal reference):
+CS(=O)(=O)c1cc2c(cc1)nc(NC(=O)Cc1csc(n3cccc3)n1)s2	XCJ
+============================================================
+siam chowdhury
+Computational and Medicinal Chemistry
+[Dr. Alam's Research Team] www.alamresearch.org
+Arkansas State University
+Date: 2026-09-25 02:01:31
+============================================================
+
+11 FINAL RECEPTOR PDBQT CHECK: 7L00_AB_receptor.pdbqt
+------------------------------------------------------------
+-rw------- 1 siamchowdhury siamchowdhury 441K Sep 25 02:01 7L00_AB_receptor.pdbqt
+
+Protein method       : Meeko mk_prepare_receptor.py
+Input heavy atoms    : 4626
+PDBQT atoms total    : 5641
+FMN atoms in PDBQT   : 70
+
+ATOM TYPES
+     180 A
+    2734 C
+    1015 HD
+     780 N
+      12 NA
+     884 OA
+       2 P
+      34 SA
+
+WARNINGS / DELETED RESIDUES (protein preparation)
+None detected.
+Grid center 8.438 15.490 31.671, size 22 A
+Active-site residues within 5.0 A: 22
+============================================================
+siam chowdhury
+Computational and Medicinal Chemistry
+[Dr. Alam's Research Team] www.alamresearch.org
+Arkansas State University
+Date: 2026-09-25 02:01:32
+============================================================
+
+14 GRID BOX DEFINITION: 7L00_AB
+------------------------------------------------------------
+Reference ligand : crystal XCJ A:402
+Center           : 8.438, 15.490, 31.671
+XCJ span         : 11.527 x 4.744 x 11.906 A
+Padding          : 10.0 A added to the largest span
+Box size         : 22 x 22 x 22 A
+Box file         : 7L00_AB_grid_box.txt
+============================================================
+siam chowdhury
+Computational and Medicinal Chemistry
+[Dr. Alam's Research Team] www.alamresearch.org
+Arkansas State University
+Date: 2026-09-25 02:01:32
+============================================================
+
+08 ACTIVE-SITE CHARACTERIZATION: 7L00_AB
+------------------------------------------------------------
+Residues with any atom within 5.0 A of crystal XCJ A:402
+(pocket used for all docking in this study)
+
+CHAIN  RESIDUE   NUMBER   MIN_DIST_A  CLOSEST_ATOM
+A      HIS       143           3.047  O
+A      ALA       95            3.048  N
+A      FMN       401           3.068  O2
+A      GLY       96            3.263  O
+A      GLY       94            3.306  CA
+A      ASN       44            3.327  N
+A      MET       70            3.432  CE
+A      GLU       136           3.435  OE1
+A      VAL       115           3.448  O
+A      LEU       260           3.467  CD2
+A      ALA       20            3.492  CB
+A      GLY       43            3.566  CA
+A      MET       275           3.603  SD
+A      PRO       117           3.619  CG
+A      LEU       121           3.693  CD2
+A      GLY       142           3.770  CA
+A      GLY       145           3.807  N
+A      TRP       21            3.874  CD1
+A      ILE       144           4.160  C
+A      GLY       141           4.654  O
+A      ASN       97            4.673  N
+A      VAL       116           4.808  CA
+
+RESIDUES PER CHAIN
+  chain A: 22
+
+All residues within 5.0 A belong to chain A.
+The partner chain lies just outside this cutoff but inside the
+docking box, so it is kept to define the box boundary correctly.
+============================================================
+siam chowdhury
+Computational and Medicinal Chemistry
+[Dr. Alam's Research Team] www.alamresearch.org
+Arkansas State University
+Date: 2026-09-25 02:01:32
+============================================================
+
+13 XCJ LIGAND PREPARATION FOR REDOCKING
+
+obabel XCJ_A402_crystal.sdf -O XCJ_H.sdf -p 7.4 --gen3d --minimize --ff MMFF94 --steps 500
+1 molecule converted
+Input molecules processed: 1, skipped: 0
+PDBQT files written: 1
+PDBQT files not written due to error: 0
+Input molecules with errors: 0
+
+SMILES after protonation (pH 7.4):
+CS(=O)(=O)c1cc2c(cc1)nc(NC(=O)Cc1csc(n3cccc3)n1)s2	XCJ
+PDBQT atoms : 28
+TORSDOF 5
+
+------------------------------------------------------------
+REDOCKING XCJ INTO 7L00_AB_receptor.pdbqt
+------------------------------------------------------------
+AutoDock Vina v1.2.5
+#################################################################
+# If you used AutoDock Vina in your work, please cite:          #
+#                                                               #
+# J. Eberhardt, D. Santos-Martins, A. F. Tillack, and S. Forli  #
+# AutoDock Vina 1.2.0: New Docking Methods, Expanded Force      #
+# Field, and Python Bindings, J. Chem. Inf. Model. (2021)       #
+# DOI 10.1021/acs.jcim.1c00203                                  #
+#                                                               #
+# O. Trott, A. J. Olson,                                        #
+# AutoDock Vina: improving the speed and accuracy of docking    #
+# with a new scoring function, efficient optimization and       #
+# multithreading, J. Comp. Chem. (2010)                         #
+# DOI 10.1002/jcc.21334                                         #
+#                                                               #
+# Please see https://github.com/ccsb-scripps/AutoDock-Vina for  #
+# more information.                                             #
+#################################################################
+
+Scoring function : vina
+Rigid receptor: 7L00_AB_receptor.pdbqt
+Ligand: XCJ.pdbqt
+Grid center: X 8.438 Y 15.49 Z 31.671
+Grid size  : X 22 Y 22 Z 22
+Grid space : 0.375
+Exhaustiveness: 32
+CPU: 0
+Verbosity: 1
+
+Computing Vina grid ... done.
+Performing docking (random seed: 12345) ... 
+0%   10   20   30   40   50   60   70   80   90   100%
+|----|----|----|----|----|----|----|----|----|----|
+***************************************************
+
+mode |   affinity | dist from best mode
+     | (kcal/mol) | rmsd l.b.| rmsd u.b.
+-----+------------+----------+----------
+   1       -10.11          0          0
+   2       -9.623      1.379      1.631
+   3       -9.205       6.78      10.49
+   4       -8.673      4.728      11.12
+   5       -8.622      2.311      2.754
+   6       -8.318      1.696      2.218
+   7       -8.282      4.162      9.471
+   8       -8.012      9.686      11.57
+   9       -8.002      10.31      11.46
+  10       -7.923        3.4      10.42
+  11       -7.897      9.504      10.47
+  12       -7.877      5.652      8.744
+  13       -7.803      5.432      8.336
+  14       -7.721      3.531      10.47
+  15        -7.58      3.013      9.107
+  16       -7.515      10.31      11.34
+  17       -7.463      9.997      11.85
+  18       -7.366      9.731      10.41
+  19       -7.338      10.36      12.94
+  20       -7.285      9.268       10.7
+17 XCJ REDOCKING RMSD VALIDATION
+------------------------------------------------------------
+Reference     : XCJ_A402_crystal.sdf (crystal pose, heavy atoms: 27)
+Docked poses  : XCJ_redock_poses.sdf (20 poses, export: Meeko mk_export.py)
+Method        : heavy-atom RMSD in the receptor frame (no superposition),
+                minimized over all symmetry-equivalent atom mappings.
+
+POSE      RMSD_A   SYMMETRY_MAPS
+1          0.820               4
+2          1.655               4
+3         10.517               4
+4         11.111               4
+5          2.886               4
+6          2.338               4
+7          9.625               4
+8         11.639               4
+9         11.532               4
+10        10.504               4
+11        10.532               4
+12         8.750               4
+13         8.532               4
+14        10.498               4
+15         9.147               4
+16        11.396               4
+17        11.906               4
+18        10.475               4
+19        13.069               4
+20        10.754               4
+
+POSE_1_RMSD      0.820 A
+LOWEST_RMSD      0.820 A (pose 1)
+
+CRITERIA: < 2.0 A excellent | 2-3 A acceptable | > 3 A re-optimize
+VERDICT: EXCELLENT (< 2.0 A) - docking protocol VALIDATED
+
+============================================================
+STEP 2 COMPLETED
+============================================================
+============================================================
+siam chowdhury
+Computational and Medicinal Chemistry
+[Dr. Alam's Research Team] www.alamresearch.org
+Arkansas State University
+Date: 2026-09-25 02:02:11
+============================================================
+
+18 STEP 2 SUMMARY: RECEPTOR + REDOCKING VALIDATION
+------------------------------------------------------------
+Receptor           : 7L00_AB_receptor.pdbqt (chains A+B + FMN)
+Protein prep       : Meeko mk_prepare_receptor.py
+Grid center        : 8.438, 15.490, 31.671
+Grid size          : 22.0 x 22.0 x 22.0 A
+Exhaustiveness     : 32   Modes: 20   Seed: 12345
+
+XCJ best Vina score: -10.11 kcal/mol
+XCJ pose 1 RMSD    : 0.8197564679016976 A
+Lowest RMSD        : 0.820 A (pose 1)
+VERDICT            : EXCELLENT (< 2.0 A) - docking protocol VALIDATED
+
+Visual check (Discovery Studio): open 7L00_AB_protein_FMN.pdb,
+XCJ_crystal.mol2 and XCJ_redock_best.mol2 together.
+
+Vina scores are computational docking scores,
+not experimentally measured binding free energies.

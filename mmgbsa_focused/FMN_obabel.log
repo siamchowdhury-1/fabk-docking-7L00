@@ -1,0 +1,5 @@
+==============================
+*** Open Babel Warning  in DoTransformations
+  Both -p and -h options are set. All implicit hydrogens (-h) will be added without considering pH.
+
+1 molecule converted

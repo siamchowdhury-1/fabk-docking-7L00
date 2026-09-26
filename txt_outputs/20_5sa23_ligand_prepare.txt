@@ -1,0 +1,34 @@
+============================================================
+siam chowdhury
+Computational and Medicinal Chemistry
+[Dr. Alam's Research Team] www.alamresearch.org
+Arkansas State University
+Date: 2026-09-25 02:09:01
+============================================================
+
+20 LIGAND PREPARATION: 5sa23
+------------------------------------------------------------
+obabel 5sa23.mol -O docking_5sa23/5sa23_H.sdf -p 7.4 --gen3d --minimize --ff MMFF94 --steps 500
+mk_prepare_ligand.py -i docking_5sa23/5sa23_H.sdf -o docking_5sa23/5sa23.pdbqt
+
+1 molecule converted
+Input molecules processed: 1, skipped: 0
+PDBQT files written: 1
+PDBQT files not written due to error: 0
+Input molecules with errors: 0
+
+3D DIMENSIONS (after protonation + MMFF94)
+ATOM_COUNT 46   HEAVY_ATOMS 30
+SIZE_X 15.819 A   SIZE_Y 7.104 A   SIZE_Z 6.453 A
+MAXIMUM_DIMENSION 15.819 A   BOX 22.0 A
+FITS_BOX YES
+
+SMILES after protonation (pH 7.4):
+c1(ccc(cc1)n1cc(c(n1)c1ccc(cc1)F)CNc1cc(ccc1)F)C(=O)[O-]	
+Net charge: ??
+PDBQT atoms: 31
+TORSDOF 6
+
+WARNINGS / ERRORS
+17:PDBQT files not written due to error: 0
+18:Input molecules with errors: 0

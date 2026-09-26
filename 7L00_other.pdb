@@ -1,0 +1,28 @@
+REMARK 999 siam chowdhury
+REMARK 999 Computational and Medicinal Chemistry
+REMARK 999 [Dr. Alam's Research Team] www.alamresearch.org
+REMARK 999 Arkansas State University
+REMARK 999 7L00 other components
+REMARK 999 Created: 2026-09-25 01:43:19
+HETATM 9320 NA    NA A 403      -1.691   8.826  50.645  1.00 40.39          NA
+HETATM 9321 NA    NA A 404       4.797  14.404  34.137  1.00 37.77          NA
+HETATM 9322  C1  GOL A 405      12.295  21.917  40.950  1.00 52.44           C
+HETATM 9323  O1  GOL A 405      11.788  21.455  39.735  1.00 53.02           O
+HETATM 9324  C2  GOL A 405      11.172  21.678  41.978  1.00 52.58           C
+HETATM 9325  O2  GOL A 405      10.766  20.349  41.998  1.00 51.03           O
+HETATM 9326  C3  GOL A 405      11.748  22.148  43.333  1.00 53.86           C
+HETATM 9327  O3  GOL A 405      10.688  22.748  44.020  1.00 54.31           O
+HETATM 9386 NA    NA B 403     -16.844  26.409  39.391  1.00 31.40          NA
+HETATM 9387 NA    NA B 404     -15.393  23.560  21.151  1.00 32.05          NA
+HETATM 9446 NA    NA C 403     -28.742   0.826  -0.104  1.00 33.69          NA
+HETATM 9447 NA    NA C 404     -18.173  -1.841  14.990  1.00 34.78          NA
+HETATM 9448  C1  GOL C 405     -27.403  13.085   5.028  1.00 33.50           C
+HETATM 9449  O1  GOL C 405     -26.437  12.897   6.037  1.00 37.36           O
+HETATM 9450  C2  GOL C 405     -26.706  12.705   3.717  1.00 32.76           C
+HETATM 9451  O2  GOL C 405     -26.086  11.440   3.833  1.00 38.27           O
+HETATM 9452  C3  GOL C 405     -27.846  12.683   2.654  1.00 32.42           C
+HETATM 9453  O3  GOL C 405     -27.422  11.757   1.688  1.00 38.89           O
+HETATM 9512 NA    NA D 403     -51.136 -11.358   4.491  1.00 41.61          NA
+HETATM 9513 NA    NA D 404     -43.172  -4.537  20.002  1.00 34.24          NA
+TER
+END

@@ -1,0 +1,15 @@
+============================================================
+siam chowdhury
+Computational and Medicinal Chemistry
+[Dr. Alam's Research Team] www.alamresearch.org
+Arkansas State University
+Date: 2026-09-25 01:43:19
+============================================================
+
+03 PROTEIN CHAIN REPORT: 7L00
+------------------------------------------------------------
+CHAIN     RESIDUES     ATOMS   FIRST    LAST
+A              310      2277       0     309
+B              311      2287      -1     309
+C              315      2308      -5     309
+D              315      2312      -5     309

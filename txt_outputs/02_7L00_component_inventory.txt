@@ -1,0 +1,29 @@
+============================================================
+siam chowdhury
+Computational and Medicinal Chemistry
+[Dr. Alam's Research Team] www.alamresearch.org
+Arkansas State University
+Date: 2026-09-25 01:43:19
+============================================================
+
+02 COMPONENT INVENTORY: 7L00 (model 1, altloc A/blank kept)
+------------------------------------------------------------
+Total coordinate records kept : 10147
+Alternate-location atoms dropped: 73
+
+GROUP        ATOMS   OUTPUT FILE
+protein       9184   7L00_protein.pdb
+FMN            124   7L00_FMN.pdb
+XCJ            108   7L00_XCJ_all.pdb
+water          711   7L00_water.pdb
+other           20   7L00_other.pdb
+
+Receptor draft (protein + FMN): 7L00_protein_FMN.pdb (9308 atoms)
+
+HETATM COMPONENTS
+RESNAME      ATOMS  COPIES
+FMN            124       4
+GOL             12       2
+HOH            711     711
+NA               8       8
+XCJ            108       4

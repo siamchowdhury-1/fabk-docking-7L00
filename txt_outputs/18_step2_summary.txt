@@ -1,0 +1,26 @@
+============================================================
+siam chowdhury
+Computational and Medicinal Chemistry
+[Dr. Alam's Research Team] www.alamresearch.org
+Arkansas State University
+Date: 2026-09-25 02:02:11
+============================================================
+
+18 STEP 2 SUMMARY: RECEPTOR + REDOCKING VALIDATION
+------------------------------------------------------------
+Receptor           : 7L00_AB_receptor.pdbqt (chains A+B + FMN)
+Protein prep       : Meeko mk_prepare_receptor.py
+Grid center        : 8.438, 15.490, 31.671
+Grid size          : 22.0 x 22.0 x 22.0 A
+Exhaustiveness     : 32   Modes: 20   Seed: 12345
+
+XCJ best Vina score: -10.11 kcal/mol
+XCJ pose 1 RMSD    : 0.8197564679016976 A
+Lowest RMSD        : 0.820 A (pose 1)
+VERDICT            : EXCELLENT (< 2.0 A) - docking protocol VALIDATED
+
+Visual check (Discovery Studio): open 7L00_AB_protein_FMN.pdb,
+XCJ_crystal.mol2 and XCJ_redock_best.mol2 together.
+
+Vina scores are computational docking scores,
+not experimentally measured binding free energies.

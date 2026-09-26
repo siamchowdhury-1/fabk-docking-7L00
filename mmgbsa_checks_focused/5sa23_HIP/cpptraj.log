@@ -1,0 +1,66 @@
+
+CPPTRAJ: Trajectory Analysis. V6.24.0 (AmberTools)
+    ___  ___  ___  ___
+     | \/ | \/ | \/ | 
+    _|_/\_|_/\_|_/\_|_
+
+| Date/time: 09/26/26 00:04:33
+| Available memory: 7.331 GB
+
+	Reading 'complex.prmtop' as Amber Topology
+	Radius Set: H(N)-modified Bondi radii (mbondi2)
+INPUT: Reading input from 'STDIN'
+  [trajin complex_min.rst7]
+	Reading 'complex_min.rst7' as Amber NC Restart
+  [trajout complex_min.nc netcdf]
+	Writing 'complex_min.nc' as Amber NetCDF
+  [trajout complex_min.pdb pdb]
+	Writing 'complex_min.pdb' as PDB
+  [go]
+---------- RUN BEGIN -------------------------------------------------
+
+PARAMETER FILES (1 total):
+ 0: complex.prmtop, 4756 atoms, 312 res, box: None, 3 mol
+
+INPUT TRAJECTORIES (1 total):
+ 0: 'complex_min.rst7' is a NetCDF AMBER restart file with coordinates, time, Parm complex.prmtop (reading 1 of 1)
+  Coordinate processing will occur on 1 frames.
+
+OUTPUT TRAJECTORIES (2 total):
+  'complex_min.nc' (1 frames) is a NetCDF (NetCDF3) AMBER trajectory
+  'complex_min.pdb' (1 frames) is a PDB file
+
+BEGIN TRAJECTORY PROCESSING:
+Warning: Setting NetCDF variable compression requires compiling with HDF5 support.
+Warning: Setting NetCDF variable compression requires compiling with HDF5 support.
+Warning: Setting NetCDF frame chunk size requires compiling with HDF5 support.
+.....................................................
+ACTIVE OUTPUT TRAJECTORIES (2):
+  complex_min.nc (coordinates, time)
+  complex_min.pdb (coordinates, time)
+----- complex_min.rst7 (1-1, 1) -----
+100% Complete.
+
+Read 1 frames and processed 1 frames.
+TIME: Avg. throughput= 51.3479 frames / second.
+
+ACTION OUTPUT:
+TIME: Analyses took 0.0000 seconds.
+
+RUN TIMING:
+TIME:		Init               : 0.0000 s (  0.07%)
+TIME:		Trajectory Process : 0.0195 s ( 99.75%)
+TIME:		Action Post        : 0.0000 s (  0.00%)
+TIME:		Analysis           : 0.0000 s (  0.00%)
+TIME:		Data File Write    : 0.0000 s (  0.01%)
+TIME:		Other              : 0.0000 s (  0.00%)
+TIME:	Run Total 0.0195 s
+---------- RUN END ---------------------------------------------------
+  [quit]
+TIME: Total execution time: 0.0486 seconds.
+--------------------------------------------------------------------------------
+To cite CPPTRAJ use:
+Daniel R. Roe and Thomas E. Cheatham, III, "PTRAJ and CPPTRAJ: Software for
+  Processing and Analysis of Molecular Dynamics Trajectory Data". J. Chem.
+  Theory Comput., 2013, 9 (7), pp 3084-3095.
+

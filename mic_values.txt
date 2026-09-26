@@ -1,0 +1,4 @@
+# compound   MIC_ug_per_mL   organism
+5sa23        16.00           S. aureus ATCC 29213
+17sa23       32.00           S. aureus ATCC 29213
+20sa23       1.00            S. aureus ATCC 29213

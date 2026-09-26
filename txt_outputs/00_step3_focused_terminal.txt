@@ -1,0 +1,239 @@
+============================================================
+STEP 3 [focused]: DOCKING 3 COMPOUND(S) INTO 7L00_AB
+Compounds: 5sa23 17sa23 20sa23
+Center: 8.438, 15.490, 31.671   Box: 16 x 16 x 16 A
+============================================================
+
+------------------------------------------------------------
+COMPOUND: 5sa23
+------------------------------------------------------------
+AutoDock Vina v1.2.5
+#################################################################
+# If you used AutoDock Vina in your work, please cite:          #
+#                                                               #
+# J. Eberhardt, D. Santos-Martins, A. F. Tillack, and S. Forli  #
+# AutoDock Vina 1.2.0: New Docking Methods, Expanded Force      #
+# Field, and Python Bindings, J. Chem. Inf. Model. (2021)       #
+# DOI 10.1021/acs.jcim.1c00203                                  #
+#                                                               #
+# O. Trott, A. J. Olson,                                        #
+# AutoDock Vina: improving the speed and accuracy of docking    #
+# with a new scoring function, efficient optimization and       #
+# multithreading, J. Comp. Chem. (2010)                         #
+# DOI 10.1002/jcc.21334                                         #
+#                                                               #
+# Please see https://github.com/ccsb-scripps/AutoDock-Vina for  #
+# more information.                                             #
+#################################################################
+
+Scoring function : vina
+Rigid receptor: 7L00_AB_receptor.pdbqt
+Ligand: docking_focused_5sa23/5sa23.pdbqt
+Grid center: X 8.438 Y 15.49 Z 31.671
+Grid size  : X 16 Y 16 Z 16
+Grid space : 0.375
+Exhaustiveness: 32
+CPU: 0
+Verbosity: 1
+
+Computing Vina grid ... done.
+Performing docking (random seed: 12345) ... 
+0%   10   20   30   40   50   60   70   80   90   100%
+|----|----|----|----|----|----|----|----|----|----|
+***************************************************
+
+mode |   affinity | dist from best mode
+     | (kcal/mol) | rmsd l.b.| rmsd u.b.
+-----+------------+----------+----------
+   1       -7.988          0          0
+   2       -7.163      1.658      3.659
+   3        -6.96      7.506      11.17
+   4       -6.919      7.891       11.5
+   5       -6.772      7.694      11.67
+   6       -6.732      7.916      11.24
+   7       -6.659      2.183       3.27
+   8       -6.634      7.333      11.06
+   9       -6.615      7.036      10.65
+  10       -6.561      7.514      11.78
+  11       -6.559      7.953      11.61
+  12       -6.549      2.019      4.804
+  13        -6.51      2.011      5.014
+  14       -6.211      6.164      8.005
+  15       -6.108      8.293      11.99
+  16       -6.104      4.402      5.411
+  17       -6.018      6.908      9.968
+  18       -6.002      4.446      6.003
+  19       -5.876      6.678      9.542
+  20       -5.757      7.539      11.71
+5sa23: best -7.988 kcal/mol, 11 contact residues, FMN contact YES
+
+------------------------------------------------------------
+COMPOUND: 17sa23
+------------------------------------------------------------
+AutoDock Vina v1.2.5
+#################################################################
+# If you used AutoDock Vina in your work, please cite:          #
+#                                                               #
+# J. Eberhardt, D. Santos-Martins, A. F. Tillack, and S. Forli  #
+# AutoDock Vina 1.2.0: New Docking Methods, Expanded Force      #
+# Field, and Python Bindings, J. Chem. Inf. Model. (2021)       #
+# DOI 10.1021/acs.jcim.1c00203                                  #
+#                                                               #
+# O. Trott, A. J. Olson,                                        #
+# AutoDock Vina: improving the speed and accuracy of docking    #
+# with a new scoring function, efficient optimization and       #
+# multithreading, J. Comp. Chem. (2010)                         #
+# DOI 10.1002/jcc.21334                                         #
+#                                                               #
+# Please see https://github.com/ccsb-scripps/AutoDock-Vina for  #
+# more information.                                             #
+#################################################################
+
+Scoring function : vina
+Rigid receptor: 7L00_AB_receptor.pdbqt
+Ligand: docking_focused_17sa23/17sa23.pdbqt
+Grid center: X 8.438 Y 15.49 Z 31.671
+Grid size  : X 16 Y 16 Z 16
+Grid space : 0.375
+Exhaustiveness: 32
+CPU: 0
+Verbosity: 1
+
+Computing Vina grid ... done.
+Performing docking (random seed: 12345) ... 
+0%   10   20   30   40   50   60   70   80   90   100%
+|----|----|----|----|----|----|----|----|----|----|
+***************************************************
+
+mode |   affinity | dist from best mode
+     | (kcal/mol) | rmsd l.b.| rmsd u.b.
+-----+------------+----------+----------
+   1       -7.166          0          0
+   2       -7.105      1.747      3.346
+   3       -6.486      7.817      11.13
+   4       -6.349      8.159      11.67
+   5       -6.338      2.766      3.465
+   6       -6.268      8.491      12.21
+   7       -6.267      8.199      11.81
+   8       -6.229      1.365      1.866
+   9       -6.221      7.885      11.76
+  10       -6.217      7.588      11.62
+  11       -6.173      4.418      7.134
+  12       -5.918      8.539      12.07
+  13       -5.854      7.771      11.47
+  14       -5.681      3.991      4.918
+  15       -5.555      4.083      5.026
+  16       -5.463      4.138      6.029
+  17       -5.213      4.897      6.947
+  18       -5.166      7.413      9.724
+  19       -4.956      9.162      12.61
+  20       -4.478      7.728      11.14
+17sa23: best -7.166 kcal/mol, 11 contact residues, FMN contact YES
+
+------------------------------------------------------------
+COMPOUND: 20sa23
+------------------------------------------------------------
+AutoDock Vina v1.2.5
+#################################################################
+# If you used AutoDock Vina in your work, please cite:          #
+#                                                               #
+# J. Eberhardt, D. Santos-Martins, A. F. Tillack, and S. Forli  #
+# AutoDock Vina 1.2.0: New Docking Methods, Expanded Force      #
+# Field, and Python Bindings, J. Chem. Inf. Model. (2021)       #
+# DOI 10.1021/acs.jcim.1c00203                                  #
+#                                                               #
+# O. Trott, A. J. Olson,                                        #
+# AutoDock Vina: improving the speed and accuracy of docking    #
+# with a new scoring function, efficient optimization and       #
+# multithreading, J. Comp. Chem. (2010)                         #
+# DOI 10.1002/jcc.21334                                         #
+#                                                               #
+# Please see https://github.com/ccsb-scripps/AutoDock-Vina for  #
+# more information.                                             #
+#################################################################
+
+Scoring function : vina
+Rigid receptor: 7L00_AB_receptor.pdbqt
+Ligand: docking_focused_20sa23/20sa23.pdbqt
+Grid center: X 8.438 Y 15.49 Z 31.671
+Grid size  : X 16 Y 16 Z 16
+Grid space : 0.375
+Exhaustiveness: 32
+CPU: 0
+Verbosity: 1
+
+Computing Vina grid ... done.
+Performing docking (random seed: 12345) ... 
+0%   10   20   30   40   50   60   70   80   90   100%
+|----|----|----|----|----|----|----|----|----|----|
+***************************************************
+
+mode |   affinity | dist from best mode
+     | (kcal/mol) | rmsd l.b.| rmsd u.b.
+-----+------------+----------+----------
+   1       -7.297          0          0
+   2       -7.271     0.1176      1.619
+   3       -7.264      7.701      11.42
+   4         -7.2      7.572      11.24
+   5       -7.135      2.789      4.313
+   6       -7.088      2.795      4.536
+   7       -6.911      2.297      4.124
+   8        -6.89       2.29      4.167
+   9       -6.748      7.724      11.38
+  10       -6.697      5.051      8.313
+  11       -6.668      2.221      3.017
+  12       -6.405      6.136      10.22
+  13       -6.342      6.161       10.2
+  14       -6.153      2.537      4.821
+  15       -6.135       6.66      10.43
+  16       -5.992      2.416      2.792
+  17       -5.956      6.102      10.01
+  18       -5.944      5.813      9.507
+  19       -5.942      2.781      4.082
+  20       -3.461      7.345       10.4
+20sa23: best -7.297 kcal/mol, 12 contact residues, FMN contact NO
+26 DOCKING RANKING: 7L00 FabK (chains A+B + FMN) [focused, 16 A box]
+------------------------------------------------------------
+Reference: crystal inhibitor XCJ redocked = -10.11 kcal/mol (RMSD-validated)
+
+RANK COMPOUND     SCORE   dXCJ     LE HEAVY TORS SHIFT_A CONT   SITE  FMN POLAR
+1    5sa23        -7.99  +2.12  0.266    30    6    5.21   11  11/22  YES     5
+2    20sa23       -7.30  +2.81  0.235    31    6    4.60   12  10/22   NO     2
+3    17sa23       -7.17  +2.94  0.231    31    6    5.34   11  10/22  YES     8
+
+COLUMNS
+  SCORE  best Vina score (kcal/mol, more negative = stronger predicted binding)
+  dXCJ   score minus XCJ reference (negative = better than XCJ)
+  LE     ligand efficiency, -score / heavy atoms
+  SHIFT  pose-1 centroid distance from crystal XCJ center
+  CONT   residues within 4 A;  SITE  shared with XCJ pocket residues
+  FMN    pose 1 contacts FMN;  POLAR  N/O pairs within 3.5 A
+
+COMPARISON WITH GLOBAL RUN (22 A box)
+COMPOUND     GLOBAL  SHIFT  FMN    FOCUSED  SHIFT  FMN  PENALTY
+5sa23         -9.12   9.73   NO      -7.99   5.21  YES    +1.13
+20sa23        -9.15   9.84   NO      -7.30   4.60   NO    +1.85
+17sa23        -9.21   9.73   NO      -7.17   5.34  YES    +2.05
+
+PENALTY = focused score - global score (kcal/mol).
+Small penalty (< ~1) with SHIFT < ~3 A and FMN contact: the compound
+fits the XCJ/FMN pocket. Large penalty or SHIFT still > 3 A: it does
+not fit the rigid crystal pocket well.
+
+Vina scores are computational docking scores,
+not experimentally measured binding free energies.
+
+Graphs:
+  graphs_focused/Graph_7L00_FabK_5sa23.png
+  graphs_focused/Graph_7L00_FabK_17sa23.png
+  graphs_focused/Graph_7L00_FabK_20sa23.png
+  graphs_focused/multi_docking_7L00_FabK.png
+  graphs_focused/best_scores_7L00_FabK.png
+
+============================================================
+STEP 3 [focused] COMPLETED
+============================================================
+Ranking : cat txt_outputs/focused/26_docking_ranking_summary.txt
+Contacts: cat txt_outputs/focused/25_<compound>_complex_contacts.txt
+Graphs  : graphs_focused/
+Files   : docking_focused_<compound>/

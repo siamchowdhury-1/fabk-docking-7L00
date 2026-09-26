@@ -1,0 +1,15 @@
+============================================================
+siam chowdhury
+Computational and Medicinal Chemistry
+[Dr. Alam's Research Team] www.alamresearch.org
+Arkansas State University
+Date: 2026-09-25 02:18:45
+============================================================
+
+27 GRAPHS CREATED
+------------------------------------------------------------
+graphs/Graph_7L00_FabK_5sa23.png
+graphs/Graph_7L00_FabK_17sa23.png
+graphs/Graph_7L00_FabK_20sa23.png
+graphs/multi_docking_7L00_FabK.png
+graphs/best_scores_7L00_FabK.png

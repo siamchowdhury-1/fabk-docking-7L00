@@ -1,0 +1,24 @@
+============================================================
+siam chowdhury
+Computational and Medicinal Chemistry
+[Dr. Alam's Research Team] www.alamresearch.org
+Arkansas State University
+Date: 2026-09-25 02:23:54
+============================================================
+
+19 INPUT CHECK: 20sa23
+------------------------------------------------------------
+-rw-r--r-- 1 siamchowdhury siamchowdhury 3.0K Sep 23 10:56 20sa23.mol
+
+SMILES (as drawn):
+1 molecule converted
+OC(=O)c1ccc(n2nc(c3ccc(F)cc3)c(CNc3cc(cc(Cl)c3)Cl)c2)cc1	
+
+MOL counts line:
+ 31 34  0  0  0  0  0  0  0  0999 V2000
+
+Formula / MW (as drawn):
+C23H16Cl2FN3O2 456.296
+
+Formal charge records:
+No explicit M  CHG record.

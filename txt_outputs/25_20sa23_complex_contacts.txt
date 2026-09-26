@@ -1,0 +1,75 @@
+============================================================
+siam chowdhury
+Computational and Medicinal Chemistry
+[Dr. Alam's Research Team] www.alamresearch.org
+Arkansas State University
+Date: 2026-09-25 02:12:40
+============================================================
+
+25 BEST-POSE COMPLEX AND CONTACT ANALYSIS: 20sa23
+------------------------------------------------------------
+Best Vina score            : -9.148 kcal/mol
+Heavy atoms                : 31
+Ligand efficiency          : 0.295 kcal/mol per heavy atom
+TORSDOF (rotatable bonds)  : 6
+Pose-1 centroid to site    : 9.84 A from crystal XCJ center
+Residues within 4.0 A      : 14
+Shared with XCJ pocket     : 6 of 22 (08 list, 5 A)
+FMN contacts (<= 4.0 A)    : NO (0 atom pairs)
+Polar contacts (N/O <=3.5A): 3 (possible H-bonds)
+
+RESIDUES WITHIN 4.0 A OF POSE 1
+CHAIN  RES   NUM      MIN_A  XCJ_SITE HYDROPHOBIC
+A      THR   220       2.63  -        -
+A      ASN   44        3.10  yes      yes
+A      TRP   21        3.18  yes      -
+A      PHE   239       3.27  -        yes
+A      THR   224       3.29  -        -
+A      GLY   256       3.39  -        yes
+A      ASP   253       3.40  -        -
+A      ALA   20        3.40  yes      yes
+A      MET   70        3.43  yes      -
+A      HIS   226       3.60  -        yes
+A      GLY   43        3.78  yes      -
+A      MET   275       3.84  yes      -
+A      GLY   221       3.96  -        -
+A      SER   273       4.00  -        -
+
+POLAR CONTACTS (ligand N/O to receptor N/O, <= 3.5 A)
+  A:ASN44     N     ... ligand O 3.10 A
+  A:TRP21     NE1   ... ligand O 3.18 A
+  A:ASP253    OD1   ... ligand N 3.40 A
+
+FMN CONTACTS (<= 4.0 A)
+  none
+
+ALL POSES
+POSE     SCORE   CENTROID_TO_SITE_A
+1       -9.148                 9.84
+2       -9.078                 9.77
+3       -8.346                 5.79
+4       -8.292                 7.78
+5       -7.937                 9.26
+6       -7.923                 7.80
+7       -7.881                 7.85
+8       -7.645                 6.75
+9       -7.449                 9.93
+10      -7.431                 9.46
+11      -7.386                 9.05
+12      -7.325                 9.68
+13      -7.317                 9.03
+14      -7.297                 9.00
+15      -7.224                 9.55
+16      -7.186                 9.73
+17      -7.112                 9.66
+18      -7.096                 9.87
+19      -7.045                 8.35
+20      -5.694                 8.43
+
+FILES
+  docking_20sa23/20sa23_7L00_best_complex.pdb
+  docking_20sa23/20sa23_7L00_all_poses_complex.pdb
+  docking_20sa23/20sa23_best.mol2  (Discovery Studio, with 7L00_AB_protein_FMN.pdb)
+
+Geometric contacts only; use Discovery Studio for a full
+2D interaction diagram (H-bond angles, pi-stacking, salt bridges).

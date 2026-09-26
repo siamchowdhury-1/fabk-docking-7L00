@@ -1,0 +1,43 @@
+============================================================
+siam chowdhury
+Computational and Medicinal Chemistry
+[Dr. Alam's Research Team] www.alamresearch.org
+Arkansas State University
+Date: 2026-09-25 02:01:32
+============================================================
+
+08 ACTIVE-SITE CHARACTERIZATION: 7L00_AB
+------------------------------------------------------------
+Residues with any atom within 5.0 A of crystal XCJ A:402
+(pocket used for all docking in this study)
+
+CHAIN  RESIDUE   NUMBER   MIN_DIST_A  CLOSEST_ATOM
+A      HIS       143           3.047  O
+A      ALA       95            3.048  N
+A      FMN       401           3.068  O2
+A      GLY       96            3.263  O
+A      GLY       94            3.306  CA
+A      ASN       44            3.327  N
+A      MET       70            3.432  CE
+A      GLU       136           3.435  OE1
+A      VAL       115           3.448  O
+A      LEU       260           3.467  CD2
+A      ALA       20            3.492  CB
+A      GLY       43            3.566  CA
+A      MET       275           3.603  SD
+A      PRO       117           3.619  CG
+A      LEU       121           3.693  CD2
+A      GLY       142           3.770  CA
+A      GLY       145           3.807  N
+A      TRP       21            3.874  CD1
+A      ILE       144           4.160  C
+A      GLY       141           4.654  O
+A      ASN       97            4.673  N
+A      VAL       116           4.808  CA
+
+RESIDUES PER CHAIN
+  chain A: 22
+
+All residues within 5.0 A belong to chain A.
+The partner chain lies just outside this cutoff but inside the
+docking box, so it is kept to define the box boundary correctly.

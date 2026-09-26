@@ -1,0 +1,21 @@
+============================================================
+siam chowdhury
+Computational and Medicinal Chemistry
+[Dr. Alam's Research Team] www.alamresearch.org
+Arkansas State University
+Date: 2026-09-25 02:01:32
+============================================================
+
+13 XCJ LIGAND PREPARATION FOR REDOCKING
+
+obabel XCJ_A402_crystal.sdf -O XCJ_H.sdf -p 7.4 --gen3d --minimize --ff MMFF94 --steps 500
+1 molecule converted
+Input molecules processed: 1, skipped: 0
+PDBQT files written: 1
+PDBQT files not written due to error: 0
+Input molecules with errors: 0
+
+SMILES after protonation (pH 7.4):
+CS(=O)(=O)c1cc2c(cc1)nc(NC(=O)Cc1csc(n3cccc3)n1)s2	XCJ
+PDBQT atoms : 28
+TORSDOF 5

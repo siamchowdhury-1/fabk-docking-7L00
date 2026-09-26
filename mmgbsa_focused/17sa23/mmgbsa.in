@@ -1,0 +1,8 @@
+MM/GBSA on the minimised docked pose
+&general
+  startframe = 1, endframe = 1, interval = 1,
+  verbose = 2, keep_files = 0,
+/
+&gb
+  igb = 5, saltcon = 0.15,
+/

@@ -1,0 +1,15 @@
+============================================================
+siam chowdhury
+Computational and Medicinal Chemistry
+[Dr. Alam's Research Team] www.alamresearch.org
+Arkansas State University
+Date: 2026-09-25 02:09:58
+============================================================
+
+24 POSE EXPORT: 5sa23
+Method: Meeko mk_export.py
+
+-rw-r--r-- 1 siamchowdhury siamchowdhury  95K Sep 25 02:09 docking_5sa23/5sa23_all20.mol2
+-rw-r--r-- 1 siamchowdhury siamchowdhury 4.8K Sep 25 02:09 docking_5sa23/5sa23_best.mol2
+-rw-r--r-- 1 siamchowdhury siamchowdhury 7.0K Sep 25 02:09 docking_5sa23/5sa23_best_ligand.pdb
+-rw-r--r-- 1 siamchowdhury siamchowdhury  80K Sep 25 02:09 docking_5sa23/5sa23_poses.sdf

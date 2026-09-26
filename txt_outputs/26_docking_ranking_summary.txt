@@ -1,0 +1,27 @@
+============================================================
+siam chowdhury
+Computational and Medicinal Chemistry
+[Dr. Alam's Research Team] www.alamresearch.org
+Arkansas State University
+Date: 2026-09-25 02:18:45
+============================================================
+
+26 DOCKING RANKING: 7L00 FabK (chains A+B + FMN)
+------------------------------------------------------------
+Reference: crystal inhibitor XCJ redocked = -10.11 kcal/mol (RMSD-validated)
+
+RANK COMPOUND     SCORE   dXCJ     LE HEAVY TORS SHIFT_A CONT   SITE  FMN POLAR
+1    17sa23       -9.21  +0.90  0.297    31    6    9.73   15   7/22   NO     3
+2    20sa23       -9.15  +0.96  0.295    31    6    9.84   14   6/22   NO     3
+3    5sa23        -9.12  +0.99  0.304    30    6    9.73   14   7/22   NO     2
+
+COLUMNS
+  SCORE  best Vina score (kcal/mol, more negative = stronger predicted binding)
+  dXCJ   score minus XCJ reference (negative = better than XCJ)
+  LE     ligand efficiency, -score / heavy atoms
+  SHIFT  pose-1 centroid distance from crystal XCJ center
+  CONT   residues within 4 A;  SITE  shared with XCJ pocket residues
+  FMN    pose 1 contacts FMN;  POLAR  N/O pairs within 3.5 A
+
+Vina scores are computational docking scores,
+not experimentally measured binding free energies.

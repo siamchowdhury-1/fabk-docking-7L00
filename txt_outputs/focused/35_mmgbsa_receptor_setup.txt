@@ -1,0 +1,27 @@
+============================================================
+siam chowdhury
+Computational and Medicinal Chemistry
+[Dr. Alam's Research Team] www.alamresearch.org
+Arkansas State University
+Date: 2026-09-25 04:16:44
+============================================================
+
+35 RECEPTOR AND FMN PARAMETERISATION
+------------------------------------------------------------
+chains A
+protein atoms 2277
+FMN atoms 31
+chain breaks (TER inserted): none
+
+Protein force field : ff14SB
+FMN / ligand        : GAFF2 with AM1-BCC charges
+FMN net charge      : -2
+FMN bond orders     : crystal SDF from RCSB (CCD bond orders)
+
+pdb4amber changes (renamed / removed):
+Summary of pdb4amber for: mmgbsa_focused/receptor_protein.pdb
+---------- Missing heavy atom(s)
+
+FMN parameters missing from GAFF2 and estimated by parmchk2:
+0
+0

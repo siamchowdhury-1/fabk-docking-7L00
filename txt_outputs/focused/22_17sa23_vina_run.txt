@@ -1,0 +1,68 @@
+============================================================
+siam chowdhury
+Computational and Medicinal Chemistry
+[Dr. Alam's Research Team] www.alamresearch.org
+Arkansas State University
+Date: 2026-09-25 02:20:27
+============================================================
+
+22 VINA RUN: 17sa23
+
+AutoDock Vina v1.2.5
+#################################################################
+# If you used AutoDock Vina in your work, please cite:          #
+#                                                               #
+# J. Eberhardt, D. Santos-Martins, A. F. Tillack, and S. Forli  #
+# AutoDock Vina 1.2.0: New Docking Methods, Expanded Force      #
+# Field, and Python Bindings, J. Chem. Inf. Model. (2021)       #
+# DOI 10.1021/acs.jcim.1c00203                                  #
+#                                                               #
+# O. Trott, A. J. Olson,                                        #
+# AutoDock Vina: improving the speed and accuracy of docking    #
+# with a new scoring function, efficient optimization and       #
+# multithreading, J. Comp. Chem. (2010)                         #
+# DOI 10.1002/jcc.21334                                         #
+#                                                               #
+# Please see https://github.com/ccsb-scripps/AutoDock-Vina for  #
+# more information.                                             #
+#################################################################
+
+Scoring function : vina
+Rigid receptor: 7L00_AB_receptor.pdbqt
+Ligand: docking_focused_17sa23/17sa23.pdbqt
+Grid center: X 8.438 Y 15.49 Z 31.671
+Grid size  : X 16 Y 16 Z 16
+Grid space : 0.375
+Exhaustiveness: 32
+CPU: 0
+Verbosity: 1
+
+Computing Vina grid ... done.
+Performing docking (random seed: 12345) ... 
+0%   10   20   30   40   50   60   70   80   90   100%
+|----|----|----|----|----|----|----|----|----|----|
+***************************************************
+
+mode |   affinity | dist from best mode
+     | (kcal/mol) | rmsd l.b.| rmsd u.b.
+-----+------------+----------+----------
+   1       -7.166          0          0
+   2       -7.105      1.747      3.346
+   3       -6.486      7.817      11.13
+   4       -6.349      8.159      11.67
+   5       -6.338      2.766      3.465
+   6       -6.268      8.491      12.21
+   7       -6.267      8.199      11.81
+   8       -6.229      1.365      1.866
+   9       -6.221      7.885      11.76
+  10       -6.217      7.588      11.62
+  11       -6.173      4.418      7.134
+  12       -5.918      8.539      12.07
+  13       -5.854      7.771      11.47
+  14       -5.681      3.991      4.918
+  15       -5.555      4.083      5.026
+  16       -5.463      4.138      6.029
+  17       -5.213      4.897      6.947
+  18       -5.166      7.413      9.724
+  19       -4.956      9.162      12.61
+  20       -4.478      7.728      11.14

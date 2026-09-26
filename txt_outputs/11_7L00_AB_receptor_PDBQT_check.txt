@@ -1,0 +1,29 @@
+============================================================
+siam chowdhury
+Computational and Medicinal Chemistry
+[Dr. Alam's Research Team] www.alamresearch.org
+Arkansas State University
+Date: 2026-09-25 02:01:31
+============================================================
+
+11 FINAL RECEPTOR PDBQT CHECK: 7L00_AB_receptor.pdbqt
+------------------------------------------------------------
+-rw------- 1 siamchowdhury siamchowdhury 441K Sep 25 02:01 7L00_AB_receptor.pdbqt
+
+Protein method       : Meeko mk_prepare_receptor.py
+Input heavy atoms    : 4626
+PDBQT atoms total    : 5641
+FMN atoms in PDBQT   : 70
+
+ATOM TYPES
+     180 A
+    2734 C
+    1015 HD
+     780 N
+      12 NA
+     884 OA
+       2 P
+      34 SA
+
+WARNINGS / DELETED RESIDUES (protein preparation)
+None detected.

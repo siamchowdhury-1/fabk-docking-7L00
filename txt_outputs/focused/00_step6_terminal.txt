@@ -1,0 +1,143 @@
+============================================================
+STEP 6: MM/GBSA VALIDATION CHECKS
+Ligands  : XCJ 5sa23 17sa23 20sa23
+States   : HIE HIP  (His143 of chain A)
+Runs     : 8 systems
+============================================================
+His143 (chain A) is residue 144 in protein_amber.pdb
+  HIP: 10 atoms renamed
+
+--- XCJ control ligand ---
+XCJ net charge: 0
+    XCJ AM1-BCC charges ...                 XCJ AM1-BCC charges ...             15s elapsed    XCJ AM1-BCC charges ...             29s elapsed    XCJ AM1-BCC charges ...             44s elapsed    XCJ AM1-BCC charges ...             58s elapsed    XCJ AM1-BCC charges ...             1m 13s elapsed    XCJ AM1-BCC charges ...             1m 28s elapsed    XCJ AM1-BCC charges ...             1m 42s elapseddone in 1m 42s
+
+============================================================
+PROTONATION STATE: His143 = HIE
+============================================================
+
+  ---- XCJ / His143 = HIE ----
+    tleap ...                           done in 1s
+    minimising 500 cycles ...               minimising 500 cycles ...           15s elapsed    minimising 500 cycles ...           29s elapsed    minimising 500 cycles ...           44s elapsed    minimising 500 cycles ...           58s elapsed    minimising 500 cycles ...           1m 13s elapsed    minimising 500 cycles ...           1m 28s elapsed    minimising 500 cycles ...           1m 43s elapsed    minimising 500 cycles ...           1m 57s elapsed    minimising 500 cycles ...           2m 12s elapsed    minimising 500 cycles ...           2m 26s elapsed    minimising 500 cycles ...           2m 41s elapsed    minimising 500 cycles ...           2m 56s elapsed    minimising 500 cycles ...           3m 11s elapsed    minimising 500 cycles ...           3m 26s elapsed    minimising 500 cycles ...           3m 40s elapsed    minimising 500 cycles ...           3m 55s elapsed    minimising 500 cycles ...           4m 09s elapsed    minimising 500 cycles ...           4m 24s elapsed    minimising 500 cycles ...           4m 39s elapsed    minimising 500 cycles ...           4m 54s elapsed    minimising 500 cycles ...           5m 08s elapsed    minimising 500 cycles ...           5m 23s elapsed    minimising 500 cycles ...           5m 38s elapsed    minimising 500 cycles ...           5m 53s elapseddone in 5m 53s
+    MM/GBSA + decomposition ...             MM/GBSA + decomposition ...         14s elapseddone in 14s
+    OK: -43.6881 kcal/mol
+
+  ---- 5sa23 / His143 = HIE ----
+    tleap ...                           done in 1s
+    minimising 500 cycles ...               minimising 500 cycles ...           15s elapsed    minimising 500 cycles ...           4m 43s elapsed    minimising 500 cycles ...           4m 58s elapsed    minimising 500 cycles ...           5m 13s elapsed    minimising 500 cycles ...           5m 28s elapsed    minimising 500 cycles ...           5m 42s elapsed    minimising 500 cycles ...           5m 57s elapsed    minimising 500 cycles ...           6m 12s elapsed    minimising 500 cycles ...           6m 26s elapsed    minimising 500 cycles ...           6m 41s elapsed    minimising 500 cycles ...           6m 56s elapsed    minimising 500 cycles ...           7m 11s elapsed    minimising 500 cycles ...           7m 25s elapsed    minimising 500 cycles ...           7m 40s elapsed    minimising 500 cycles ...           7m 55s elapsed    minimising 500 cycles ...           8m 10s elapsed    minimising 500 cycles ...           8m 24s elapsed    minimising 500 cycles ...           8m 39s elapsed    minimising 500 cycles ...           8m 53s elapsed    minimising 500 cycles ...           9m 08s elapsed    minimising 500 cycles ...           9m 23s elapsed    minimising 500 cycles ...           9m 38s elapsed    minimising 500 cycles ...           9m 53s elapseddone in 9m 53s
+    MM/GBSA + decomposition ...             MM/GBSA + decomposition ...         14s elapsed    MM/GBSA + decomposition ...         5m 41s elapseddone in 5m 41s
+    OK: -17.8949 kcal/mol
+
+  ---- 17sa23 / His143 = HIE ----
+    tleap ...                           done in 0s
+    minimising 500 cycles ...               minimising 500 cycles ...           15s elapsed    minimising 500 cycles ...           30s elapsed    minimising 500 cycles ...           45s elapsed    minimising 500 cycles ...           59s elapsed    minimising 500 cycles ...           1m 14s elapsed    minimising 500 cycles ...           1m 28s elapsed    minimising 500 cycles ...           1m 43s elapsed    minimising 500 cycles ...           1m 58s elapsed    minimising 500 cycles ...           2m 13s elapsed    minimising 500 cycles ...           2m 27s elapsed    minimising 500 cycles ...           2m 42s elapsed    minimising 500 cycles ...           2m 57s elapsed    minimising 500 cycles ...           3m 12s elapsed    minimising 500 cycles ...           3m 27s elapsed    minimising 500 cycles ...           3m 41s elapsed    minimising 500 cycles ...           3m 56s elapsed    minimising 500 cycles ...           4m 10s elapsed    minimising 500 cycles ...           4m 25s elapsed    minimising 500 cycles ...           4m 40s elapsed    minimising 500 cycles ...           4m 55s elapsed    minimising 500 cycles ...           8m 42s elapsed    minimising 500 cycles ...           8m 57s elapsed    minimising 500 cycles ...           9m 12s elapseddone in 9m 12s
+    MM/GBSA + decomposition ...             MM/GBSA + decomposition ...         15s elapseddone in 15s
+    OK: -10.7805 kcal/mol
+
+  ---- 20sa23 / His143 = HIE ----
+    tleap ...                           done in 0s
+    minimising 500 cycles ...               minimising 500 cycles ...           15s elapsed    minimising 500 cycles ...           30s elapsed    minimising 500 cycles ...           45s elapsed    minimising 500 cycles ...           1m 00s elapsed    minimising 500 cycles ...           1m 15s elapsed    minimising 500 cycles ...           1m 29s elapsed    minimising 500 cycles ...           1m 44s elapsed    minimising 500 cycles ...           1m 58s elapsed    minimising 500 cycles ...           2m 13s elapsed    minimising 500 cycles ...           2m 28s elapsed    minimising 500 cycles ...           2m 43s elapsed    minimising 500 cycles ...           2m 57s elapsed    minimising 500 cycles ...           3m 12s elapsed    minimising 500 cycles ...           3m 26s elapsed    minimising 500 cycles ...           3m 41s elapsed    minimising 500 cycles ...           3m 55s elapsed    minimising 500 cycles ...           4m 10s elapsed    minimising 500 cycles ...           4m 25s elapsed    minimising 500 cycles ...           4m 40s elapsed    minimising 500 cycles ...           6m 58s elapsed    minimising 500 cycles ...           7m 13s elapsed    minimising 500 cycles ...           7m 28s elapsed    minimising 500 cycles ...           7m 43s elapseddone in 7m 43s
+    MM/GBSA + decomposition ...             MM/GBSA + decomposition ...         14s elapseddone in 14s
+    OK: -32.0151 kcal/mol
+
+============================================================
+PROTONATION STATE: His143 = HIP
+============================================================
+
+  ---- XCJ / His143 = HIP ----
+    tleap ...                           done in 0s
+    minimising 500 cycles ...               minimising 500 cycles ...           15s elapsed    minimising 500 cycles ...           30s elapsed    minimising 500 cycles ...           45s elapsed    minimising 500 cycles ...           59s elapsed    minimising 500 cycles ...           1m 14s elapsed    minimising 500 cycles ...           1m 29s elapsed    minimising 500 cycles ...           1m 43s elapsed    minimising 500 cycles ...           1m 58s elapsed    minimising 500 cycles ...           2m 13s elapsed    minimising 500 cycles ...           2m 28s elapsed    minimising 500 cycles ...           2m 42s elapsed    minimising 500 cycles ...           2m 57s elapsed    minimising 500 cycles ...           3m 11s elapsed    minimising 500 cycles ...           3m 26s elapsed    minimising 500 cycles ...           3m 41s elapsed    minimising 500 cycles ...           3m 56s elapsed    minimising 500 cycles ...           4m 10s elapsed    minimising 500 cycles ...           4m 25s elapsed    minimising 500 cycles ...           4m 40s elapsed    minimising 500 cycles ...           4m 54s elapsed    minimising 500 cycles ...           5m 09s elapsed    minimising 500 cycles ...           5m 24s elapsed    minimising 500 cycles ...           5m 39s elapseddone in 5m 39s
+    MM/GBSA + decomposition ...             MM/GBSA + decomposition ...         14s elapsed    MM/GBSA + decomposition ...         29s elapseddone in 29s
+    OK: -49.8806 kcal/mol
+
+  ---- 5sa23 / His143 = HIP ----
+    tleap ...                           done in 0s
+    minimising 500 cycles ...               minimising 500 cycles ...           14s elapsed    minimising 500 cycles ...           29s elapsed    minimising 500 cycles ...           44s elapsed    minimising 500 cycles ...           59s elapsed    minimising 500 cycles ...           1m 13s elapsed    minimising 500 cycles ...           1m 28s elapsed    minimising 500 cycles ...           14m 39s elapsed    minimising 500 cycles ...           14m 54s elapsed    minimising 500 cycles ...           15m 09s elapsed    minimising 500 cycles ...           15m 23s elapsed    minimising 500 cycles ...           15m 38s elapsed    minimising 500 cycles ...           15m 52s elapsed    minimising 500 cycles ...           16m 07s elapsed    minimising 500 cycles ...           16m 21s elapsed    minimising 500 cycles ...           16m 36s elapsed    minimising 500 cycles ...           16m 50s elapsed    minimising 500 cycles ...           17m 05s elapsed    minimising 500 cycles ...           17m 19s elapsed    minimising 500 cycles ...           17m 34s elapsed    minimising 500 cycles ...           17m 48s elapsed    minimising 500 cycles ...           18m 04s elapsed    minimising 500 cycles ...           18m 17s elapsed    minimising 500 cycles ...           18m 33s elapseddone in 18m 33s
+    MM/GBSA + decomposition ...             MM/GBSA + decomposition ...         15s elapsed    MM/GBSA + decomposition ...         29s elapseddone in 29s
+    OK: -21.6200 kcal/mol
+
+  ---- 17sa23 / His143 = HIP ----
+    tleap ...                           done in 0s
+    minimising 500 cycles ...               minimising 500 cycles ...           15s elapsed    minimising 500 cycles ...           29s elapsed    minimising 500 cycles ...           44s elapsed    minimising 500 cycles ...           58s elapsed    minimising 500 cycles ...           4m 26s elapsed    minimising 500 cycles ...           4m 41s elapsed    minimising 500 cycles ...           4m 56s elapsed    minimising 500 cycles ...           5m 11s elapsed    minimising 500 cycles ...           5m 26s elapsed    minimising 500 cycles ...           5m 40s elapsed    minimising 500 cycles ...           5m 55s elapsed    minimising 500 cycles ...           6m 10s elapsed    minimising 500 cycles ...           6m 24s elapsed    minimising 500 cycles ...           6m 39s elapsed    minimising 500 cycles ...           6m 53s elapsed    minimising 500 cycles ...           7m 08s elapsed    minimising 500 cycles ...           7m 23s elapsed    minimising 500 cycles ...           7m 38s elapsed    minimising 500 cycles ...           7m 52s elapsed    minimising 500 cycles ...           8m 07s elapsed    minimising 500 cycles ...           8m 21s elapsed    minimising 500 cycles ...           8m 36s elapsed    minimising 500 cycles ...           8m 51s elapseddone in 8m 51s
+    MM/GBSA + decomposition ...             MM/GBSA + decomposition ...         15s elapsed    MM/GBSA + decomposition ...         30s elapseddone in 30s
+    OK: -14.3567 kcal/mol
+
+  ---- 20sa23 / His143 = HIP ----
+    tleap ...                           done in -1s
+    minimising 500 cycles ...               minimising 500 cycles ...           15s elapsed    minimising 500 cycles ...           30s elapsed    minimising 500 cycles ...           45s elapsed    minimising 500 cycles ...           1m 00s elapsed    minimising 500 cycles ...           1m 14s elapsed    minimising 500 cycles ...           1m 29s elapsed    minimising 500 cycles ...           1m 43s elapsed    minimising 500 cycles ...           1m 58s elapsed    minimising 500 cycles ...           2m 12s elapsed    minimising 500 cycles ...           2m 27s elapsed    minimising 500 cycles ...           2m 42s elapsed    minimising 500 cycles ...           2m 57s elapsed    minimising 500 cycles ...           3m 11s elapsed    minimising 500 cycles ...           3m 26s elapsed    minimising 500 cycles ...           3m 41s elapsed    minimising 500 cycles ...           3m 55s elapsed    minimising 500 cycles ...           4m 10s elapsed    minimising 500 cycles ...           4m 24s elapsed    minimising 500 cycles ...           4m 39s elapsed    minimising 500 cycles ...           4m 53s elapsed    minimising 500 cycles ...           5m 08s elapsed    minimising 500 cycles ...           5m 22s elapsed    minimising 500 cycles ...           5m 37s elapseddone in 5m 37s
+    MM/GBSA + decomposition ...             MM/GBSA + decomposition ...         15s elapseddone in 15s
+    OK: -34.1291 kcal/mol
+39 MM/GBSA VALIDATION CHECKS
+----------------------------------------------------------------------------
+6A  XCJ control      the redocked crystal inhibitor, RMSD 0.82 A from
+                     its crystal pose. Its energy tests the protocol,
+                     because this pose is known to be right.
+6B  His143 state    HIE is neutral (proton on N-epsilon), HID neutral
+                     (N-delta), HIP protonated and positively charged.
+6C  Decomposition    per-residue contributions to the binding energy.
+
+============================================================================
+6A + 6B  TOTALS BY PROTONATION STATE
+============================================================================
+LIGAND    STATE     MMGBSA      VDW       EEL       EGB   ESURF    VINA
+XCJ       HIE       -43.69   -60.97    -42.51     65.89   -6.10     nan
+5sa23     HIE       -17.89   -54.46    121.59    -79.36   -5.67   -7.99
+17sa23    HIE       -10.78   -51.36    125.80    -79.66   -5.56   -7.17
+20sa23    HIE       -32.02   -45.74     55.49    -36.68   -5.09   -7.30
+
+XCJ       HIP       -49.88   -61.09    -50.61     67.90   -6.08     nan
+5sa23     HIP       -21.62   -54.26     64.06    -25.79   -5.64   -7.99
+17sa23    HIP       -14.36   -51.52     73.63    -30.94   -5.53   -7.17
+20sa23    HIP       -34.13   -45.99     10.08      6.91   -5.13   -7.30
+
+============================================================================
+RANKING BY STATE (XCJ shown for reference)
+============================================================================
+  His143=HIE  XCJ (-43.7) > 20sa23 (-32.0) > 5sa23 (-17.9) > 17sa23 (-10.8)
+  His143=HIP  XCJ (-49.9) > 20sa23 (-34.1) > 5sa23 (-21.6) > 17sa23 (-14.4)
+  Vina      5sa23 (-8.0) > 20sa23 (-7.3) > 17sa23 (-7.2)
+
+============================================================================
+6A  XCJ CONTROL: IS THE PROTOCOL SOUND?
+============================================================================
+  His143=HIE: XCJ = -43.69 kcal/mol, EEL = -42.51
+    0 of 3 compounds score better than the known-correct pose.
+    EEL is favourable for the crystal inhibitor, so positive EEL
+    for a compound is a real signal about that compound.
+  His143=HIP: XCJ = -49.88 kcal/mol, EEL = -50.61
+    0 of 3 compounds score better than the known-correct pose.
+    EEL is favourable for the crystal inhibitor, so positive EEL
+    for a compound is a real signal about that compound.
+
+============================================================================
+6B  DOES His143 PROTONATION CHANGE THE ANSWER?
+============================================================================
+LIGAND             HIE         HIP    SPREAD
+XCJ             -43.69      -49.88      6.19
+5sa23           -17.89      -21.62      3.73
+17sa23          -10.78      -14.36      3.58
+20sa23          -32.02      -34.13      2.11
+
+  Compound order is THE SAME across protonation states.
+
+============================================================================
+6C  PER-RESIDUE CONTRIBUTIONS
+============================================================================
+  Decomposition did not run. See the mmpbsa.log files.
+
+============================================================================
+HOW TO READ THIS
+============================================================================
+Single-structure MM/GBSA with charged ligands is noisy. EEL and EGB are
+large numbers that nearly cancel, so a small error in either moves the
+total a long way. Treat differences under about 5 kcal/mol as undecided.
+
+No entropy term is included. These are relative ranking energies, not
+experimental binding free energies.
+
+
+Graph: graphs_focused/mmgbsa_protonation_check.png
+
+============================================================
+STEP 6 COMPLETED in 1h 19m 29s
+============================================================
+Read: cat txt_outputs/focused/39_mmgbsa_validation_checks.txt

@@ -1,0 +1,30 @@
+============================================================
+siam chowdhury
+Computational and Medicinal Chemistry
+[Dr. Alam's Research Team] www.alamresearch.org
+Arkansas State University
+Date: 2026-09-25 01:43:19
+============================================================
+
+06 XCJ-FMN PAIRING: 7L00
+------------------------------------------------------------
+Minimum atom-atom distance between each XCJ copy and each FMN copy.
+The closest FMN defines the active site used for that XCJ copy.
+
+XCJ               FMN                 MIN_DIST_A  CENTER_DIST_A
+A:402             A:401                    3.068          6.665
+A:402             B:401                   21.108         31.182
+A:402             C:401                   38.546         49.116
+A:402             D:401                   52.614         60.012
+B:402             A:401                   21.214         31.205
+B:402             B:401                    3.184          6.642
+B:402             C:401                   46.697         53.019
+B:402             D:401                   44.568         51.383
+C:402             A:401                   45.313         53.311
+C:402             B:401                   38.575         47.852
+C:402             C:401                    3.188          6.683
+C:402             D:401                   21.295         31.219
+D:402             A:401                   39.711         52.632
+D:402             B:401                   28.883         39.407
+D:402             C:401                   20.979         31.122
+D:402             D:401                    3.176          6.705

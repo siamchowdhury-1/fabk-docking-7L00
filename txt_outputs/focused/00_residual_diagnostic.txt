@@ -1,0 +1,95 @@
+==============================================================================
+DECOMPOSITION RESIDUAL DIAGNOSTIC  (read-only)
+==============================================================================
+
+17sa23_HIE   (312 rows kept, 0 rejected by the row filter)
+  COMPONENT     SUM OF RESIDUES   DELTA TOTAL   RESIDUAL
+  VDWAALS               -51.342       -51.356      0.014
+  EEL                   125.804       125.803      0.001
+  EGB                   -79.666       -79.662     -0.004
+  ESURF                  -6.482        -5.565     -0.918  <-- differs
+  TOTAL                 -11.686       -10.780     -0.906  <-- differs
+
+17sa23_HIP   (312 rows kept, 0 rejected by the row filter)
+  COMPONENT     SUM OF RESIDUES   DELTA TOTAL   RESIDUAL
+  VDWAALS               -51.516       -51.516      0.000
+  EEL                    73.624        73.629     -0.005
+  EGB                   -30.953       -30.941     -0.012
+  ESURF                  -6.501        -5.528     -0.973  <-- differs
+  TOTAL                 -15.346       -14.357     -0.989  <-- differs
+
+20sa23_HIE   (312 rows kept, 0 rejected by the row filter)
+  COMPONENT     SUM OF RESIDUES   DELTA TOTAL   RESIDUAL
+  VDWAALS               -45.741       -45.743      0.002
+  EEL                    55.495        55.493      0.002
+  EGB                   -36.681       -36.676     -0.005
+  ESURF                  -6.187        -5.089     -1.098  <-- differs
+  TOTAL                 -33.114       -32.015     -1.099  <-- differs
+
+20sa23_HIP   (312 rows kept, 0 rejected by the row filter)
+  COMPONENT     SUM OF RESIDUES   DELTA TOTAL   RESIDUAL
+  VDWAALS               -45.986       -45.987      0.001
+  EEL                    10.086        10.080      0.006
+  EGB                     6.912         6.909      0.003
+  ESURF                  -6.170        -5.131     -1.039  <-- differs
+  TOTAL                 -35.158       -34.129     -1.029  <-- differs
+
+5sa23_HIE   (312 rows kept, 0 rejected by the row filter)
+  COMPONENT     SUM OF RESIDUES   DELTA TOTAL   RESIDUAL
+  VDWAALS               -54.463       -54.460     -0.003
+  EEL                   121.595       121.591      0.004
+  EGB                   -79.356       -79.357      0.001
+  ESURF                  -6.369        -5.670     -0.699  <-- differs
+  TOTAL                 -18.593       -17.895     -0.698  <-- differs
+
+5sa23_HIP   (312 rows kept, 0 rejected by the row filter)
+  COMPONENT     SUM OF RESIDUES   DELTA TOTAL   RESIDUAL
+  VDWAALS               -54.253       -54.255      0.002
+  EEL                    64.059        64.062     -0.003
+  EGB                   -25.779       -25.787      0.008
+  ESURF                  -6.298        -5.640     -0.658  <-- differs
+  TOTAL                 -22.271       -21.620     -0.651  <-- differs
+
+XCJ_HIE   (312 rows kept, 0 rejected by the row filter)
+  COMPONENT     SUM OF RESIDUES   DELTA TOTAL   RESIDUAL
+  VDWAALS               -60.965       -60.971      0.006
+  EEL                   -42.517       -42.511     -0.006
+  EGB                    65.890        65.894     -0.004
+  ESURF                  -6.333        -6.100     -0.232  <-- differs
+  TOTAL                 -43.925       -43.688     -0.237  <-- differs
+
+XCJ_HIP   (312 rows kept, 0 rejected by the row filter)
+  COMPONENT     SUM OF RESIDUES   DELTA TOTAL   RESIDUAL
+  VDWAALS               -61.086       -61.094      0.008
+  EEL                   -50.603       -50.612      0.009
+  EGB                    67.905        67.905      0.000
+  ESURF                  -6.346        -6.080     -0.266  <-- differs
+  TOTAL                 -50.130       -49.881     -0.249  <-- differs
+
+==============================================================================
+WHERE THE RESIDUAL SITS
+==============================================================================
+  SYSTEM              VDWAALS        EEL        EGB      ESURF      TOTAL
+  17sa23_HIE            0.014      0.001     -0.004     -0.918     -0.906
+  17sa23_HIP            0.000     -0.005     -0.012     -0.973     -0.989
+  20sa23_HIE            0.002      0.002     -0.005     -1.098     -1.099
+  20sa23_HIP            0.001      0.006      0.003     -1.039     -1.029
+  5sa23_HIE            -0.003      0.004      0.001     -0.699     -0.698
+  5sa23_HIP             0.002     -0.003      0.008     -0.658     -0.651
+  XCJ_HIE               0.006     -0.006     -0.004     -0.232     -0.237
+  XCJ_HIP               0.008      0.009      0.000     -0.266     -0.249
+
+  Van der Waals, electrostatics and polar solvation reconcile
+  exactly. The entire residual is in the non-polar surface term.
+
+  This is a property of gbsa=2: the surface area is computed
+  per atom by a route that is not strictly additive per residue.
+  The electrostatic and van der Waals contributions, which are
+  what the Glu136 question depends on, are exact.
+
+  Bound on the effect: up to 1.10 kcal/mol per system,
+  spread across every residue rather than concentrated in one.
+
+==============================================================================
+Nothing was changed. This was read-only.
+==============================================================================

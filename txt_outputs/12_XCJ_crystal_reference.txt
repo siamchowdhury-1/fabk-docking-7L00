@@ -1,0 +1,17 @@
+============================================================
+siam chowdhury
+Computational and Medicinal Chemistry
+[Dr. Alam's Research Team] www.alamresearch.org
+Arkansas State University
+Date: 2026-09-25 02:01:25
+============================================================
+
+12 XCJ CRYSTAL REFERENCE
+------------------------------------------------------------
+Copy         : XCJ A:402
+Source       : RCSB ModelServer (CCD bond orders)
+Heavy atoms  : 27 (expected 27)
+File         : XCJ_A402_crystal.sdf
+
+SMILES (crystal reference):
+CS(=O)(=O)c1cc2c(cc1)nc(NC(=O)Cc1csc(n3cccc3)n1)s2	XCJ

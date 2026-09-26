@@ -1,0 +1,24 @@
+============================================================
+siam chowdhury
+Computational and Medicinal Chemistry
+[Dr. Alam's Research Team] www.alamresearch.org
+Arkansas State University
+Date: 2026-09-25 02:01:30
+============================================================
+
+10 FMN COFACTOR PREPARATION (kept in receptor)
+
+1 molecule converted
+FMN A:401
+  source      : RCSB ModelServer (CCD bond orders)
+  heavy atoms : 31 (expected 31)
+  PDBQT atoms : 35
+  SMILES      : n1c(=O)[nH]c(=O)c2-c1n(c1c(n2)cc(C)c(C)c1)C[C@H](O)[C@H](O)[C@H](O)COP(=O)(O)O
+
+1 molecule converted
+FMN B:401
+  source      : RCSB ModelServer (CCD bond orders)
+  heavy atoms : 31 (expected 31)
+  PDBQT atoms : 35
+  SMILES      : n1c(=O)[nH]c(=O)c2-c1n(c1c(n2)cc(C)c(C)c1)C[C@H](O)[C@H](O)[C@H](O)COP(=O)(O)O
+

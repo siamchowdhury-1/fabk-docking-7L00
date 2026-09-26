@@ -1,0 +1,42 @@
+============================================================
+siam chowdhury
+Computational and Medicinal Chemistry
+[Dr. Alam's Research Team] www.alamresearch.org
+Arkansas State University
+Date: 2026-09-25 02:02:11
+============================================================
+
+17 XCJ REDOCKING RMSD VALIDATION
+------------------------------------------------------------
+Reference     : XCJ_A402_crystal.sdf (crystal pose, heavy atoms: 27)
+Docked poses  : XCJ_redock_poses.sdf (20 poses, export: Meeko mk_export.py)
+Method        : heavy-atom RMSD in the receptor frame (no superposition),
+                minimized over all symmetry-equivalent atom mappings.
+
+POSE      RMSD_A   SYMMETRY_MAPS
+1          0.820               4
+2          1.655               4
+3         10.517               4
+4         11.111               4
+5          2.886               4
+6          2.338               4
+7          9.625               4
+8         11.639               4
+9         11.532               4
+10        10.504               4
+11        10.532               4
+12         8.750               4
+13         8.532               4
+14        10.498               4
+15         9.147               4
+16        11.396               4
+17        11.906               4
+18        10.475               4
+19        13.069               4
+20        10.754               4
+
+POSE_1_RMSD      0.820 A
+LOWEST_RMSD      0.820 A (pose 1)
+
+CRITERIA: < 2.0 A excellent | 2-3 A acceptable | > 3 A re-optimize
+VERDICT: EXCELLENT (< 2.0 A) - docking protocol VALIDATED

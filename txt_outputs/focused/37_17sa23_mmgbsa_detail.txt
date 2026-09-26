@@ -1,0 +1,27 @@
+========================================================================
+siam chowdhury
+Computational and Medicinal Chemistry
+[Dr. Alam's Research Team] www.alamresearch.org
+Arkansas State University
+Date: 2026-09-25 04:44:35
+========================================================================
+37 MM/GBSA DETAIL: 17sa23 (focused pose)
+------------------------------------------------------------------------
+TERM                      kcal/mol   MEANING
+VDWAALS                     -51.36   van der Waals
+EEL                         125.80   electrostatic
+EGB                         -79.65   polar solvation
+ESURF                        -5.56   nonpolar solvation
+DELTA G gas                  74.45   gas-phase total
+DELTA G solv                -85.22   solvation total
+DELTA TOTAL                 -10.77   MM/GBSA binding energy
+Heavy atoms            31
+Vina score             -7.17 kcal/mol
+FMN contact (pose 1)   YES
+Polar contacts         8
+XCJ pocket residues    10 of 22
+FILES
+  mmgbsa_focused/17sa23/complex_min.pdb    minimised complex
+  mmgbsa_focused/17sa23/mmgbsa.dat         full MMPBSA.py output
+No entropy term is included, so this is a relative ranking energy,
+not an experimental binding free energy.

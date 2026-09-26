@@ -1,0 +1,70 @@
+============================================================
+DECOMPOSITION DIAGNOSTIC
+System: mmgbsa_checks_focused/5sa23_HIE
+============================================================
+
+--- 1. print_res actually used ---
+MM/GBSA with per-residue decomposition
+&general
+  startframe = 1, endframe = 1, interval = 1,
+  verbose = 2, keep_files = 0,
+/
+&gb
+  igb = 5, saltcon = 0.15,
+/
+&decomp
+  idecomp = 2, dec_verbose = 0,
+  print_res = "20-22,42,44-46,69,71-75,94-97,116,137,142-146,229,254,257-262,274,276,311",
+/
+
+--- 2. residue counts in each topology ---
+  complex     312 residues   last: LEU FMN LIG
+  receptor    311 residues   last: GLU LEU FMN
+  ligand        1 residues   last: LIG
+  FMN residue number(s) in complex: [311]
+  LIG residue number(s) in complex: [312]
+  complex = receptor + ligand ? 312 vs 311 + 1 = 312  -> consistent
+
+--- 3. residues requested, and where they fall ---
+  print_res = "20-22,42,44-46,69,71-75,94-97,116,137,142-146,229,254,257-262,274,276,311"
+  residues requested: 35
+  receptor spans residues 1-311; ligand is residue 312 of 312
+    requested inside receptor: 35
+    requested inside ligand  : 0 
+
+  >> The ligand residue was NOT requested.
+     MMPBSA.py decomposes the complex over these residues, but the
+     ligand decomposition has nothing to match, so the term counts
+     differ and it raises DecompError.
+
+--- 4. what MMPBSA.py reported ---
+    write_decomp_binding_output(self.FILES, self.INPUT, self.mpi_size,
+  File "/home/siamchowdhury/miniconda3/envs/docking/lib/python3.10/site-packages/MMPBSA_mods/output_file.py", line 673, in write_decomp_binding_output
+    raise DecompError('Mismatch in number of decomp terms!')
+DecompError: Mismatch in number of decomp terms!
+Fatal Error! 
+All files have been retained for your error investigation: 
+
+--- 5. retained intermediate files ---
+_MMPBSA_complex.mdcrd.0
+_MMPBSA_complex.pdb
+_MMPBSA_complex_gb.mdout.0
+_MMPBSA_complex_gb_surf.dat.0
+_MMPBSA_dummycomplex.inpcrd
+_MMPBSA_dummyligand.inpcrd
+_MMPBSA_dummyreceptor.inpcrd
+_MMPBSA_gb_bind.TDC.csv
+_MMPBSA_gb_com.TDC.csv
+_MMPBSA_gb_decomp_com.mdin
+_MMPBSA_gb_decomp_lig.mdin
+_MMPBSA_gb_decomp_rec.mdin
+_MMPBSA_gb_lig.TDC.csv
+_MMPBSA_gb_rec.TDC.csv
+_MMPBSA_info
+
+--- 6. AmberTools version ---
+MMPBSA.py 14.0
+
+============================================================
+Nothing was changed. This was read-only.
+============================================================

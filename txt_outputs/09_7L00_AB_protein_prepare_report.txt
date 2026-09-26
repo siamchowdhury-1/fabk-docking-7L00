@@ -1,0 +1,16 @@
+============================================================
+siam chowdhury
+Computational and Medicinal Chemistry
+[Dr. Alam's Research Team] www.alamresearch.org
+Arkansas State University
+Date: 2026-09-25 02:01:25
+============================================================
+
+09 PROTEIN PDBQT PREPARATION
+
+COMMAND: mk_prepare_receptor.py --read_pdb 7L00_AB_protein.pdb -o 7L00_AB_protein_prep -p --allow_bad_res --default_altloc A
+
+
+Files written:
+7L00_AB_protein_prep.pdbqt <-- static (i.e., rigid) receptor input file
+METHOD USED: Meeko mk_prepare_receptor.py

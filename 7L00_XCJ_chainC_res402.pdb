@@ -1,0 +1,35 @@
+REMARK 999 siam chowdhury
+REMARK 999 Computational and Medicinal Chemistry
+REMARK 999 [Dr. Alam's Research Team] www.alamresearch.org
+REMARK 999 Arkansas State University
+REMARK 999 7L00 XCJ chain C residue 402
+REMARK 999 Created: 2026-09-25 01:43:19
+HETATM 9419  C01 XCJ C 402     -25.915   9.892  -4.209  1.00 34.46           C
+HETATM 9420  C03 XCJ C 402     -25.459   7.066  -3.490  1.00 31.17           C
+HETATM 9421  C04 XCJ C 402     -26.335   6.323  -4.272  1.00 29.73           C
+HETATM 9422  C05 XCJ C 402     -26.908   5.179  -3.732  1.00 27.87           C
+HETATM 9423  C06 XCJ C 402     -26.571   4.834  -2.427  1.00 27.20           C
+HETATM 9424  C07 XCJ C 402     -25.684   5.594  -1.639  1.00 28.46           C
+HETATM 9425  C08 XCJ C 402     -25.113   6.726  -2.183  1.00 28.99           C
+HETATM 9426  C10 XCJ C 402     -28.001   3.146  -2.858  1.00 25.49           C
+HETATM 9427  C13 XCJ C 402     -29.392   1.252  -3.623  1.00 28.05           C
+HETATM 9428  C14 XCJ C 402     -29.973  -0.070  -3.174  1.00 27.72           C
+HETATM 9429  C15 XCJ C 402     -31.465   0.079  -3.031  1.00 29.29           C
+HETATM 9430  C16 XCJ C 402     -32.221   0.046  -1.828  1.00 31.50           C
+HETATM 9431  C18 XCJ C 402     -33.606   0.404  -3.828  1.00 32.52           C
+HETATM 9432  C20 XCJ C 402     -34.609  -0.076  -5.985  1.00 35.22           C
+HETATM 9433  C21 XCJ C 402     -35.728   0.321  -6.688  1.00 36.03           C
+HETATM 9434  C22 XCJ C 402     -36.391   1.247  -5.927  1.00 35.74           C
+HETATM 9435  C23 XCJ C 402     -35.690   1.409  -4.749  1.00 35.37           C
+HETATM 9436  N09 XCJ C 402     -27.191   3.661  -1.909  1.00 26.20           N
+HETATM 9437  N12 XCJ C 402     -28.678   1.926  -2.588  1.00 24.95           N
+HETATM 9438  N19 XCJ C 402     -34.623   0.593  -4.826  1.00 34.88           N
+HETATM 9439  N24 XCJ C 402     -32.292   0.284  -4.211  1.00 30.81           N
+HETATM 9440  O25 XCJ C 402     -29.530   1.701  -4.725  1.00 30.13           O
+HETATM 9441  O26 XCJ C 402     -23.462   8.885  -3.663  1.00 36.79           O
+HETATM 9442  O27 XCJ C 402     -24.387   8.146  -5.633  1.00 34.87           O
+HETATM 9443  S02 XCJ C 402     -24.739   8.514  -4.256  1.00 35.02           S
+HETATM 9444  S11 XCJ C 402     -27.987   4.034  -4.282  1.00 26.75           S
+HETATM 9445  S17 XCJ C 402     -33.766   0.248  -2.200  1.00 33.74           S
+TER
+END

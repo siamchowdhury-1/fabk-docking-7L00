@@ -1,0 +1,20 @@
+============================================================
+siam chowdhury
+Computational and Medicinal Chemistry
+[Dr. Alam's Research Team] www.alamresearch.org
+Arkansas State University
+Date: 2026-09-25 01:43:19
+============================================================
+
+01 DOWNLOAD REPORT: 7L00
+--------------------------
+-rw-r--r-- 1 siamchowdhury siamchowdhury 2.0M Sep 25 01:43 7L00.cif
+-rw-r--r-- 1 siamchowdhury siamchowdhury 1.7M Sep 25 01:39 7L00.pdb
+
+TITLE / RESOLUTION / SOURCE
+---------------------------
+TITLE     CRYSTAL STRUCTURE OF C. DIFFICILE ENOYL-ACYL CARRIER PROTEIN REDUCTASE
+TITLE    2 (FABK) IN COMPLEX WITH AN INHIBITOR                                  
+COMPND   2 MOLECULE: ENOYL-ACYL CARRIER PROTEIN REDUCTASE FABK;                 
+SOURCE   2 ORGANISM_SCIENTIFIC: CLOSTRIDIOIDES DIFFICILE;                       
+REMARK   2 RESOLUTION.    1.72 ANGSTROMS.                                       

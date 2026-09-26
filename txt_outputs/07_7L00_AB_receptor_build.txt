@@ -1,0 +1,21 @@
+============================================================
+siam chowdhury
+Computational and Medicinal Chemistry
+[Dr. Alam's Research Team] www.alamresearch.org
+Arkansas State University
+Date: 2026-09-25 02:01:24
+============================================================
+
+07 RECEPTOR BUILD: 7L00_AB
+------------------------------------------------------------
+Pocket chain         : A (XCJ A:402, FMN A:401)
+Partner chain        : B (XCJ-B min distance ~7 A)
+Kept                 : protein chains A+B, FMN of both chains
+Removed              : all XCJ, waters (HOH), GOL, NA, chains C and D
+
+Incomplete side chains trimmed (crystal atoms missing):
+    A:254   LYS -> ALA  (had 5/9 heavy atoms, 12.6 A from XCJ A)
+
+7L00_AB_protein.pdb                4564 atoms
+7L00_AB_FMN.pdb                      62 atoms
+7L00_AB_protein_FMN.pdb            4626 atoms
