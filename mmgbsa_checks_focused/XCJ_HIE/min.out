@@ -3,7 +3,7 @@
           Amber 24 SANDER                              2024
           -------------------------------------------------------
 
-| Run on 09/25/2026 at 23:00:46
+| Run on 09/27/2026 at 03:06:20
 
 |   Executable path: sander
 | Working directory: /home/siamchowdhury/chem/s_series/mmgbsa_checks_focused/XCJ_HIE
@@ -45,7 +45,7 @@ Minimisation, GB implicit solvent, backbone restrained
 
 | Flags:                                                                        
 | New format PARM file being parsed.
-| Version =    1.000 Date = 09/25/26 Time = 23:00:46
+| Version =    1.000 Date = 09/27/26 Time = 03:06:20
  NATOM  =    4750 NTYPES =      31 NBONH =    2414 MBONA  =    2369
  NTHETH =    5513 MTHETA =    3209 NPHIH =   10742 MPHIA  =   10271
  NHPARM =       0 NPARM  =       0 NNB   =   26242 NRES   =     312
@@ -202,25 +202,24 @@ default_name
    5.  TIMINGS
 --------------------------------------------------------------------------------
 
-|                Calc gb radii             80.13 (24.91% of Gen B)
-|                Calc gb diag              84.19 (26.17% of Gen B)
-|                Calc gb off-diag         157.34 (48.92% of Gen B)
-|             Gen Born time            321.67 (100.0% of Nonbo)
-|          Nonbond force            321.67 (99.63% of Force)
-|          Bond/Angle/Dihedral        1.16 ( 0.36% of Force)
-|          Other                      0.02 ( 0.01% of Force)
-|       Force time               322.85 (100.0% of Runmd)
-|    Runmd Time               322.85 (93.30% of Total)
-|    Other                     23.18 ( 6.70% of Total)
-| Total time               346.03 (100.0% of ALL  )
+|                Calc gb radii             70.93 (22.36% of Gen B)
+|                Calc gb diag              85.28 (26.88% of Gen B)
+|                Calc gb off-diag         161.02 (50.76% of Gen B)
+|             Gen Born time            317.23 (100.0% of Nonbo)
+|          Nonbond force            317.23 (99.63% of Force)
+|          Bond/Angle/Dihedral        1.18 ( 0.37% of Force)
+|       Force time               318.42 (100.0% of Runmd)
+|    Runmd Time               318.42 (97.98% of Total)
+|    Other                      6.56 ( 2.02% of Total)
+| Total time               324.99 (100.0% of ALL  )
 
 | Number of list builds   :          0
 
 | Highest rstack allocated:          0
 | Highest istack allocated:          0
-|           Job began  at 23:00:46.443  on 09/25/2026
-|           Setup done at 23:00:46.560  on 09/25/2026
-|           Run   done at 23:06:32.477  on 09/25/2026
+|           Job began  at 03:06:20.907  on 09/27/2026
+|           Setup done at 03:06:21.044  on 09/27/2026
+|           Run   done at 03:11:45.938  on 09/27/2026
 |     wallclock() was called    9028 times
 
 |3D-RISM memory allocation summary

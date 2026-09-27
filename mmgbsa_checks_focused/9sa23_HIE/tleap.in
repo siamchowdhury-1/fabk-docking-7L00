@@ -1,0 +1,21 @@
+source leaprc.protein.ff14SB
+source leaprc.gaff2
+
+loadamberparams ../../mmgbsa_focused/FMN.frcmod
+loadamberparams lig.frcmod
+
+FMN = loadmol2 ../../mmgbsa_focused/FMN.mol2
+LIG = loadmol2 lig.mol2
+
+prot = loadpdb ../protein_HIE.pdb
+
+rec = combine { prot FMN }
+com = combine { prot FMN LIG }
+
+set default PBRadii mbondi2
+
+saveamberparm LIG ligand.prmtop ligand.inpcrd
+saveamberparm rec receptor.prmtop receptor.inpcrd
+saveamberparm com complex.prmtop complex.inpcrd
+
+quit

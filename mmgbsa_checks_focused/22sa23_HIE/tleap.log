@@ -1,0 +1,136 @@
+-I: Adding /home/siamchowdhury/miniconda3/envs/docking/dat/leap/prep to search path.
+-I: Adding /home/siamchowdhury/miniconda3/envs/docking/dat/leap/lib to search path.
+-I: Adding /home/siamchowdhury/miniconda3/envs/docking/dat/leap/parm to search path.
+-I: Adding /home/siamchowdhury/miniconda3/envs/docking/dat/leap/cmd to search path.
+-f: Source tleap.in.
+
+Welcome to LEaP!
+(no leaprc in search path)
+Sourcing: ./tleap.in
+----- Source: /home/siamchowdhury/miniconda3/envs/docking/dat/leap/cmd/leaprc.protein.ff14SB
+----- Source of /home/siamchowdhury/miniconda3/envs/docking/dat/leap/cmd/leaprc.protein.ff14SB done
+Log file: ./leap.log
+Loading parameters: /home/siamchowdhury/miniconda3/envs/docking/dat/leap/parm/parm10.dat
+Reading title:
+PARM99 + frcmod.ff99SB + frcmod.parmbsc0 + OL3 for RNA
+Loading parameters: /home/siamchowdhury/miniconda3/envs/docking/dat/leap/parm/frcmod.ff14SB
+Reading force field modification type file (frcmod)
+Reading title:
+ff14SB protein backbone and sidechain parameters
+Loading library: /home/siamchowdhury/miniconda3/envs/docking/dat/leap/lib/amino12.lib
+Loading library: /home/siamchowdhury/miniconda3/envs/docking/dat/leap/lib/aminoct12.lib
+Loading library: /home/siamchowdhury/miniconda3/envs/docking/dat/leap/lib/aminont12.lib
+----- Source: /home/siamchowdhury/miniconda3/envs/docking/dat/leap/cmd/leaprc.gaff2
+----- Source of /home/siamchowdhury/miniconda3/envs/docking/dat/leap/cmd/leaprc.gaff2 done
+Log file: ./leap.log
+Loading parameters: /home/siamchowdhury/miniconda3/envs/docking/dat/leap/parm/gaff2.dat
+Reading title:
+AMBER General Force Field for organic molecules (Version 2.2.20, March 2021)
+Loading parameters: ../../mmgbsa_focused/FMN.frcmod
+Reading force field modification type file (frcmod)
+Reading title:
+Remark line goes here
+Loading parameters: ./lig.frcmod
+Reading force field modification type file (frcmod)
+Reading title:
+Remark line goes here
+Loading Mol2 file: ../../mmgbsa_focused/FMN.mol2
+Reading MOLECULE named FMN
+Loading Mol2 file: ./lig.mol2
+Reading MOLECULE named LIG
+Loading PDB file: ../protein_HIE.pdb
+  Added missing heavy atom: .R<CLEU 310>.A<OXT 20>
+  total atoms in file: 2277
+  Leap added 2380 missing atoms according to residue templates:
+       1 Heavy
+       2379 H / lone pairs
+Using H(N)-modified Bondi radii
+Checking Unit.
+
+/home/siamchowdhury/miniconda3/envs/docking/bin/teLeap: Warning!
+The unperturbed charge of the unit (-1.001001) is not zero.
+
+/home/siamchowdhury/miniconda3/envs/docking/bin/teLeap: Note.
+Ignoring the warning from Unit Checking.
+
+Building topology.
+Building atom parameters.
+Building bond parameters.
+Building angle parameters.
+Building proper torsion parameters.
+Building improper torsion parameters.
+ total 24 improper torsions applied
+Building H-Bond parameters.
+Incorporating Non-Bonded adjustments.
+Not Marking per-residue atom chain types.
+Marking per-residue atom chain types.
+  (Residues lacking connect0/connect1 - 
+   these don't have chain types marked:
+
+	res	total affected
+
+	LIG	1
+  )
+ (no restraints)
+Checking Unit.
+
+/home/siamchowdhury/miniconda3/envs/docking/bin/teLeap: Warning!
+The unperturbed charge of the unit (-2.001998) is not zero.
+
+/home/siamchowdhury/miniconda3/envs/docking/bin/teLeap: Note.
+Ignoring the warning from Unit Checking.
+
+Building topology.
+Building atom parameters.
+Building bond parameters.
+Building angle parameters.
+Building proper torsion parameters.
+Building improper torsion parameters.
+ total 826 improper torsions applied
+Building H-Bond parameters.
+Incorporating Non-Bonded adjustments.
+Not Marking per-residue atom chain types.
+Marking per-residue atom chain types.
+  (Residues lacking connect0/connect1 - 
+   these don't have chain types marked:
+
+	res	total affected
+
+	CLEU	1
+	FMN	1
+	NHIE	1
+  )
+ (no restraints)
+Checking Unit.
+
+/home/siamchowdhury/miniconda3/envs/docking/bin/teLeap: Warning!
+The unperturbed charge of the unit (-3.002999) is not zero.
+
+/home/siamchowdhury/miniconda3/envs/docking/bin/teLeap: Note.
+Ignoring the warning from Unit Checking.
+
+Building topology.
+Building atom parameters.
+Building bond parameters.
+Building angle parameters.
+Building proper torsion parameters.
+Building improper torsion parameters.
+ total 850 improper torsions applied
+Building H-Bond parameters.
+Incorporating Non-Bonded adjustments.
+Not Marking per-residue atom chain types.
+Marking per-residue atom chain types.
+  (Residues lacking connect0/connect1 - 
+   these don't have chain types marked:
+
+	res	total affected
+
+	CLEU	1
+	FMN	1
+	LIG	1
+	NHIE	1
+  )
+ (no restraints)
+	Quit
+
+Exiting LEaP: Errors = 0; Warnings = 3; Notes = 3.

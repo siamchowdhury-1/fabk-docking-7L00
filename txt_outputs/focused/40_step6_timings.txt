@@ -3,11 +3,11 @@ siam chowdhury
 Computational and Medicinal Chemistry
 [Dr. Alam's Research Team] www.alamresearch.org
 Arkansas State University
-Date: 2026-09-26 00:20:14
+Date: 2026-09-27 04:06:24
 ============================================================
 
 40 STEP 6 RUN TIMINGS
 ------------------------------------------------------------
 Settings: MAXCYC=500, igb=5, states: HIE HIP
-Ligands : XCJ 5sa23 17sa23 20sa23
-Total   : 1h 19m 29s
+Ligands : XCJ 9sa23 22sa23 25sa23
+Total   : 1h 00m 03s

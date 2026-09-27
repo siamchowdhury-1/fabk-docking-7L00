@@ -1,9 +1,11 @@
 #!/usr/bin/env bash
 # ============================================================
 # Siam Chowdhury (www.siamchowdhury.com)
+# GitHub: https://github.com/siamchowdhury-1
+# ORCID:  https://orcid.org/0000-0001-5216-6879
 # Computational and Medicinal Chemistry
-# Mentor: Mohammad Alam PhD.
-# Professor of Chemistry
+# Mentor: Mohammad Alam PhD., Professor of Chemistry
+# Mail:   malam@astate.edu
 # [Dr. Alam's Research Team] www.alamresearch.org
 # Arkansas State University, AR, USA
 # ------------------------------------------------------------
@@ -48,9 +50,13 @@ out_path = Path(sys.argv[1])
 
 AUTHOR = "Siam Chowdhury"
 AUTHOR_SITE = "www.siamchowdhury.com"
+AUTHOR_GITHUB = "https://github.com/siamchowdhury-1"
+AUTHOR_ORCID = "https://orcid.org/0000-0001-5216-6879"
+MENTOR_MAIL = "malam@astate.edu"
 AFFIL = [
     "Computational and Medicinal Chemistry",
-    "Mentor: Mohammad Alam, PhD &mdash; Professor of Chemistry",
+    "Mentor: Mohammad Alam, PhD &mdash; Professor of Chemistry "
+    f"(<a href=\"mailto:{MENTOR_MAIL}\">{MENTOR_MAIL}</a>)",
     "Dr. Alam's Research Team &mdash; "
     "<a href=\"https://www.alamresearch.org\">www.alamresearch.org</a>",
     "Arkansas State University, AR, USA",
@@ -517,8 +523,12 @@ P.append(f"""<!DOCTYPE html>
   .who {{ font-size:14.5px; line-height:1.55; }}
   .who .name {{ font-size:16px; font-weight:700; }}
   .who .aff {{ color:var(--muted); }}
-  .who .aff a, .who .site {{ color:var(--accent); text-decoration:none; }}
-  .who .aff a:hover, .who .site:hover {{ text-decoration:underline; }}
+  .who .aff a {{ color:var(--accent); text-decoration:none; }}
+  .who .aff a:hover {{ text-decoration:underline; }}
+  .who .links {{ margin:5px 0 7px; font-size:13.5px; }}
+  .who .links a {{ color:var(--accent); text-decoration:none; font-weight:600;
+                   margin-right:16px; }}
+  .who .links a:hover {{ text-decoration:underline; }}
   footer a {{ color:var(--accent); }}
   .meta {{ margin-top:14px; font-size:13.5px; color:var(--muted); }}
   .meta a {{ color:var(--accent); }}
@@ -555,6 +565,10 @@ P.append(f"""<!DOCTYPE html>
   .key {{ border-left:5px solid var(--accent); background:#eef6f1;
           padding:18px 22px; border-radius:0 8px 8px 0; margin:24px 0; }}
   .key h3 {{ margin:0 0 9px; color:var(--accent); font-size:18px; }}
+  .alert {{ border:2px solid var(--warn); background:#fdf2ef; padding:18px 22px;
+             border-radius:8px; margin:26px 0 8px; }}
+  .alert h3 {{ margin:0 0 10px; color:var(--warn); font-size:17.5px; }}
+  .alert p {{ margin:9px 0; font-size:14.5px; }}
   .caveat {{ border-left:5px solid var(--warn); background:#fdf2ef;
              padding:15px 20px; border-radius:0 8px 8px 0; margin:22px 0;
              font-size:14.5px; }}
@@ -607,8 +621,12 @@ exactly: <b>20sa23 (MIC 1&nbsp;&micro;g/mL) &gt; 5sa23 (MIC 16&nbsp;&micro;g/mL)
 &gt; 17sa23 (MIC 32&nbsp;&micro;g/mL)</b>, matching the MIC values reported in
 the source paper.</div>
 <div class="who">
-  <div class="name">{E(AUTHOR)} &middot;
-    <a href="https://{AUTHOR_SITE}" class="site">{AUTHOR_SITE}</a></div>
+  <div class="name">{E(AUTHOR)}</div>
+  <div class="links">
+    <a href="https://{AUTHOR_SITE}">{AUTHOR_SITE}</a>
+    <a href="{AUTHOR_GITHUB}">GitHub</a>
+    <a href="{AUTHOR_ORCID}">ORCID 0000-0001-5216-6879</a>
+  </div>
   <div class="aff">{'<br>'.join(AFFIL)}</div>
 </div>
 <div class="meta">
@@ -637,6 +655,22 @@ the source paper.</div>
 
 # ---------------- summary ----------------
 P.append("""
+<div class="alert">
+<h3>Target and organism caveat &mdash; read first</h3>
+<p>FabK belongs to a family of closely related enoyl-ACP reductases found
+across many bacterial species. The structure used here is
+<i>Clostridioides difficile</i> FabK (PDB 7L00), while the MIC values the
+predictions are compared against were measured in <i>Staphylococcus aureus</i>
+ATCC&nbsp;29213. A compound may bind one homologue differently from another,
+and whole-cell potency in one organism need not reflect binding to an enzyme
+from a different one.</p>
+<p>The comparison is therefore between a binding model for one protein and
+antibacterial activity in a different organism. Properly matched work would
+use the enzyme of the organism the MIC was measured in, or MIC data for the
+organism the structure came from. The agreement reported below should be read
+with that mismatch in mind.</p>
+</div>
+
 <h2 id="summary">Summary</h2>
 <p>Three pyrazole benzoic acid derivatives (5sa23, 17sa23 and 20sa23) were
 docked against FabK, the enoyl-ACP reductase of bacterial fatty acid
@@ -742,6 +776,14 @@ either, which is why it gave no useful signal. MM/GBSA models charge
 explicitly, and that is the difference.</p>
 
 <div class="caveat">
+<b>Target and organism.</b> The caveat at the top of this page applies to every
+number in this section: the structure is <i>C. difficile</i> FabK and the MIC
+values are from <i>S. aureus</i>. The correlation is between a binding model
+for one enzyme and whole-cell activity in an organism that may not depend on
+that enzyme in the same way.
+</div>
+
+<div class="caveat">
 <b>How far this can be taken.</b> Three compounds is a small set: a correct
 rank order has a one-in-six chance of arising at random, so the agreement is
 not statistical proof on its own. What supports it is that the ordering follows
@@ -815,7 +857,9 @@ P.append("</dl>")
 P.append(f"""
 <footer>
 <b>{E(AUTHOR)}</b> &middot;
-<a href="https://{AUTHOR_SITE}">{AUTHOR_SITE}</a><br>
+<a href="https://{AUTHOR_SITE}">{AUTHOR_SITE}</a> &middot;
+<a href="{AUTHOR_GITHUB}">GitHub</a> &middot;
+<a href="{AUTHOR_ORCID}">ORCID 0000-0001-5216-6879</a><br>
 {'<br>'.join(AFFIL)}<br><br>
 {len(txts)} text reports and {len(pngs)} graphs, collected from their original
 locations; no file was moved or altered.<br>

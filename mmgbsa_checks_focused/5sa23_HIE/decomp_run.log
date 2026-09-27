@@ -12,14 +12,14 @@ Beginning GB calculations with /home/siamchowdhury/miniconda3/envs/docking/bin/s
   calculating ligand contribution...
 
 Timing:
-Total setup time:                           0.393 sec.
-Creating trajectories with cpptraj:         0.269 sec.
-Total calculation time:                    29.876 sec.
+Total setup time:                           0.658 sec.
+Creating trajectories with cpptraj:         0.306 sec.
+Total calculation time:                    23.606 sec.
 
-Total GB calculation time:                 29.876 sec.
+Total GB calculation time:                 23.606 sec.
 
-Statistics calculation & output writing:    0.020 sec.
-Total time taken:                          30.562 sec.
+Statistics calculation & output writing:    0.026 sec.
+Total time taken:                          24.601 sec.
 
 
 MMPBSA.py Finished! Thank you for using. Please cite us if you publish this work with this paper:

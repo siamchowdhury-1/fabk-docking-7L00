@@ -1,0 +1,85 @@
+============================================================
+siam chowdhury
+Computational and Medicinal Chemistry
+[Dr. Alam's Research Team] www.alamresearch.org
+Arkansas State University
+Date: 2026-09-27 02:01:11
+============================================================
+
+25 BEST-POSE COMPLEX AND CONTACT ANALYSIS: 25sa23
+------------------------------------------------------------
+Best Vina score            : -8.185 kcal/mol
+Heavy atoms                : 34
+Ligand efficiency          : 0.241 kcal/mol per heavy atom
+TORSDOF (rotatable bonds)  : 7
+Pose-1 centroid to site    : 3.79 A from crystal XCJ center
+Residues within 4.0 A      : 13
+Shared with XCJ pocket     : 11 of 22 (08 list, 5 A)
+FMN contacts (<= 4.0 A)    : YES (14 atom pairs)
+Polar contacts (N/O <=3.5A): 2 (possible H-bonds)
+
+RESIDUES WITHIN 4.0 A OF POSE 1
+CHAIN  RES   NUM      MIN_A  XCJ_SITE HYDROPHOBIC
+A      FMN   401       3.03  yes      -
+A      GLU   136       3.17  yes      yes
+A      ALA   95        3.22  yes      yes
+A      VAL   115       3.23  yes      yes
+A      ASN   44        3.24  yes      -
+A      HIS   143       3.27  yes      yes
+A      MET   72        3.39  -        yes
+A      GLY   145       3.43  yes      -
+A      PRO   117       3.46  yes      yes
+A      MET   70        3.51  yes      -
+A      GLY   94        3.62  yes      -
+A      HIS   226       3.77  -        yes
+A      GLY   96        3.83  yes      yes
+
+POLAR CONTACTS (ligand N/O to receptor N/O, <= 3.5 A)
+  A:ASN44     ND2   ... ligand O 3.24 A
+  A:ASN44     OD1   ... ligand O 3.46 A
+
+FMN CONTACTS (<= 4.0 A)
+  FMN A:O2    ... ligand F 3.03 A
+  FMN A:N1    ... ligand F 3.29 A
+  FMN A:O2    ... ligand F 3.40 A
+  FMN A:C2    ... ligand F 3.50 A
+  FMN A:N1    ... ligand F 3.51 A
+  FMN A:C2    ... ligand F 3.55 A
+  FMN A:C1'   ... ligand F 3.65 A
+  FMN A:N1    ... ligand F 3.68 A
+  FMN A:O2    ... ligand C 3.75 A
+  FMN A:N1    ... ligand C 3.78 A
+  FMN A:C10   ... ligand F 3.82 A
+  FMN A:C2    ... ligand F 3.90 A
+  FMN A:C2    ... ligand C 3.95 A
+  FMN A:N10   ... ligand F 3.98 A
+
+ALL POSES
+POSE     SCORE   CENTROID_TO_SITE_A
+1       -8.185                 3.79
+2       -7.833                 5.44
+3       -7.728                 4.45
+4       -7.566                 5.46
+5        -7.54                 5.43
+6       -7.499                 4.07
+7        -7.35                 4.96
+8       -7.145                 6.10
+9        -6.99                 3.37
+10      -6.927                 5.75
+11      -6.858                 4.85
+12      -6.771                 4.22
+13      -6.711                 4.73
+14       -6.69                 4.93
+15      -6.641                 4.97
+16      -6.614                 5.96
+17      -6.521                 5.53
+18       -6.43                 4.95
+19      -6.287                 5.52
+
+FILES
+  docking_focused_25sa23/25sa23_7L00_best_complex.pdb
+  docking_focused_25sa23/25sa23_7L00_all_poses_complex.pdb
+  docking_focused_25sa23/25sa23_best.mol2  (Discovery Studio, with 7L00_AB_protein_FMN.pdb)
+
+Geometric contacts only; use Discovery Studio for a full
+2D interaction diagram (H-bond angles, pi-stacking, salt bridges).

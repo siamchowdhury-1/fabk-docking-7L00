@@ -3,7 +3,7 @@ siam chowdhury
 Computational and Medicinal Chemistry
 [Dr. Alam's Research Team] www.alamresearch.org
 Arkansas State University
-Date: 2026-09-26 01:26:41
+Date: 2026-09-27 04:18:57
 ==============================================================================
 
 42 EXPERIMENTAL MIC vs COMPUTATIONAL PREDICTIONS
@@ -17,6 +17,9 @@ MEASURED AND PREDICTED
 ------------------------------------------------------------------------------
 COMPOUND         MIC     VINA   MMGBSA      EEL   GLU136      FMN  POLAR
 20sa23             1    -7.30   -32.02    55.49    12.73    28.27      2
+25sa23             2    -8.19   -28.53    67.76    14.20    33.49      2
+22sa23             4    -8.36   -23.35   111.19    32.46    36.14      6
+9sa23              8    -7.16   -11.77   127.21    33.07    50.81      5
 5sa23             16    -7.99   -17.89   121.59    34.08    43.24      5
 17sa23            32    -7.17   -10.78   125.80    32.70    49.82      8
 
@@ -26,15 +29,15 @@ electrostatic contributions, where positive means repulsion.
 
 RANK ORDER
 ------------------------------------------------------------------------------
-  experiment (most potent first):   20sa23 > 5sa23 > 17sa23
-  Vina score                5sa23 > 20sa23 > 17sa23   [differs]
-  MM/GBSA total             20sa23 > 5sa23 > 17sa23   [MATCHES]
-  MM/GBSA electrostatic     20sa23 > 5sa23 > 17sa23   [MATCHES]
-  MM/GBSA van der Waals     5sa23 > 17sa23 > 20sa23   [differs]
-  Glu136 electrostatic      20sa23 > 17sa23 > 5sa23   [differs]
-  FMN electrostatic         20sa23 > 5sa23 > 17sa23   [MATCHES]
-  His143 electrostatic      20sa23 > 5sa23 > 17sa23   [MATCHES]
-  polar contact count       17sa23 > 5sa23 > 20sa23   [reversed]
+  experiment (most potent first):   20sa23 > 25sa23 > 22sa23 > 9sa23 > 5sa23 > 17sa23
+  Vina score                22sa23 > 25sa23 > 5sa23 > 20sa23 > 17sa23 > 9sa23   [differs]
+  MM/GBSA total             20sa23 > 25sa23 > 22sa23 > 5sa23 > 9sa23 > 17sa23   [differs]
+  MM/GBSA electrostatic     20sa23 > 25sa23 > 22sa23 > 5sa23 > 17sa23 > 9sa23   [differs]
+  MM/GBSA van der Waals     22sa23 > 5sa23 > 9sa23 > 17sa23 > 25sa23 > 20sa23   [differs]
+  Glu136 electrostatic      20sa23 > 25sa23 > 22sa23 > 17sa23 > 9sa23 > 5sa23   [differs]
+  FMN electrostatic         20sa23 > 25sa23 > 22sa23 > 5sa23 > 17sa23 > 9sa23   [differs]
+  His143 electrostatic      20sa23 > 25sa23 > 22sa23 > 5sa23 > 9sa23 > 17sa23   [differs]
+  polar contact count       17sa23 > 22sa23 > 5sa23 > 9sa23 > 20sa23 > 25sa23   [differs]
 
 CORRELATION WITH log10(MIC)
 ------------------------------------------------------------------------------
@@ -42,18 +45,18 @@ A working predictor gives a POSITIVE r: lower MIC (more potent)
 together with a more negative energy.
 
 PREDICTOR                    n   PEARSON   SPEARMAN   DIRECTION
-Vina score                   3    -0.184      0.500   no relationship
-MM/GBSA total                3     0.989      1.000   as expected
-MM/GBSA electrostatic        3     0.991      1.000   as expected
-MM/GBSA van der Waals        3    -0.853     -0.500   OPPOSITE to expected
-Glu136 electrostatic         3     0.969      0.500   as expected
-FMN electrostatic            3     0.994      1.000   as expected
-His143 electrostatic         3     0.998      1.000   as expected
-polar contact count          3    -0.945     -1.000   OPPOSITE to expected
+Vina score                   6     0.239      0.371   no relationship
+MM/GBSA total                6     0.915      0.943   as expected
+MM/GBSA electrostatic        6     0.894      0.829   as expected
+MM/GBSA van der Waals        6    -0.438     -0.486   OPPOSITE to expected
+Glu136 electrostatic         6     0.843      0.829   as expected
+FMN electrostatic            6     0.886      0.829   as expected
+His143 electrostatic         6     0.882      0.943   as expected
+polar contact count          6    -0.869     -0.794   OPPOSITE to expected
 
 STATISTICAL WEIGHT
 ------------------------------------------------------------------------------
-n = 3. With three compounds a correlation coefficient carries almost no
+n = 6. At this sample size a correlation carries limited
 statistical weight: r can reach 1.0 by chance, and no p-value would be
 meaningful. Read the RANK ORDER section as the real test, and treat the
 correlations as description rather than evidence. A conclusion about
@@ -62,11 +65,11 @@ which predictor works needs the full compound series from the paper.
 ==============================================================================
 WHAT THIS MEANS
 ==============================================================================
-  Best agreement: His143 electrostatic (r = 1.00).
+  Best agreement: MM/GBSA total (r = 0.91).
   This is consistent with the compounds acting on FabK in the way
   modelled here, though it does not establish it.
 
-  Opposite to expectation: polar contact count (r = -0.94).
+  Opposite to expectation: polar contact count (r = -0.87).
   A predictor pointing the wrong way is more informative than a
   weak one: it suggests the quantity it measures is not what
   drives potency in this series.

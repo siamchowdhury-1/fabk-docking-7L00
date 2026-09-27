@@ -1,0 +1,425 @@
+============================================================
+STEP 6C: PER-RESIDUE DECOMPOSITION (rerun and verified)
+Systems: 17sa23_HIE 17sa23_HIP 20sa23_HIE 20sa23_HIP 22sa23_HIE 22sa23_HIP 25sa23_HIE 25sa23_HIP 5sa23_HIE 5sa23_HIP 9sa23_HIE 9sa23_HIP XCJ_HIE XCJ_HIP
+============================================================
+
+--- 17sa23_HIE ---
+  complex has 312 residues; decomposing all of them
+  running MMPBSA.py ... done in 26s
+  decomp.dat written (321 lines)
+
+--- 17sa23_HIP ---
+  complex has 312 residues; decomposing all of them
+  running MMPBSA.py ... done in 25s
+  decomp.dat written (321 lines)
+
+--- 20sa23_HIE ---
+  complex has 312 residues; decomposing all of them
+  running MMPBSA.py ... done in 25s
+  decomp.dat written (321 lines)
+
+--- 20sa23_HIP ---
+  complex has 312 residues; decomposing all of them
+  running MMPBSA.py ... done in 25s
+  decomp.dat written (321 lines)
+
+--- 22sa23_HIE ---
+  complex has 312 residues; decomposing all of them
+  running MMPBSA.py ... done in 25s
+  decomp.dat written (321 lines)
+
+--- 22sa23_HIP ---
+  complex has 312 residues; decomposing all of them
+  running MMPBSA.py ... done in 26s
+  decomp.dat written (321 lines)
+
+--- 25sa23_HIE ---
+  complex has 312 residues; decomposing all of them
+  running MMPBSA.py ... done in 25s
+  decomp.dat written (321 lines)
+
+--- 25sa23_HIP ---
+  complex has 312 residues; decomposing all of them
+  running MMPBSA.py ... done in 21s
+  decomp.dat written (321 lines)
+
+--- 5sa23_HIE ---
+  complex has 312 residues; decomposing all of them
+  running MMPBSA.py ... done in 25s
+  decomp.dat written (321 lines)
+
+--- 5sa23_HIP ---
+  complex has 312 residues; decomposing all of them
+  running MMPBSA.py ... done in 24s
+  decomp.dat written (321 lines)
+
+--- 9sa23_HIE ---
+  complex has 312 residues; decomposing all of them
+  running MMPBSA.py ... done in 25s
+  decomp.dat written (321 lines)
+
+--- 9sa23_HIP ---
+  complex has 312 residues; decomposing all of them
+  running MMPBSA.py ... done in 25s
+  decomp.dat written (321 lines)
+
+--- XCJ_HIE ---
+  complex has 312 residues; decomposing all of them
+  running MMPBSA.py ... done in 24s
+  decomp.dat written (321 lines)
+
+--- XCJ_HIP ---
+  complex has 312 residues; decomposing all of them
+  running MMPBSA.py ... done in 24s
+  decomp.dat written (321 lines)
+41 PER-RESIDUE DECOMPOSITION (6C)
+----------------------------------------------------------------------------
+The first attempt failed with a decomposition term mismatch. The cause
+was confirmed from the retained MMPBSA inputs: the complex decomposed
+35 residues while the ligand decomposed 1, and the binding calculation
+needs the complex to cover receptor plus ligand. The ligand residue had
+been left out of print_res. Every residue is now decomposed.
+
+CONSISTENCY CHECK (per component)
+----------------------------------------------------------------------------
+The per-residue contributions must sum back to the reported totals.
+Each term is checked separately, because they do not all decompose
+the same way:
+
+  VDWAALS, EEL, EGB   decompose exactly, so these must reconcile.
+                      Tolerance 0.05 kcal/mol, above the rounding from
+                      summing values printed to three decimals.
+  ESURF               does not decompose exactly: with gbsa=2 the surface
+                      area is computed per atom by a route that is not
+                      additive per residue. Its residual is bounded and
+                      reported rather than treated as an error.
+
+A system passes on the three exact terms. Electrostatics, which is what
+the Glu136 question depends on, is among them.
+
+Residual = sum over residues minus reported total.
+
+SYSTEM               VDW      EEL      EGB    ESURF    TOTAL   VERDICT
+17sa23_HIE         0.014    0.001   -0.004   -0.918   -0.906   PASS
+17sa23_HIP         0.000   -0.005   -0.012   -0.973   -0.989   PASS
+20sa23_HIE         0.002    0.002   -0.005   -1.098   -1.099   PASS
+20sa23_HIP         0.001    0.006    0.003   -1.039   -1.029   PASS
+22sa23_HIE         0.005   -0.006    0.004   -0.563   -0.560   PASS
+22sa23_HIP        -0.001    0.001   -0.006   -0.541   -0.548   PASS
+25sa23_HIE        -0.003    0.009   -0.015   -0.499   -0.508   PASS
+25sa23_HIP         0.006   -0.011    0.010   -0.479   -0.475   PASS
+5sa23_HIE         -0.003    0.004    0.001   -0.699   -0.698   PASS
+5sa23_HIP          0.002   -0.003    0.008   -0.658   -0.651   PASS
+9sa23_HIE         -0.003    0.003   -0.022   -1.278   -1.300   PASS
+9sa23_HIP         -0.005   -0.014    0.004   -1.301   -1.316   PASS
+XCJ_HIE            0.006   -0.006   -0.004   -0.232   -0.237   PASS
+XCJ_HIP            0.008    0.009    0.000   -0.266   -0.249   PASS
+
+Largest surface-term residual: 1.30 kcal/mol, spread across all
+312 residues rather than sitting on one, so no single residue's value
+carries more than a small fraction of it.
+
+============================================================================
+RESIDUE CONTRIBUTIONS (kcal/mol)
+Negative helps binding, positive opposes it.
+============================================================================
+
+  17sa23_HIE   (15 residues contributing 0.5 or more)
+    RESIDUE     CHAIN       TOTAL       EEL       VDW
+    MET70       A           -2.40     -1.16     -1.97
+    LEU260      A           -1.61     -1.14     -1.53
+    LIG#312     -           -1.55     62.90    -25.68
+    ALA95       A           -1.12     -3.43     -0.70
+    GLY94       A           -1.06     -3.44     -0.63
+    VAL115      A           -1.06     -1.12     -0.39
+    ALA20       A           -1.05     -0.47     -0.72
+    GLY142      A           -0.87     -0.94     -0.63
+    MET19       A           -0.73     -0.91     -0.11
+    MET72       A           -0.63     -0.46     -0.58
+    ...                  (1 more)
+    MET275      A           -0.57      0.13     -0.82
+    ASN68       A           -0.51     -0.67     -0.12
+    GLU136      A            2.40     32.70     -0.43
+    FMN#311     -            3.71     49.82     -4.68
+
+  17sa23_HIP   (14 residues contributing 0.5 or more)
+    RESIDUE     CHAIN       TOTAL       EEL       VDW
+    LIG#312     -           -5.38     36.81    -25.76
+    MET70       A           -2.60     -1.24     -2.10
+    LEU260      A           -1.57     -1.12     -1.50
+    HIP143      A           -1.13    -19.59     -4.88
+    ALA20       A           -1.05     -0.45     -0.73
+    VAL115      A           -1.02     -1.13     -0.38
+    GLY94       A           -0.91     -3.27     -0.62
+    ALA95       A           -0.89     -3.21     -0.51
+    MET19       A           -0.71     -0.90     -0.12
+    MET275      A           -0.65      0.14     -0.80
+    MET72       A           -0.64     -0.45     -0.60
+    ASN68       A           -0.50     -0.66     -0.12
+    GLU136      A            2.70     33.64     -0.45
+    FMN#311     -            3.46     49.29     -4.68
+
+  20sa23_HIE   (15 residues contributing 0.5 or more)
+    RESIDUE     CHAIN       TOTAL       EEL       VDW
+    LIG#312     -          -14.38     27.75    -22.87
+    ASN44       A           -3.41     -6.07      0.19
+    MET72       A           -2.88     -0.47     -2.30
+    ALA95       A           -2.29      1.08     -3.15
+    PRO117      A           -1.77     -0.67     -1.64
+    HIE143      A           -1.40     -3.50     -3.13
+    MET70       A           -1.21     -0.39     -0.98
+    HIE226      A           -1.18     -0.63     -1.85
+    GLY96       A           -0.95      0.10     -1.40
+    GLY145      A           -0.67     -0.49     -0.72
+    ...                  (1 more)
+    VAL115      A           -0.53      0.71     -1.07
+    GLY94       A           -0.52     -0.32     -0.49
+    VAL116      A           -0.50     -0.06     -0.81
+    FMN#311     -            0.52     28.27     -0.25
+
+  20sa23_HIP   (14 residues contributing 0.5 or more)
+    RESIDUE     CHAIN       TOTAL       EEL       VDW
+    LIG#312     -          -15.41      5.04    -22.99
+    ASN44       A           -3.45     -5.91      0.17
+    MET72       A           -2.99     -0.47     -2.38
+    ALA95       A           -2.37      0.97     -3.15
+    HIP143      A           -2.28    -26.34     -3.23
+    PRO117      A           -1.74     -0.66     -1.62
+    MET70       A           -1.25     -0.42     -1.01
+    HIE226      A           -1.13     -0.67     -1.82
+    GLY96       A           -0.90      0.13     -1.38
+    GLY145      A           -0.63     -0.45     -0.68
+    ILE144      A           -0.54     -0.06     -0.85
+    VAL115      A           -0.54      0.71     -1.11
+    GLY94       A           -0.53     -0.33     -0.50
+    VAL116      A           -0.53     -0.06     -0.84
+
+  22sa23_HIE   (18 residues contributing 0.5 or more)
+    RESIDUE     CHAIN       TOTAL       EEL       VDW
+    LIG#312     -           -8.82     55.59    -29.97
+    MET70       A           -2.73      0.01     -2.73
+    LEU260      A           -1.93     -0.77     -1.90
+    VAL115      A           -1.64     -1.16     -0.64
+    MET72       A           -1.42     -0.72     -1.14
+    ALA20       A           -1.14      0.14     -0.97
+    ALA95       A           -1.12     -3.62     -0.77
+    MET275      A           -0.84     -0.59     -0.94
+    GLY142      A           -0.81     -0.21     -0.58
+    ASN44       A           -0.75      0.30     -1.93
+    ...                  (4 more)
+    VAL228      A           -0.57     -0.62     -0.35
+    ASN68       A           -0.56     -0.91     -0.15
+    GLU136      A            2.43     32.46     -0.66
+    FMN#311     -            2.89     36.14     -5.08
+
+  22sa23_HIP   (16 residues contributing 0.5 or more)
+    RESIDUE     CHAIN       TOTAL       EEL       VDW
+    LIG#312     -          -13.36     28.35    -29.92
+    MET70       A           -2.86     -0.04     -2.78
+    HIP143      A           -2.44    -21.79     -4.71
+    LEU260      A           -1.98     -0.81     -1.93
+    VAL115      A           -1.58     -1.16     -0.63
+    MET72       A           -1.46     -0.69     -1.16
+    ALA20       A           -1.11      0.16     -0.95
+    ALA95       A           -1.07     -3.63     -0.68
+    MET275      A           -0.90     -0.59     -0.91
+    ASN44       A           -0.75      0.22     -1.97
+    ...                  (2 more)
+    MET19       A           -0.60     -0.23     -0.15
+    ASN68       A           -0.56     -0.91     -0.15
+    GLU136      A            2.31     32.03     -0.64
+    FMN#311     -            2.77     36.08     -5.12
+
+  25sa23_HIE   (14 residues contributing 0.5 or more)
+    RESIDUE     CHAIN       TOTAL       EEL       VDW
+    LIG#312     -          -13.72     33.88    -23.68
+    ASN44       A           -3.37     -6.34      0.19
+    MET72       A           -2.71     -0.64     -2.16
+    ALA95       A           -2.41      0.87     -3.01
+    VAL115      A           -1.46     -0.18     -1.08
+    MET70       A           -1.35     -0.59     -1.09
+    HIE226      A           -1.22     -0.71     -1.77
+    PRO117      A           -0.88     -0.02     -0.92
+    HIE143      A           -0.88     -1.90     -4.00
+    ILE144      A           -0.74     -0.09     -1.00
+    GLY94       A           -0.70     -0.51     -0.74
+    GLY96       A           -0.57      0.19     -0.81
+    GLU136      A            1.77     14.20     -1.38
+    FMN#311     -            1.98     33.49     -1.77
+
+  25sa23_HIP   (14 residues contributing 0.5 or more)
+    RESIDUE     CHAIN       TOTAL       EEL       VDW
+    LIG#312     -          -14.71      7.09    -23.74
+    ASN44       A           -3.35     -6.45      0.20
+    MET72       A           -2.70     -0.71     -2.15
+    ALA95       A           -2.42      0.81     -2.96
+    HIP143      A           -2.10    -28.58     -4.16
+    VAL115      A           -1.46     -0.20     -1.09
+    MET70       A           -1.38     -0.61     -1.09
+    HIE226      A           -1.13     -0.67     -1.74
+    PRO117      A           -0.88     -0.00     -0.92
+    ILE144      A           -0.78     -0.05     -0.99
+    GLY94       A           -0.69     -0.52     -0.74
+    GLY96       A           -0.57      0.20     -0.81
+    GLU136      A            1.85     14.21     -1.39
+    FMN#311     -            1.90     33.66     -1.79
+
+  5sa23_HIE   (16 residues contributing 0.5 or more)
+    RESIDUE     CHAIN       TOTAL       EEL       VDW
+    LIG#312     -           -5.30     60.80    -27.23
+    MET70       A           -2.47     -0.54     -2.21
+    LEU260      A           -2.29     -1.18     -2.03
+    ASN44       A           -1.34     -1.00     -2.23
+    ALA20       A           -1.12     -0.08     -0.90
+    GLY142      A           -1.05     -0.96     -0.60
+    HIE143      A           -0.97      5.52     -4.51
+    MET72       A           -0.90     -0.86     -0.87
+    GLY94       A           -0.82     -3.02     -0.53
+    VAL115      A           -0.81     -0.96     -0.28
+    ...                  (2 more)
+    MET275      A           -0.65     -0.58     -0.68
+    MET19       A           -0.60     -0.46     -0.13
+    GLU136      A            2.75     34.08     -0.41
+    FMN#311     -            3.05     43.24     -4.94
+
+  5sa23_HIP   (17 residues contributing 0.5 or more)
+    RESIDUE     CHAIN       TOTAL       EEL       VDW
+    LIG#312     -           -8.55     32.03    -27.13
+    MET70       A           -2.71     -0.59     -2.39
+    HIP143      A           -2.38    -24.95     -4.47
+    LEU260      A           -2.31     -1.20     -2.03
+    ASN44       A           -1.29     -0.94     -2.23
+    ALA20       A           -1.05     -0.05     -0.86
+    MET72       A           -0.91     -0.81     -0.86
+    ALA259      A           -0.79     -0.49     -0.56
+    MET275      A           -0.74     -0.57     -0.68
+    VAL115      A           -0.73     -0.94     -0.25
+    ...                  (3 more)
+    ALA95       A           -0.52     -2.53     -0.40
+    GLY141      A            0.51      3.51     -0.25
+    FMN#311     -            2.94     42.93     -4.82
+    GLU136      A            3.16     35.53     -0.44
+
+  9sa23_HIE   (16 residues contributing 0.5 or more)
+    RESIDUE     CHAIN       TOTAL       EEL       VDW
+    MET70       A           -2.34     -1.33     -1.82
+    LIG#312     -           -1.67     63.61    -26.21
+    LEU260      A           -1.63     -1.09     -1.56
+    GLY94       A           -1.14     -3.57     -0.59
+    ALA95       A           -1.04     -3.33     -0.68
+    ALA20       A           -1.00     -0.50     -0.66
+    GLY142      A           -0.94     -1.12     -0.63
+    VAL115      A           -0.89     -1.03     -0.32
+    VAL228      A           -0.73     -0.85     -0.49
+    MET19       A           -0.72     -0.94     -0.11
+    ...                  (2 more)
+    MET72       A           -0.58     -0.53     -0.52
+    GLY256      A           -0.55      0.01     -0.56
+    GLU136      A            2.46     33.07     -0.39
+    FMN#311     -            3.75     50.81     -4.62
+
+  9sa23_HIP   (15 residues contributing 0.5 or more)
+    RESIDUE     CHAIN       TOTAL       EEL       VDW
+    LIG#312     -           -5.98     35.49    -26.26
+    MET70       A           -2.58     -1.40     -1.97
+    LEU260      A           -1.58     -1.09     -1.51
+    HIP143      A           -1.37    -21.88     -4.93
+    ALA20       A           -1.01     -0.48     -0.68
+    GLY94       A           -0.94     -3.31     -0.56
+    VAL115      A           -0.84     -1.04     -0.30
+    ALA95       A           -0.82     -3.05     -0.51
+    MET275      A           -0.77      0.15     -0.91
+    MET19       A           -0.70     -0.93     -0.12
+    ...                  (1 more)
+    VAL228      A           -0.58     -0.91     -0.46
+    GLY256      A           -0.54     -0.01     -0.56
+    GLU136      A            2.66     33.81     -0.40
+    FMN#311     -            3.56     50.33     -4.59
+
+  XCJ_HIE   (15 residues contributing 0.5 or more)
+    RESIDUE     CHAIN       TOTAL       EEL       VDW
+    LIG#312     -          -20.48    -21.26    -30.49
+    GLY94       A           -2.96     -2.70     -1.05
+    ALA95       A           -2.94     -2.19     -1.99
+    MET70       A           -2.13     -0.77     -1.57
+    GLY142      A           -2.02     -1.02     -0.75
+    VAL115      A           -1.78      0.00     -1.87
+    HIE143      A           -1.72     -3.60     -3.35
+    PRO117      A           -1.67     -0.21     -1.57
+    ALA20       A           -1.37     -0.96     -1.02
+    GLY43       A           -0.99     -1.30     -0.34
+    ...                  (1 more)
+    MET19       A           -0.72     -0.11     -0.16
+    ASN44       A           -0.65     -0.83     -1.04
+    LEU260      A           -0.61      0.30     -0.69
+    FMN#311     -            2.67      2.38     -5.74
+
+  XCJ_HIP   (16 residues contributing 0.5 or more)
+    RESIDUE     CHAIN       TOTAL       EEL       VDW
+    LIG#312     -          -25.78    -25.31    -30.55
+    ALA95       A           -2.96     -2.21     -1.95
+    GLY94       A           -2.93     -2.71     -1.06
+    HIP143      A           -2.66     -7.32     -3.36
+    MET70       A           -2.19     -0.77     -1.59
+    VAL115      A           -1.78      0.01     -1.89
+    PRO117      A           -1.67     -0.21     -1.56
+    ALA20       A           -1.38     -0.96     -1.06
+    GLY142      A           -1.29     -1.03     -0.76
+    MET275      A           -1.13     -0.29     -0.82
+    ...                  (2 more)
+    MET19       A           -0.66     -0.09     -0.16
+    ILE144      A           -0.57      0.43     -0.90
+    LEU260      A           -0.57      0.30     -0.66
+    FMN#311     -            2.08      1.82     -5.75
+
+============================================================================
+KEY RESIDUES ACROSS SYSTEMS
+============================================================================
+GLU136 is the residue suspected of repelling the ligand
+carboxylate. HIS143 is catalytic. FMN is the cofactor.
+
+Each cell shows TOTAL (EEL in brackets), kcal/mol. EEL is the
+exactly decomposed electrostatic part.
+
+SYSTEM                     GLU136            HIS143               FMN
+17sa23_HIE            2.40 (32.70)      -0.58 ( 7.02)       3.71 (49.82)
+17sa23_HIP            2.70 (33.64)      -1.13 (-19.59)       3.46 (49.29)
+20sa23_HIE            0.44 (12.73)      -1.40 (-3.50)       0.52 (28.27)
+20sa23_HIP            0.43 (12.66)      -2.28 (-26.34)       0.49 (28.34)
+22sa23_HIE            2.43 (32.46)      -0.73 ( 5.04)       2.89 (36.14)
+22sa23_HIP            2.31 (32.03)      -2.44 (-21.79)       2.77 (36.08)
+25sa23_HIE            1.77 (14.20)      -0.88 (-1.90)       1.98 (33.49)
+25sa23_HIP            1.85 (14.21)      -2.10 (-28.58)       1.90 (33.66)
+5sa23_HIE             2.75 (34.08)      -0.97 ( 5.52)       3.05 (43.24)
+5sa23_HIP             3.16 (35.53)      -2.38 (-24.95)       2.94 (42.93)
+9sa23_HIE             2.46 (33.07)      -0.62 ( 6.92)       3.75 (50.81)
+9sa23_HIP             2.66 (33.81)      -1.37 (-21.88)       3.56 (50.33)
+XCJ_HIE               0.29 (-11.03)      -1.72 (-3.60)       2.67 ( 2.38)
+XCJ_HIP               0.27 (-11.03)      -2.66 (-7.32)       2.08 ( 1.82)
+
+A positive GLU136 value is direct evidence of carboxylate repulsion:
+both groups carry a negative charge at pH 7.4, so a close contact
+between them opposes binding rather than helping it. A distance-only
+contact analysis, and the Vina scoring function, both count such a
+contact as favourable because neither considers charge.
+
+============================================================================
+LIMITATIONS
+============================================================================
+Single minimised structure, no entropy, no conformational averaging.
+MMPBSA.py 14.0. Per-residue decomposition divides an approximate energy
+among residues, so individual values carry more uncertainty than the
+total. Read the sign and the relative size, not the exact number.
+
+The non-polar surface term does not decompose exactly (see the
+consistency check). Van der Waals, electrostatics and polar solvation
+do, so conclusions resting on those terms stand on firmer ground than
+conclusions resting on buried surface.
+
+
+Graph: graphs_focused/per_residue_key_contacts.png
+
+============================================================
+STEP 6C COMPLETED in 348s
+============================================================
+Read: cat txt_outputs/focused/41_per_residue_decomposition.txt

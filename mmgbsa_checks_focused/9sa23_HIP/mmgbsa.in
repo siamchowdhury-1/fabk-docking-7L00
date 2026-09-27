@@ -1,0 +1,12 @@
+MM/GBSA with per-residue decomposition
+&general
+  startframe = 1, endframe = 1, interval = 1,
+  verbose = 2, keep_files = 0,
+/
+&gb
+  igb = 5, saltcon = 0.15,
+/
+&decomp
+  idecomp = 2, dec_verbose = 0,
+  print_res = "19-22,44-46,69,71-75,94-97,116,137,142-146,221,227,229,240,253-254,257-262,274,276,311",
+/
