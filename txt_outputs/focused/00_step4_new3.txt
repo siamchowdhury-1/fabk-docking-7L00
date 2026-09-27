@@ -1,135 +1,0 @@
-============================================================
-STEP 4: MM/GBSA [focused poses, chain(s) A]
-Compounds: 9sa23 22sa23 25sa23
-============================================================
-
---- receptor preparation ---
-protein atoms 2277, FMN atoms 31
-chain breaks: none
-============================================================
-siam chowdhury
-Computational and Medicinal Chemistry
-[Dr. Alam's Research Team] www.alamresearch.org
-Arkansas State University
-Date: 2026-09-27 02:14:17
-============================================================
-
-35 RECEPTOR AND FMN PARAMETERISATION
-------------------------------------------------------------
-chains A
-protein atoms 2277
-FMN atoms 31
-chain breaks (TER inserted): none
-
-Protein force field : ff14SB
-FMN / ligand        : GAFF2 with AM1-BCC charges
-FMN net charge      : -2
-FMN bond orders     : crystal SDF from RCSB (CCD bond orders)
-
-pdb4amber changes (renamed / removed):
-Summary of pdb4amber for: mmgbsa_focused/receptor_protein.pdb
----------- Missing heavy atom(s)
-
-FMN parameters missing from GAFF2 and estimated by parmchk2:
-0
-0
-
-------------------------------------------------------------
-MM/GBSA: 9sa23
-------------------------------------------------------------
-NOTE: charge from SDF -1, from MOL2 0;
-      using -1 (gives an even electron count).
-net charge: -1   electrons: 236
-  AM1-BCC charges ...                 AM1-BCC charges ...               16s elapsed  AM1-BCC charges ...               31s elapsed  AM1-BCC charges ...               46s elapsed  AM1-BCC charges ...               1m 01s elapsed  AM1-BCC charges ...               1m 16s elapsed  AM1-BCC charges ...               1m 32s elapsed  AM1-BCC charges ...               1m 47s elapsed  AM1-BCC charges ...               2m 02s elapsed  AM1-BCC charges ...               2m 17s elapsed  AM1-BCC charges ...               2m 33s elapseddone in 2m 33s
-  tleap topologies ...              done in 0s
-  minimising 500 cycles ...           minimising 500 cycles ...         15s elapsed  minimising 500 cycles ...         31s elapsed  minimising 500 cycles ...         46s elapsed  minimising 500 cycles ...         1m 01s elapsed  minimising 500 cycles ...         1m 16s elapsed  minimising 500 cycles ...         1m 31s elapsed  minimising 500 cycles ...         1m 47s elapsed  minimising 500 cycles ...         2m 02s elapsed  minimising 500 cycles ...         2m 17s elapsed  minimising 500 cycles ...         2m 32s elapsed  minimising 500 cycles ...         2m 47s elapsed  minimising 500 cycles ...         3m 02s elapsed  minimising 500 cycles ...         3m 18s elapsed  minimising 500 cycles ...         3m 33s elapsed  minimising 500 cycles ...         3m 48s elapsed  minimising 500 cycles ...         4m 03s elapsed  minimising 500 cycles ...         4m 19s elapsed  minimising 500 cycles ...         4m 34s elapsed  minimising 500 cycles ...         4m 49s elapsed  minimising 500 cycles ...         5m 04s elapsed  minimising 500 cycles ...         5m 20s elapsed  minimising 500 cycles ...         5m 35s elapsed  minimising 500 cycles ...         5m 50s elapseddone in 5m 50s
-  MM/GBSA ...                         MM/GBSA ...                       15s elapseddone in 15s
-  TOTAL for 9sa23                   8m 38s
-
-------------------------------------------------------------
-MM/GBSA: 22sa23
-------------------------------------------------------------
-NOTE: charge from SDF -1, from MOL2 0;
-      using -1 (gives an even electron count).
-net charge: -1   electrons: 242
-  AM1-BCC charges ...                 AM1-BCC charges ...               15s elapsed  AM1-BCC charges ...               30s elapsed  AM1-BCC charges ...               45s elapsed  AM1-BCC charges ...               1m 00s elapsed  AM1-BCC charges ...               1m 15s elapsed  AM1-BCC charges ...               1m 30s elapsed  AM1-BCC charges ...               1m 45s elapsed  AM1-BCC charges ...               2m 00s elapsed  AM1-BCC charges ...               2m 15s elapseddone in 2m 15s
-  tleap topologies ...              done in 0s
-  minimising 500 cycles ...           minimising 500 cycles ...         15s elapsed  minimising 500 cycles ...         30s elapsed  minimising 500 cycles ...         45s elapsed  minimising 500 cycles ...         1m 00s elapsed  minimising 500 cycles ...         24m 15s elapsed  minimising 500 cycles ...         24m 30s elapsed  minimising 500 cycles ...         24m 45s elapsed  minimising 500 cycles ...         25m 00s elapsed  minimising 500 cycles ...         25m 15s elapsed  minimising 500 cycles ...         25m 30s elapsed  minimising 500 cycles ...         25m 45s elapsed  minimising 500 cycles ...         26m 00s elapsed  minimising 500 cycles ...         26m 15s elapsed  minimising 500 cycles ...         26m 30s elapsed  minimising 500 cycles ...         26m 45s elapsed  minimising 500 cycles ...         27m 00s elapsed  minimising 500 cycles ...         27m 15s elapsed  minimising 500 cycles ...         27m 30s elapsed  minimising 500 cycles ...         27m 45s elapsed  minimising 500 cycles ...         28m 00s elapsed  minimising 500 cycles ...         28m 15s elapsed  minimising 500 cycles ...         28m 30s elapsed  minimising 500 cycles ...         28m 45s elapseddone in 28m 45s
-  MM/GBSA ...                         MM/GBSA ...                       15s elapseddone in 15s
-  TOTAL for 22sa23                  31m 15s
-
-------------------------------------------------------------
-MM/GBSA: 25sa23
-------------------------------------------------------------
-NOTE: charge from SDF -1, from MOL2 0;
-      using -1 (gives an even electron count).
-net charge: -1   electrons: 242
-  AM1-BCC charges ...                 AM1-BCC charges ...               15s elapsed  AM1-BCC charges ...               30s elapsed  AM1-BCC charges ...               45s elapsed  AM1-BCC charges ...               1m 00s elapsed  AM1-BCC charges ...               1m 15s elapsed  AM1-BCC charges ...               1m 30s elapsed  AM1-BCC charges ...               1m 45s elapsed  AM1-BCC charges ...               2m 00s elapsed  AM1-BCC charges ...               2m 15s elapsed  AM1-BCC charges ...               2m 30s elapseddone in 2m 30s
-  tleap topologies ...              done in 0s
-  minimising 500 cycles ...           minimising 500 cycles ...         15s elapsed  minimising 500 cycles ...         30s elapsed  minimising 500 cycles ...         45s elapsed  minimising 500 cycles ...         1m 00s elapsed  minimising 500 cycles ...         1m 15s elapsed  minimising 500 cycles ...         1m 30s elapsed  minimising 500 cycles ...         1m 45s elapsed  minimising 500 cycles ...         2m 00s elapsed  minimising 500 cycles ...         2m 15s elapsed  minimising 500 cycles ...         2m 30s elapsed  minimising 500 cycles ...         2m 45s elapsed  minimising 500 cycles ...         3m 00s elapsed  minimising 500 cycles ...         3m 15s elapsed  minimising 500 cycles ...         3m 30s elapsed  minimising 500 cycles ...         3m 45s elapsed  minimising 500 cycles ...         4m 00s elapsed  minimising 500 cycles ...         4m 15s elapsed  minimising 500 cycles ...         4m 30s elapsed  minimising 500 cycles ...         4m 45s elapsed  minimising 500 cycles ...         5m 00s elapsed  minimising 500 cycles ...         5m 15s elapsed  minimising 500 cycles ...         5m 30s elapseddone in 5m 30s
-  MM/GBSA ...                         MM/GBSA ...                       15s elapseddone in 15s
-  TOTAL for 25sa23                  8m 15s
-36 MM/GBSA RESULTS: 7L00 FabK (focused poses)
-------------------------------------------------------------------------
-Single minimised structure, GB implicit solvent (igb=5, 0.15 M salt).
-Entropy is NOT included, so these are relative, not absolute, energies.
-
-RANK COMPOUND      MMGBSA      VDW       EEL       EGB    ESURF    VINA  LE_GBSA
-1    25sa23        -28.53   -47.37     67.76    -42.96    -5.96   -8.19    0.839
-2    22sa23        -23.35   -59.94    111.19    -68.22    -6.38   -8.36    0.687
-3    9sa23         -11.76   -52.42    127.21    -81.05    -5.50   -7.16    0.392
-
-TERMS (kcal/mol, all are complex minus receptor minus ligand)
-  VDW    van der Waals: shape fit and buried surface
-  EEL    electrostatic: charge-charge, salt bridges, H-bonds
-  EGB    polar solvation: cost of desolvating charges on binding
-         (opposes EEL; a strong salt bridge pays a large EGB penalty)
-  ESURF  nonpolar solvation: burial of hydrophobic surface
-  MMGBSA total binding energy, more negative = stronger predicted binding
-  LE_GBSA  -MMGBSA / heavy atoms
-
-CROSS-METHOD COMPARISON
-------------------------------------------------------------------------
-COMPOUND      MMGBSA  RANK    VINA  RANK   FMN  POLAR    SITE
-25sa23        -28.53     1   -8.19     2   YES      2   11/22
-22sa23        -23.35     2   -8.36     1   YES      6   12/22
-9sa23         -11.76     3   -7.16     3   YES      5    9/22
-
-Methods agree on the rank of: 9sa23
-
-Where MM/GBSA and Vina disagree, MM/GBSA is usually the better guide,
-because it treats electrostatics and desolvation explicitly, while the
-Vina score weights buried hydrophobic surface heavily. Neither includes
-entropy, and neither is an experimental binding free energy.
-
-
-Graphs written to graphs_focused/
-
-============================================================
-STEP 4 COMPLETED
-============================================================
-Total run time: 48m 10s
-
-compound 9sa23
-  AM1-BCC charges  2m 33s
-  tleap            0s
-  minimisation     5m 50s (500 cycles)
-  MM/GBSA          15s
-  total            8m 38s
-compound 22sa23
-  AM1-BCC charges  2m 15s
-  tleap            0s
-  minimisation     28m 45s (500 cycles)
-  MM/GBSA          15s
-  total            31m 15s
-compound 25sa23
-  AM1-BCC charges  2m 30s
-  tleap            0s
-  minimisation     5m 30s (500 cycles)
-  MM/GBSA          15s
-  total            8m 15s
-
-Results : cat txt_outputs/focused/36_mmgbsa_results.txt
-Detail  : cat txt_outputs/focused/37_<compound>_mmgbsa_detail.txt
-Setup   : cat txt_outputs/focused/35_mmgbsa_receptor_setup.txt
-Structures: mmgbsa_focused/<compound>/complex_min.pdb

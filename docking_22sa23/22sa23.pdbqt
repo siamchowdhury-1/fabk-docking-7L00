@@ -1,0 +1,64 @@
+REMARK 999 siam chowdhury
+REMARK 999 Computational and Medicinal Chemistry
+REMARK 999 [Dr. Alam's Research Team] www.alamresearch.org
+REMARK 999 Arkansas State University
+REMARK 999 22sa23 ligand PDBQT (pH 7.4, MMFF94, Meeko)
+REMARK 999 Created: 2026-09-27 10:53:36
+REMARK SMILES O=C([O-])c1ccc(-n2cc(CNc3ccc(F)c(C(F)(F)F)c3)c(-c3ccc(F)cc3)n2)cc1
+REMARK SMILES IDX 11 1 10 2 8 3 32 4 9 5 24 6 7 7 4 8 5 9 34 10 6 11 33 12
+REMARK SMILES IDX 2 13 1 14 3 15 25 16 31 17 26 18 30 19 27 20 28 21 29 22
+REMARK SMILES IDX 12 23 13 25 23 26 14 27 18 28 15 29 16 30 17 31 19 32 20 33
+REMARK SMILES IDX 21 34 22 35
+REMARK H PARENT 12 24
+ROOT
+ATOM      1  C   UNL     1       5.934   7.118   4.181  1.00  0.00     0.152 C 
+ENDROOT
+BRANCH   1   2
+ATOM      2  C   UNL     1       5.803   5.641   4.050  1.00  0.00     0.018 A 
+ATOM      3  N   UNL     1       5.164   3.647   3.329  1.00  0.00    -0.240 N 
+ATOM      4  N   UNL     1       5.985   3.394   4.379  1.00  0.00    -0.168 NA
+ATOM      5  C   UNL     1       5.028   4.993   3.115  1.00  0.00     0.121 A 
+ATOM      6  C   UNL     1       6.411   4.596   4.808  1.00  0.00     0.098 A 
+BRANCH   3   7
+ATOM      7  C   UNL     1       4.524   2.603   2.598  1.00  0.00     0.065 A 
+ATOM      8  C   UNL     1       3.151   0.553   1.245  1.00  0.00    -0.003 A 
+ATOM      9  C   UNL     1       4.026   0.242   2.295  1.00  0.00     0.012 A 
+ATOM     10  C   UNL     1       2.983   1.887   0.862  1.00  0.00     0.012 A 
+ATOM     11  C   UNL     1       4.719   1.264   2.962  1.00  0.00     0.029 A 
+ATOM     12  C   UNL     1       3.666   2.906   1.529  1.00  0.00     0.029 A 
+BRANCH   8  13
+ATOM     13  C   UNL     1       2.323  -0.464   0.545  1.00  0.00     0.071 C 
+ATOM     14  O   UNL     1       1.250  -0.197   0.036  1.00  0.00    -0.545 OA
+ATOM     15  O   UNL     1       2.871  -1.693   0.491  1.00  0.00    -0.545 OA
+ENDBRANCH   8  13
+ENDBRANCH   3   7
+BRANCH   6  16
+ATOM     16  C   UNL     1       7.365   4.720   5.923  1.00  0.00     0.003 A 
+ATOM     17  C   UNL     1       7.362   3.796   6.980  1.00  0.00     0.013 A 
+ATOM     18  C   UNL     1       8.302   5.769   5.962  1.00  0.00     0.013 A 
+ATOM     19  C   UNL     1       8.254   3.937   8.053  1.00  0.00     0.040 A 
+ATOM     20  C   UNL     1       9.178   5.921   7.037  1.00  0.00     0.040 A 
+ATOM     21  C   UNL     1       9.147   5.001   8.075  1.00  0.00     0.123 A 
+ATOM     22  F   UNL     1       9.992   5.139   9.103  1.00  0.00    -0.207 F 
+ENDBRANCH   6  16
+ENDBRANCH   1   2
+BRANCH   1  23
+ATOM     23  N   UNL     1       7.067   7.673   3.452  1.00  0.00    -0.381 N 
+ATOM     24  H   UNL     1       7.661   7.066   2.954  1.00  0.00     0.160 HD
+BRANCH  23  25
+ATOM     25  C   UNL     1       7.329   9.035   3.443  1.00  0.00     0.035 A 
+ATOM     26  C   UNL     1       8.412   9.505   2.684  1.00  0.00     0.041 A 
+ATOM     27  C   UNL     1       6.662   9.949   4.266  1.00  0.00     0.029 A 
+ATOM     28  C   UNL     1       8.798  10.859   2.704  1.00  0.00     0.093 A 
+ATOM     29  C   UNL     1       7.025  11.296   4.287  1.00  0.00     0.042 A 
+ATOM     30  C   UNL     1       8.085  11.739   3.508  1.00  0.00     0.135 A 
+ATOM     31  F   UNL     1       8.412  13.035   3.562  1.00  0.00    -0.206 F 
+BRANCH  28  32
+ATOM     32  C   UNL     1       9.966  11.324   1.891  1.00  0.00     0.419 C 
+ATOM     33  F   UNL     1      10.236  12.655   1.972  1.00  0.00    -0.166 F 
+ATOM     34  F   UNL     1      11.122  10.692   2.246  1.00  0.00    -0.166 F 
+ATOM     35  F   UNL     1       9.802  11.063   0.563  1.00  0.00    -0.166 F 
+ENDBRANCH  28  32
+ENDBRANCH  23  25
+ENDBRANCH   1  23
+TORSDOF 7

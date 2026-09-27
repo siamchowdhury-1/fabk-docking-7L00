@@ -3,7 +3,7 @@ siam chowdhury
 Computational and Medicinal Chemistry
 [Dr. Alam's Research Team] www.alamresearch.org
 Arkansas State University
-Date: 2026-09-27 04:06:23
+Date: 2026-09-27 13:49:49
 ============================================================================
 
 39 MM/GBSA VALIDATION CHECKS
@@ -20,31 +20,35 @@ Date: 2026-09-27 04:06:23
 ============================================================================
 LIGAND    STATE     MMGBSA      VDW       EEL       EGB   ESURF    VINA
 XCJ       HIE       -43.69   -60.97    -42.51     65.89   -6.10     nan
-9sa23     HIE       -11.77   -52.42    127.21    -81.06   -5.50   -7.16
-22sa23    HIE       -23.35   -59.94    111.19    -68.22   -6.38   -8.36
+20sa23    HIE       -32.02   -45.74     55.49    -36.68   -5.09   -7.30
 25sa23    HIE       -28.53   -47.37     67.76    -42.96   -5.96   -8.19
+22sa23    HIE       -23.35   -59.94    111.19    -68.22   -6.38   -8.36
+5sa23     HIE       -17.89   -54.46    121.59    -79.36   -5.67   -7.99
+17sa23    HIE       -10.78   -51.36    125.80    -79.66   -5.56   -7.17
 
 XCJ       HIP       -49.88   -61.09    -50.61     67.90   -6.08     nan
-9sa23     HIP       -16.02   -52.52     70.98    -28.99   -5.49   -7.16
-22sa23    HIP       -29.66   -59.85     56.70    -20.16   -6.36   -8.36
+20sa23    HIP       -34.13   -45.99     10.08      6.91   -5.13   -7.30
 25sa23    HIP       -30.60   -47.49     14.18      8.66   -5.95   -8.19
+22sa23    HIP       -29.66   -59.85     56.70    -20.16   -6.36   -8.36
+5sa23     HIP       -21.62   -54.26     64.06    -25.79   -5.64   -7.99
+17sa23    HIP       -14.36   -51.52     73.63    -30.94   -5.53   -7.17
 
 ============================================================================
 RANKING BY STATE (XCJ shown for reference)
 ============================================================================
-  His143=HIE  XCJ (-43.7) > 25sa23 (-28.5) > 22sa23 (-23.4) > 9sa23 (-11.8)
-  His143=HIP  XCJ (-49.9) > 25sa23 (-30.6) > 22sa23 (-29.7) > 9sa23 (-16.0)
-  Vina      22sa23 (-8.4) > 25sa23 (-8.2) > 9sa23 (-7.2)
+  His143=HIE  XCJ (-43.7) > 20sa23 (-32.0) > 25sa23 (-28.5) > 22sa23 (-23.4) > 5sa23 (-17.9) > 17sa23 (-10.8)
+  His143=HIP  XCJ (-49.9) > 20sa23 (-34.1) > 25sa23 (-30.6) > 22sa23 (-29.7) > 5sa23 (-21.6) > 17sa23 (-14.4)
+  Vina      22sa23 (-8.4) > 25sa23 (-8.2) > 5sa23 (-8.0) > 20sa23 (-7.3) > 17sa23 (-7.2)
 
 ============================================================================
 6A  XCJ CONTROL: IS THE PROTOCOL SOUND?
 ============================================================================
   His143=HIE: XCJ = -43.69 kcal/mol, EEL = -42.51
-    0 of 3 compounds score better than the known-correct pose.
+    0 of 5 compounds score better than the known-correct pose.
     EEL is favourable for the crystal inhibitor, so positive EEL
     for a compound is a real signal about that compound.
   His143=HIP: XCJ = -49.88 kcal/mol, EEL = -50.61
-    0 of 3 compounds score better than the known-correct pose.
+    0 of 5 compounds score better than the known-correct pose.
     EEL is favourable for the crystal inhibitor, so positive EEL
     for a compound is a real signal about that compound.
 
@@ -53,9 +57,11 @@ RANKING BY STATE (XCJ shown for reference)
 ============================================================================
 LIGAND             HIE         HIP    SPREAD
 XCJ             -43.69      -49.88      6.19
-9sa23           -11.77      -16.02      4.25
-22sa23          -23.35      -29.66      6.31
+20sa23          -32.02      -34.13      2.11
 25sa23          -28.53      -30.60      2.07
+22sa23          -23.35      -29.66      6.31
+5sa23           -17.89      -21.62      3.73
+17sa23          -10.78      -14.36      3.58
 
   Compound order is THE SAME across protonation states.
 

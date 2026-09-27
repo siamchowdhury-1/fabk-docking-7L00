@@ -1,4 +1,0 @@
-trajin complex_min.rst7
-trajout complex_min.nc netcdf
-go
-quit

@@ -1,18 +1,30 @@
-compound 9sa23
-  AM1-BCC charges  2m 33s
-  tleap            0s
-  minimisation     5m 50s (500 cycles)
+compound 20sa23
+  AM1-BCC charges  0s
+  tleap            1s
+  minimisation     4m 41s (500 cycles)
   MM/GBSA          15s
-  total            8m 38s
-compound 22sa23
-  AM1-BCC charges  2m 15s
-  tleap            0s
-  minimisation     28m 45s (500 cycles)
-  MM/GBSA          15s
-  total            31m 15s
+  total            4m 57s
 compound 25sa23
-  AM1-BCC charges  2m 30s
+  AM1-BCC charges  0s
   tleap            0s
-  minimisation     5m 30s (500 cycles)
+  minimisation     4m 45s (500 cycles)
   MM/GBSA          15s
-  total            8m 15s
+  total            5m 00s
+compound 22sa23
+  AM1-BCC charges  0s
+  tleap            1s
+  minimisation     4m 45s (500 cycles)
+  MM/GBSA          15s
+  total            5m 01s
+compound 5sa23
+  AM1-BCC charges  0s
+  tleap            1s
+  minimisation     4m 45s (500 cycles)
+  MM/GBSA          15s
+  total            5m 01s
+compound 17sa23
+  AM1-BCC charges  0s
+  tleap            0s
+  minimisation     4m 46s (500 cycles)
+  MM/GBSA          15s
+  total            5m 01s

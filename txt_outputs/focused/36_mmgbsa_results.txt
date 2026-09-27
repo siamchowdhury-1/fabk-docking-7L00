@@ -3,7 +3,7 @@ siam chowdhury
 Computational and Medicinal Chemistry
 [Dr. Alam's Research Team] www.alamresearch.org
 Arkansas State University
-Date: 2026-09-27 03:02:27
+Date: 2026-09-27 11:38:09
 ========================================================================
 
 36 MM/GBSA RESULTS: 7L00 FabK (focused poses)
@@ -12,9 +12,11 @@ Single minimised structure, GB implicit solvent (igb=5, 0.15 M salt).
 Entropy is NOT included, so these are relative, not absolute, energies.
 
 RANK COMPOUND      MMGBSA      VDW       EEL       EGB    ESURF    VINA  LE_GBSA
-1    25sa23        -28.53   -47.37     67.76    -42.96    -5.96   -8.19    0.839
-2    22sa23        -23.35   -59.94    111.19    -68.22    -6.38   -8.36    0.687
-3    9sa23         -11.76   -52.42    127.21    -81.05    -5.50   -7.16    0.392
+1    20sa23        -32.02   -45.74     55.49    -36.68    -5.09   -7.30    1.033
+2    25sa23        -28.53   -47.37     67.76    -42.96    -5.96   -8.19    0.839
+3    22sa23        -23.35   -59.94    111.19    -68.22    -6.38   -8.36    0.687
+4    5sa23         -17.89   -54.46    121.59    -79.35    -5.67   -7.99    0.596
+5    17sa23        -10.77   -51.36    125.80    -79.65    -5.56   -7.17    0.347
 
 TERMS (kcal/mol, all are complex minus receptor minus ligand)
   VDW    van der Waals: shape fit and buried surface
@@ -28,14 +30,19 @@ TERMS (kcal/mol, all are complex minus receptor minus ligand)
 CROSS-METHOD COMPARISON
 ------------------------------------------------------------------------
 COMPOUND      MMGBSA  RANK    VINA  RANK   FMN  POLAR    SITE
-25sa23        -28.53     1   -8.19     2   YES      2   11/22
-22sa23        -23.35     2   -8.36     1   YES      6   12/22
-9sa23         -11.76     3   -7.16     3   YES      5    9/22
+20sa23        -32.02     1   -7.30     4    NO      2   10/22
+25sa23        -28.53     2   -8.19     2   YES      2   11/22
+22sa23        -23.35     3   -8.36     1   YES      6   12/22
+5sa23         -17.89     4   -7.99     3   YES      5   11/22
+17sa23        -10.77     5   -7.17     5   YES      8   10/22
 
-Methods agree on the rank of: 9sa23
+Methods agree on the rank of: 25sa23, 17sa23
 
 Where MM/GBSA and Vina disagree, MM/GBSA is usually the better guide,
 because it treats electrostatics and desolvation explicitly, while the
 Vina score weights buried hydrophobic surface heavily. Neither includes
 entropy, and neither is an experimental binding free energy.
+
+MIC vs MM/GBSA (n=5): Pearson r = 0.990 against log10(MIC)
+Expected: lower MIC with more negative MM/GBSA, so r > 0.
 

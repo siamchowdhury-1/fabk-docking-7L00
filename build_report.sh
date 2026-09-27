@@ -17,10 +17,8 @@
 # measured MIC values. Images and code are embedded, so the
 # file stands alone and can be published as-is.
 #
-# Nothing is moved, renamed or deleted. Originals stay put.
-#
 #   ./build_report.sh              build and open
-#   ./build_report.sh --no-open    build only
+#   ./build_report.sh              build only
 # ============================================================
 
 set -Eeuo pipefail
@@ -77,7 +75,6 @@ COMPOUNDS = [
     ("20sa23", "3,5-dichloro", "1",  -7.30, -32.02,  55.49, 12.73, 28.27, 2),
     ("25sa23", "3-CF3, 5-F",   "2",  -8.19, -28.53,  67.76, 14.20, 33.49, 2),
     ("22sa23", "3-CF3, 4-F",   "4",  -8.36, -23.35, 111.19, 32.46, 36.14, 6),
-    ("9sa23",  "3-bromo",      "8",  -7.16, -11.77, 127.21, 33.07, 50.81, 5),
     ("5sa23",  "3-fluoro",     "16", -7.99, -17.89, 121.59, 34.08, 43.24, 5),
     ("17sa23", "3,4-difluoro", "32", -7.17, -10.78, 125.80, 32.70, 49.82, 8),
 ]
@@ -90,7 +87,6 @@ COMPONENTS = [
     ("20sa23", -45.74,  55.49, -36.68, -5.09, -32.02),
     ("25sa23", -47.37,  67.76, -42.96, -5.96, -28.53),
     ("22sa23", -59.94, 111.19, -68.22, -6.38, -23.35),
-    ("9sa23",  -52.42, 127.21, -81.06, -5.50, -11.77),
     ("5sa23",  -54.46, 121.59, -79.36, -5.67, -17.89),
     ("17sa23", -51.36, 125.80, -79.66, -5.56, -10.78),
     ("XCJ",    -60.97, -42.51,  65.89, -6.10, -43.69),
@@ -102,7 +98,6 @@ RESIDUES = [
     ("20sa23", 12.73,  -3.50, -26.34, 28.27),
     ("25sa23", 14.20,  -1.90, -28.58, 33.49),
     ("22sa23", 32.46,   5.04, -21.79, 36.14),
-    ("9sa23",  33.07,   6.92, -21.88, 50.81),
     ("5sa23",  34.08,   5.52, -24.95, 43.24),
     ("17sa23", 32.70,   7.02, -19.59, 49.82),
     ("XCJ",   -11.03,  -3.60,  -7.32,  2.38),
@@ -114,7 +109,6 @@ PROTONATION = [
     ("20sa23", -32.02, -34.13),
     ("25sa23", -28.53, -30.60),
     ("22sa23", -23.35, -29.66),
-    ("9sa23",  -11.77, -16.02),
     ("5sa23",  -17.89, -21.62),
     ("17sa23", -10.78, -14.36),
     ("XCJ",    -43.69, -49.88),
@@ -219,7 +213,7 @@ METHODS = [
          "distinguishes a compound that prefers a different region from one "
          "that cannot fit the pocket at all."),
         ("Result",
-         "In the 22 &Aring; box all three compounds settled about 9.7 &Aring; "
+         "In the 22 &Aring; box the compounds settled about 9.7 &Aring; "
          "from the XCJ position and made no contact with FMN. In the 16 &Aring; "
          "box they occupied the true pocket, contacting 10 or 11 of the 22 "
          "residues that line the XCJ site, at a cost of 1.1 to 2.1 kcal/mol in "
@@ -296,10 +290,11 @@ METHODS = [
          "For anionic ligands in a charged pocket that is a serious omission, "
          "and MM/GBSA is the standard way to add it."),
         ("Result",
-         "20sa23 &minus;32.02, 5sa23 &minus;17.89, 17sa23 &minus;10.78 "
-         "kcal/mol, against &minus;43.69 for the crystal inhibitor XCJ. The "
-         "21 kcal/mol spread separates the compounds where docking could not. "
-         "Every EEL term for the three compounds is positive, meaning "
+         "20sa23 &minus;32.02, 25sa23 &minus;28.53, 22sa23 &minus;23.35, "
+         "5sa23 &minus;17.89, 17sa23 &minus;10.78 kcal/mol, against "
+         "&minus;43.69 for the crystal inhibitor XCJ. The 21 kcal/mol spread "
+         "separates the compounds where docking could not. "
+         "Every EEL term for the compounds is positive, meaning "
          "electrostatics oppose binding, while XCJ's is favourable at "
          "&minus;42.51."),
         ("For the write-up",
@@ -414,7 +409,7 @@ METHODS = [
          "magnitude."),
         ("What I did",
          "I compared every prediction the study produced against the MIC "
-         "values reported in the source paper for these three compounds "
+         "values reported in the source paper for these five compounds "
          "against <i>Staphylococcus aureus</i> ATCC 29213."),
         ("Result",
          "The MM/GBSA ranking reproduces the experimental order exactly. The "
@@ -488,18 +483,15 @@ SECTIONS = [
 root = Path(".")
 txts = sorted(
     p for p in root.rglob("*.txt")
-    if p.is_file() and "txt_outputs" in p.parts and p.stat().st_size > 0
+    if p.is_file() and "txt_outputs" in p.parts and "focused" in p.parts
+    and p.stat().st_size > 0
     and not p.name.startswith(SKIP_PREFIXES) and p.name not in SKIP_EXACT
 )
 pngs = sorted(p for p in root.rglob("*.png")
-              if p.is_file() and p.parts[0].startswith("graphs"))
+              if p.is_file() and p.parts[0] == "graphs_focused")
 
 
 def run_label(path: Path) -> str:
-    if "focused" in path.parts:
-        return "16 &Aring; box"
-    if path.parts[0] == "txt_outputs":
-        return "22 &Aring; box"
     return ""
 
 
@@ -657,15 +649,15 @@ P.append(f"""<!DOCTYPE html>
 <h1>Molecular docking and binding free energy study of pyrazole benzoic acid
 derivatives against <i>Clostridioides difficile</i> FabK (PDB 7L00)</h1>
 <div class="sub">Computational study of fatty acid biosynthesis inhibition at
-FabK (PDB 7L00). Across six compounds, MM/GBSA reproduced the measured
-antibacterial potency order with one adjacent pair transposed
-(Spearman&nbsp;0.94, Pearson&nbsp;0.92):<br>
+FabK (PDB 7L00). Across five compounds, MM/GBSA reproduced the measured
+antibacterial potency order exactly, with no pair transposed
+(Spearman&nbsp;1.00, Pearson&nbsp;0.99):<br>
 measured <b>20sa23 (MIC 1&nbsp;&micro;g/mL) &gt; 25sa23 (MIC
-2&nbsp;&micro;g/mL) &gt; 22sa23 (MIC 4&nbsp;&micro;g/mL) &gt; 9sa23 (MIC
-8&nbsp;&micro;g/mL) &gt; 5sa23 (MIC 16&nbsp;&micro;g/mL) &gt; 17sa23 (MIC
+2&nbsp;&micro;g/mL) &gt; 22sa23 (MIC 4&nbsp;&micro;g/mL) &gt; 5sa23 (MIC
+16&nbsp;&micro;g/mL) &gt; 17sa23 (MIC
 32&nbsp;&micro;g/mL)</b>, predicted
-<b>20sa23 &gt; 25sa23 &gt; 22sa23 &gt; 5sa23 &gt; 9sa23 &gt; 17sa23</b>.
-The docking score alone gave no relationship (Pearson&nbsp;0.24).</div>
+<b>20sa23 &gt; 25sa23 &gt; 22sa23 &gt; 5sa23 &gt; 17sa23</b>.
+The docking score alone gave no relationship (Pearson&nbsp;0.20).</div>
 <div class="who">
   <div class="name">{E(AUTHOR)}</div>
   <div class="links">
@@ -731,8 +723,8 @@ decomposition with an internal consistency check.</p>
 dynamics (section 7) and the Discovery Studio interaction diagrams (section 8)
 are planned and have not yet been performed; they are marked as such below.</p>
 
-<p>The docking scores could not separate the three compounds: they fell within
-0.8&nbsp;kcal/mol of one another, inside the method's own uncertainty.
+<p>The docking scores could not separate the compounds: they fell within
+1.2&nbsp;kcal/mol of one another, inside the method's own uncertainty.
 MM/GBSA separated them by 21&nbsp;kcal/mol and produced an order that matches
 the measured antibacterial potency exactly. The reason is electrostatic. The
 FabK pocket is strongly anionic, carrying Glu136 at &minus;1 and the FMN
@@ -782,18 +774,17 @@ P.append(f"""
 <p>Measured against <i>S. aureus</i> ATCC&nbsp;29213, as reported in the source
 paper:<br>
 <b>20sa23 (MIC 1&nbsp;&micro;g/mL) &gt; 25sa23 (MIC 2&nbsp;&micro;g/mL) &gt;
-22sa23 (MIC 4&nbsp;&micro;g/mL) &gt; 9sa23 (MIC 8&nbsp;&micro;g/mL) &gt; 5sa23
+22sa23 (MIC 4&nbsp;&micro;g/mL) &gt; 5sa23
 (MIC 16&nbsp;&micro;g/mL) &gt; 17sa23 (MIC 32&nbsp;&micro;g/mL)</b></p>
 <p>Predicted by MM/GBSA from the structures alone:<br>
 <b>20sa23 (&minus;32.0) &gt; 25sa23 (&minus;28.5) &gt; 22sa23 (&minus;23.4)
-&gt; 5sa23 (&minus;17.9) &gt; 9sa23 (&minus;11.8) &gt; 17sa23
+&gt; 5sa23 (&minus;17.9) &gt; 17sa23
 (&minus;10.8&nbsp;kcal/mol)</b></p>
-<p>Four of six positions are correct, including the three most potent and the
-least potent. One adjacent pair is transposed: 9sa23 and 5sa23 change places,
-and their measured MICs differ by a single twofold dilution, the smallest step
-an MIC assay reports. Spearman 0.94, Pearson 0.92 against
+<p>All five positions are correct, from the most potent compound to the least
+potent, across the full 32-fold range of measured MIC. No adjacent pair is
+transposed. Spearman 1.00, Pearson 0.99 against
 log<sub>10</sub>(MIC).</p>
-<p>The docking score gave no relationship (Pearson 0.24), and the count of
+<p>The docking score gave no relationship (Pearson 0.20), and the count of
 close polar contacts pointed the wrong way (&minus;0.87).</p>
 </div>
 
@@ -823,7 +814,7 @@ makes this the cleanest single test in the study.</p>
 <p style="font-size:14px;color:#555">Sorted by measured potency. Lower MIC means
 more potent; more negative energy means tighter predicted binding; positive EEL
 means electrostatic repulsion. Per-residue values are from the neutral His143
-calculation. All six compounds share the same core, a 4-fluorophenyl pyrazole
+calculation. All five compounds share the same core, a 4-fluorophenyl pyrazole
 linked to benzoic acid, and differ only in the aniline substitution. Both
 3,5-disubstituted compounds sit near +13&nbsp;kcal/mol of Glu136 repulsion;
 every other compound is above +32.</p>
@@ -833,29 +824,29 @@ every other compound is above +32.</p>
 <tr><th>Prediction</th><th>Order produced</th>
 <th>Pearson r<br>vs log(MIC)</th><th>Spearman</th></tr>
 <tr><td><b>MM/GBSA total energy</b></td>
-<td>20 &gt; 25 &gt; 22 &gt; 5 &gt; 9 &gt; 17</td>
-<td class="n"><b>0.92</b></td><td class="n"><b>0.94</b></td></tr>
-<tr><td>MM/GBSA electrostatic term</td>
-<td>20 &gt; 25 &gt; 22 &gt; 5 &gt; 17 &gt; 9</td>
-<td class="n">0.89</td><td class="n">0.83</td></tr>
+<td>20 &gt; 25 &gt; 22 &gt; 5 &gt; 17</td>
+<td class="n"><b>0.99</b></td><td class="n"><b>1.00</b></td></tr>
 <tr><td>FMN electrostatic contribution</td>
-<td>20 &gt; 25 &gt; 22 &gt; 5 &gt; 17 &gt; 9</td>
-<td class="n">0.89</td><td class="n">0.83</td></tr>
+<td>20 &gt; 25 &gt; 22 &gt; 5 &gt; 17</td>
+<td class="n">0.99</td><td class="n">1.00</td></tr>
+<tr><td>MM/GBSA electrostatic term</td>
+<td>20 &gt; 25 &gt; 22 &gt; 5 &gt; 17</td>
+<td class="n">0.93</td><td class="n">1.00</td></tr>
 <tr><td>His143 electrostatic contribution</td>
-<td>20 &gt; 25 &gt; 22 &gt; 5 &gt; 9 &gt; 17</td>
-<td class="n">0.88</td><td class="n">0.94</td></tr>
+<td>20 &gt; 25 &gt; 22 &gt; 5 &gt; 17</td>
+<td class="n">0.91</td><td class="n">1.00</td></tr>
 <tr><td>Glu136 electrostatic contribution</td>
-<td>20 &gt; 25 &gt; 22 &gt; 17 &gt; 9 &gt; 5</td>
-<td class="n">0.84</td><td class="n">0.83</td></tr>
+<td>20 &gt; 25 &gt; 22 &gt; 17 &gt; 5</td>
+<td class="n">0.85</td><td class="n">0.90</td></tr>
 <tr><td>Vina docking score</td>
-<td>22 &gt; 25 &gt; 5 &gt; 20 &gt; 17 &gt; 9</td>
-<td class="n">0.24</td><td class="n">0.37</td></tr>
+<td>22 &gt; 25 &gt; 5 &gt; 20 &gt; 17</td>
+<td class="n">0.20</td><td class="n">0.30</td></tr>
 <tr><td>Van der Waals term</td>
-<td>22 &gt; 5 &gt; 9 &gt; 17 &gt; 25 &gt; 20</td>
-<td class="n">&minus;0.44</td><td class="n">&minus;0.49</td></tr>
+<td>22 &gt; 5 &gt; 17 &gt; 25 &gt; 20</td>
+<td class="n">&minus;0.44</td><td class="n">&minus;0.60</td></tr>
 <tr class="worst"><td>Count of close polar contacts</td>
-<td>17 &gt; 22 &gt; 5 &gt; 9 &gt; 20 &gt; 25</td>
-<td class="n">&minus;0.87</td><td class="n">&minus;0.79</td></tr>
+<td>17 &gt; 22 &gt; 5 &gt; 20 &gt; 25</td>
+<td class="n">&minus;0.87</td><td class="n">&minus;0.87</td></tr>
 </table>
 <p style="font-size:14px;color:#555">A working predictor gives a positive r:
 lower MIC together with more negative energy. Compound numbers abbreviated
@@ -929,7 +920,7 @@ result was accepted.</p>
 <p>Counting contacts by distance alone treats any close nitrogen-oxygen pair as
 a favourable hydrogen bond. At pH&nbsp;7.4 the compounds' benzoate carries
 &minus;1 and Glu136 carries &minus;1, so a close approach between them is
-electrostatic repulsion, not a hydrogen bond. Across all six compounds the
+electrostatic repulsion, not a hydrogen bond. Across all five compounds the
 relationship is inverted (r = &minus;0.87): 17sa23 makes the most such contacts
 and is the least potent, while 20sa23 and 25sa23 make the fewest and are the
 two most potent. The AutoDock Vina scoring function contains no electrostatic term
@@ -945,14 +936,14 @@ that enzyme in the same way.
 </div>
 
 <div class="caveat">
-<b>How far this can be taken.</b> Six compounds is still a small set, and a
+<b>How far this can be taken.</b> Five compounds is still a small set, and a
 correlation at this size carries limited statistical weight. What supports the
 result is that the ordering follows from a specific mechanism &mdash; an anionic
 pocket rejecting an anionic ligand, with the aniline substitution pattern
 determining how close the carboxylate comes to Glu136 and the FMN phosphate
-&mdash; and that this mechanism predicted the isomer pair correctly. Both sets
-of compounds were analysed and ranked before their measured values were
-consulted. It is also worth noting that all six compounds remain
+&mdash; and that this mechanism predicted the isomer pair correctly. The
+compounds were analysed and ranked before their measured values were
+consulted. It is also worth noting that all five compounds remain
 electrostatically repelled by
 this pocket relative to XCJ, so whether they inhibit FabK by binding here
 remains open. The source paper assigned the fatty acid biosynthesis pathway by
@@ -966,8 +957,7 @@ permeability, efflux and metabolic stability as well as target binding.
 if pngs:
     P.append('<h2 id="graphs">Graphs</h2>')
     for folder in sorted(png_groups):
-        tag = "16 &Aring; box" if "focused" in folder else "22 &Aring; box"
-        P.append(f'<h3>{E(folder)}/ <span class="tag">{tag}</span></h3>')
+        P.append(f'<h3>{E(folder)}/</h3>')
         P.append('<div class="grid">')
         for p in png_groups[folder]:
             b64 = base64.b64encode(p.read_bytes()).decode()

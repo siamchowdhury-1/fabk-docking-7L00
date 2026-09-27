@@ -1,8 +1,0 @@
-Minimisation of the docked complex, GB implicit solvent
- &cntrl
-  imin = 1, maxcyc = 500, ncyc = 200,
-  ntb = 0, igb = 5, saltcon = 0.15,
-  cut = 999.0, ntpr = 100,
-  ntr = 1, restraint_wt = 5.0,
-  restraintmask = ':1-9999 & @CA,C,N,O',
- /

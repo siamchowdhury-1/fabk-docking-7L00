@@ -4,8 +4,8 @@ CPPTRAJ: Trajectory Analysis. V6.24.0 (AmberTools)
      | \/ | \/ | \/ | 
     _|_/\_|_/\_|_/\_|_
 
-| Date/time: 09/25/26 23:31:40
-| Available memory: 7.373 GB
+| Date/time: 09/27/26 12:31:29
+| Available memory: 7.347 GB
 
 	Reading 'complex.prmtop' as Amber Topology
 	Radius Set: H(N)-modified Bondi radii (mbondi2)
@@ -42,22 +42,22 @@ ACTIVE OUTPUT TRAJECTORIES (2):
 100% Complete.
 
 Read 1 frames and processed 1 frames.
-TIME: Avg. throughput= 169.2907 frames / second.
+TIME: Avg. throughput= 73.3192 frames / second.
 
 ACTION OUTPUT:
 TIME: Analyses took 0.0000 seconds.
 
 RUN TIMING:
-TIME:		Init               : 0.0000 s (  0.13%)
-TIME:		Trajectory Process : 0.0059 s ( 99.51%)
+TIME:		Init               : 0.0000 s (  0.09%)
+TIME:		Trajectory Process : 0.0136 s ( 98.96%)
 TIME:		Action Post        : 0.0000 s (  0.00%)
-TIME:		Analysis           : 0.0000 s (  0.02%)
-TIME:		Data File Write    : 0.0000 s (  0.02%)
-TIME:		Other              : 0.0000 s (  0.00%)
-TIME:	Run Total 0.0059 s
+TIME:		Analysis           : 0.0000 s (  0.00%)
+TIME:		Data File Write    : 0.0000 s (  0.01%)
+TIME:		Other              : 0.0001 s (  0.01%)
+TIME:	Run Total 0.0138 s
 ---------- RUN END ---------------------------------------------------
   [quit]
-TIME: Total execution time: 0.0153 seconds.
+TIME: Total execution time: 0.0254 seconds.
 --------------------------------------------------------------------------------
 To cite CPPTRAJ use:
 Daniel R. Roe and Thomas E. Cheatham, III, "PTRAJ and CPPTRAJ: Software for

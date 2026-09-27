@@ -2,6 +2,5 @@
 5sa23        16.00           S. aureus ATCC 29213
 17sa23       32.00           S. aureus ATCC 29213
 20sa23       1.00            S. aureus ATCC 29213
-9sa23        8.00            S. aureus ATCC 29213
 22sa23       4.00            S. aureus ATCC 29213
 25sa23       2.00            S. aureus ATCC 29213

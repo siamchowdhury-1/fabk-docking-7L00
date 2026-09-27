@@ -1,0 +1,20 @@
+# siam chowdhury
+# Computational and Medicinal Chemistry
+# [Dr. Alam's Research Team] www.alamresearch.org
+# Arkansas State University
+# 7L00 FabK docking: 25sa23 (run: global, box 22.0 A)
+
+receptor = 7L00_AB_receptor.pdbqt
+ligand = docking_25sa23/25sa23.pdbqt
+
+center_x = 8.438
+center_y = 15.490
+center_z = 31.671
+
+size_x = 22.0
+size_y = 22.0
+size_z = 22.0
+
+exhaustiveness = 32
+num_modes = 20
+energy_range = 5

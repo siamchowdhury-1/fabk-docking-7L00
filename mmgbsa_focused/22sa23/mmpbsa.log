@@ -13,13 +13,13 @@ Beginning GB calculations with /home/siamchowdhury/miniconda3/envs/docking/bin/m
 
 Timing:
 Total setup time:                           0.302 sec.
-Creating trajectories with cpptraj:         0.152 sec.
-Total calculation time:                     3.527 sec.
+Creating trajectories with cpptraj:         0.073 sec.
+Total calculation time:                     3.406 sec.
 
-Total GB calculation time:                  3.527 sec.
+Total GB calculation time:                  3.406 sec.
 
 Statistics calculation & output writing:    0.001 sec.
-Total time taken:                           3.983 sec.
+Total time taken:                           3.784 sec.
 
 
 MMPBSA.py Finished! Thank you for using. Please cite us if you publish this work with this paper:

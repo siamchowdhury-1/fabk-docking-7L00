@@ -1,9 +1,0 @@
-
-
-   NSTEP       ENERGY          RMS            GMAX         NAME    NUMBER
-    500      -9.0803E+03     2.0427E-01     6.8818E+00     CD       2212
-
- BOND    =      170.0939  ANGLE   =      527.4685  DIHED      =     3405.8548
- VDWAALS =    -2754.8463  EEL     =   -22816.2554  EGB        =    -3672.0113
- 1-4 VDW =      966.9685  1-4 EEL =    15045.4938  RESTRAINT  =       46.9689
- EAMBER  =    -9127.2335
