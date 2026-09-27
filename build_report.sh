@@ -84,6 +84,42 @@ COMPOUNDS = [
 XCJ = ("XCJ (crystal inhibitor)", "co-crystallised", "-",
        -10.11, -43.69, -42.51, -11.03, 2.38, "-")
 
+# MM/GBSA energy components, neutral His143 (kcal/mol), by measured potency.
+COMPONENTS = [
+    # name, VDWAALS, EEL, EGB, ESURF, TOTAL
+    ("20sa23", -45.74,  55.49, -36.68, -5.09, -32.02),
+    ("25sa23", -47.37,  67.76, -42.96, -5.96, -28.53),
+    ("22sa23", -59.94, 111.19, -68.22, -6.38, -23.35),
+    ("9sa23",  -52.42, 127.21, -81.06, -5.50, -11.77),
+    ("5sa23",  -54.46, 121.59, -79.36, -5.67, -17.89),
+    ("17sa23", -51.36, 125.80, -79.66, -5.56, -10.78),
+    ("XCJ",    -60.97, -42.51,  65.89, -6.10, -43.69),
+]
+
+# Per-residue electrostatic contributions, neutral His143 unless noted.
+# Each entry: name, Glu136 EEL, His143 EEL (HIE), His143 EEL (HIP), FMN EEL
+RESIDUES = [
+    ("20sa23", 12.73,  -3.50, -26.34, 28.27),
+    ("25sa23", 14.20,  -1.90, -28.58, 33.49),
+    ("22sa23", 32.46,   5.04, -21.79, 36.14),
+    ("9sa23",  33.07,   6.92, -21.88, 50.81),
+    ("5sa23",  34.08,   5.52, -24.95, 43.24),
+    ("17sa23", 32.70,   7.02, -19.59, 49.82),
+    ("XCJ",   -11.03,  -3.60,  -7.32,  2.38),
+]
+
+# Total binding energy in each protonation state (kcal/mol).
+PROTONATION = [
+    # name, HIE, HIP
+    ("20sa23", -32.02, -34.13),
+    ("25sa23", -28.53, -30.60),
+    ("22sa23", -23.35, -29.66),
+    ("9sa23",  -11.77, -16.02),
+    ("5sa23",  -17.89, -21.62),
+    ("17sa23", -10.78, -14.36),
+    ("XCJ",    -43.69, -49.88),
+]
+
 # ============================================================
 # Methods: number, title, and the blocks that make it up
 # ============================================================
@@ -821,6 +857,70 @@ every other compound is above +32.</p>
 <p style="font-size:14px;color:#555">A working predictor gives a positive r:
 lower MIC together with more negative energy. Compound numbers abbreviated
 (20 = 20sa23, and so on).</p>
+
+<h3>MM/GBSA energy components</h3>
+<table>
+<tr><th>Compound</th><th>van der Waals<br>VDWAALS</th>
+<th>Electrostatic<br>EEL</th><th>Polar solvation<br>EGB</th>
+<th>Non-polar<br>ESURF</th><th>Total<br>&Delta;G<sub>bind</sub></th></tr>
+{''.join(
+    f'<tr class="{"ref" if n == "XCJ" else ""}">'
+    f'<td>{"<b>" + n + "</b>" if n != "XCJ" else n}</td>'
+    f'<td class="n">{v:.2f}</td><td class="n">{e:+.2f}</td>'
+    f'<td class="n">{g:+.2f}</td><td class="n">{su:.2f}</td>'
+    f'<td class="n"><b>{t:.2f}</b></td></tr>'
+    for n, v, e, g, su, t in COMPONENTS)}
+</table>
+<p style="font-size:14px;color:#555">All values kcal/mol, neutral His143, sorted
+by measured potency. EEL is positive for every compound, meaning electrostatics
+oppose binding, and it is the term that separates them: it spans 55 to 127
+across the series while van der Waals stays within 14. For the crystal
+inhibitor XCJ, EEL is favourable at &minus;42.51, which is what confirms the
+positive values are a property of these compounds rather than of the
+calculation. EGB opposes EEL because charges must shed their water shell to
+bind, so the two partly cancel and the total is the difference between two
+large numbers.</p>
+
+<h3>Per-residue electrostatic contributions</h3>
+<table>
+<tr><th>Compound</th><th>Glu136</th><th>His143<br>neutral</th>
+<th>His143<br>protonated</th><th>FMN</th></tr>
+{''.join(
+    f'<tr class="{"ref" if n == "XCJ" else ""}">'
+    f'<td>{"<b>" + n + "</b>" if n != "XCJ" else n}</td>'
+    f'<td class="n">{glu:+.2f}</td><td class="n">{h_e:+.2f}</td>'
+    f'<td class="n">{h_p:+.2f}</td><td class="n">{fmn:+.2f}</td></tr>'
+    for n, glu, h_e, h_p, fmn in RESIDUES)}
+</table>
+<p style="font-size:14px;color:#555">Electrostatic contribution of each residue
+to the binding energy, kcal/mol. Positive opposes binding. Glu136 carries
+&minus;1 and the FMN phosphate &minus;2, and both repel the compounds'
+carboxylate; for XCJ, which has no carboxylate in that position, Glu136 is
+attractive instead. His143 is the one favourable anchor, and only when
+protonated and positively charged, where it reaches &minus;20 to &minus;29 for
+the compounds against &minus;7 for XCJ. These values come from the
+decomposition that was verified to reconcile with the totals to within 0.014
+kcal/mol.</p>
+
+<h3>Sensitivity to the His143 protonation state</h3>
+<table>
+<tr><th>Compound</th><th>His143 neutral<br>(HIE)</th>
+<th>His143 protonated<br>(HIP)</th><th>Difference</th></tr>
+{''.join(
+    f'<tr class="{"ref" if n == "XCJ" else ""}">'
+    f'<td>{"<b>" + n + "</b>" if n != "XCJ" else n}</td>'
+    f'<td class="n">{hie:.2f}</td><td class="n">{hip:.2f}</td>'
+    f'<td class="n">{hip - hie:+.2f}</td></tr>'
+    for n, hie, hip in PROTONATION)}
+</table>
+<p style="font-size:14px;color:#555">Total binding energy, kcal/mol, with the
+catalytic histidine modelled as neutral and as protonated. Every compound binds
+more tightly with His143 protonated, by 2 to 6 kcal/mol, which is expected
+since a positively charged histidine attracts an anion. The ordering of the
+compounds is unchanged between the two states, so the ranking does not depend
+on this assumption. The preparation assigns the neutral form by default, and
+testing the alternative was one of the three checks applied before the MM/GBSA
+result was accepted.</p>
 
 <h3>Why the contact count points the wrong way</h3>
 <p>Counting contacts by distance alone treats any close nitrogen-oxygen pair as
