@@ -660,8 +660,10 @@ derivatives against <i>Clostridioides difficile</i> FabK (PDB 7L00)</h1>
 FabK (PDB 7L00). Across six compounds, MM/GBSA reproduced the measured
 antibacterial potency order with one adjacent pair transposed
 (Spearman&nbsp;0.94, Pearson&nbsp;0.92):<br>
-measured <b>20sa23 (MIC 1) &gt; 25sa23 (2) &gt; 22sa23 (4) &gt; 9sa23 (8) &gt;
-5sa23 (16) &gt; 17sa23 (32&nbsp;&micro;g/mL)</b>, predicted
+measured <b>20sa23 (MIC 1&nbsp;&micro;g/mL) &gt; 25sa23 (MIC
+2&nbsp;&micro;g/mL) &gt; 22sa23 (MIC 4&nbsp;&micro;g/mL) &gt; 9sa23 (MIC
+8&nbsp;&micro;g/mL) &gt; 5sa23 (MIC 16&nbsp;&micro;g/mL) &gt; 17sa23 (MIC
+32&nbsp;&micro;g/mL)</b>, predicted
 <b>20sa23 &gt; 25sa23 &gt; 22sa23 &gt; 5sa23 &gt; 9sa23 &gt; 17sa23</b>.
 The docking score alone gave no relationship (Pearson&nbsp;0.24).</div>
 <div class="who">
@@ -779,8 +781,9 @@ P.append(f"""
 <h3>MM/GBSA reproduces the experimental potency order; the docking score does not</h3>
 <p>Measured against <i>S. aureus</i> ATCC&nbsp;29213, as reported in the source
 paper:<br>
-<b>20sa23 (1) &gt; 25sa23 (2) &gt; 22sa23 (4) &gt; 9sa23 (8) &gt; 5sa23 (16)
-&gt; 17sa23 (32&nbsp;&micro;g/mL)</b></p>
+<b>20sa23 (MIC 1&nbsp;&micro;g/mL) &gt; 25sa23 (MIC 2&nbsp;&micro;g/mL) &gt;
+22sa23 (MIC 4&nbsp;&micro;g/mL) &gt; 9sa23 (MIC 8&nbsp;&micro;g/mL) &gt; 5sa23
+(MIC 16&nbsp;&micro;g/mL) &gt; 17sa23 (MIC 32&nbsp;&micro;g/mL)</b></p>
 <p>Predicted by MM/GBSA from the structures alone:<br>
 <b>20sa23 (&minus;32.0) &gt; 25sa23 (&minus;28.5) &gt; 22sa23 (&minus;23.4)
 &gt; 5sa23 (&minus;17.9) &gt; 9sa23 (&minus;11.8) &gt; 17sa23
