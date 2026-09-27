@@ -1,0 +1,4 @@
+name: ambertools
+channels:
+  - defaults
+prefix: /home/siamchowdhury/miniconda3/envs/ambertools
