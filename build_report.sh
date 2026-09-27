@@ -72,12 +72,17 @@ PAPER_DOI = "https://doi.org/10.1021/acs.jmedchem.3c00969"
 # Measured and computed results
 # ============================================================
 COMPOUNDS = [
-    # name, MIC, Vina, MM/GBSA, EEL, Glu136 EEL, FMN EEL, polar contacts
-    ("20sa23", "1",  -7.30, -32.02,  55.49, 12.73, 28.27, 2),
-    ("5sa23",  "16", -7.99, -17.89, 121.59, 34.08, 43.24, 5),
-    ("17sa23", "32", -7.17, -10.78, 125.80, 32.70, 49.82, 8),
+    # name, aniline substitution, MIC, Vina, MM/GBSA, EEL,
+    # Glu136 EEL, FMN EEL, polar contacts    (sorted by measured MIC)
+    ("20sa23", "3,5-dichloro", "1",  -7.30, -32.02,  55.49, 12.73, 28.27, 2),
+    ("25sa23", "3-CF3, 5-F",   "2",  -8.19, -28.53,  67.76, 14.20, 33.49, 2),
+    ("22sa23", "3-CF3, 4-F",   "4",  -8.36, -23.35, 111.19, 32.46, 36.14, 6),
+    ("9sa23",  "3-bromo",      "8",  -7.16, -11.77, 127.21, 33.07, 50.81, 5),
+    ("5sa23",  "3-fluoro",     "16", -7.99, -17.89, 121.59, 34.08, 43.24, 5),
+    ("17sa23", "3,4-difluoro", "32", -7.17, -10.78, 125.80, 32.70, 49.82, 8),
 ]
-XCJ = ("XCJ (crystal inhibitor)", "-", -10.11, -43.69, -42.51, -11.03, 2.38, "-")
+XCJ = ("XCJ (crystal inhibitor)", "co-crystallised", "-",
+       -10.11, -43.69, -42.51, -11.03, 2.38, "-")
 
 # ============================================================
 # Methods: number, title, and the blocks that make it up
@@ -616,10 +621,13 @@ P.append(f"""<!DOCTYPE html>
 <h1>Molecular docking and binding free energy study of pyrazole benzoic acid
 derivatives against <i>Clostridioides difficile</i> FabK (PDB 7L00)</h1>
 <div class="sub">Computational study of fatty acid biosynthesis inhibition at
-FabK (PDB 7L00). MM/GBSA reproduced the measured antibacterial potency order
-exactly: <b>20sa23 (MIC 1&nbsp;&micro;g/mL) &gt; 5sa23 (MIC 16&nbsp;&micro;g/mL)
-&gt; 17sa23 (MIC 32&nbsp;&micro;g/mL)</b>, matching the MIC values reported in
-the source paper.</div>
+FabK (PDB 7L00). Across six compounds, MM/GBSA reproduced the measured
+antibacterial potency order with one adjacent pair transposed
+(Spearman&nbsp;0.94, Pearson&nbsp;0.92):<br>
+measured <b>20sa23 (MIC 1) &gt; 25sa23 (2) &gt; 22sa23 (4) &gt; 9sa23 (8) &gt;
+5sa23 (16) &gt; 17sa23 (32&nbsp;&micro;g/mL)</b>, predicted
+<b>20sa23 &gt; 25sa23 &gt; 22sa23 &gt; 5sa23 &gt; 9sa23 &gt; 17sa23</b>.
+The docking score alone gave no relationship (Pearson&nbsp;0.24).</div>
 <div class="who">
   <div class="name">{E(AUTHOR)}</div>
   <div class="links">
@@ -709,19 +717,20 @@ for num, title, blocks in METHODS:
 
 # ---------------- key findings ----------------
 rows = []
-for i, (name, mic, vina, gbsa, eel, glu, fmn, polar) in enumerate(COMPOUNDS):
+for i, (name, sub, mic, vina, gbsa, eel, glu, fmn, polar) in enumerate(COMPOUNDS):
     cls = "best" if i == 0 else ("worst" if i == len(COMPOUNDS) - 1 else "")
     verdict = ("<b>Most potent</b>" if i == 0 else
-               ("<b>Least potent</b>" if i == len(COMPOUNDS) - 1 else "Intermediate"))
+               ("<b>Least potent</b>" if i == len(COMPOUNDS) - 1 else ""))
     rows.append(
-        f'<tr class="{cls}"><td><b>{name}</b></td><td class="n">{mic}</td>'
+        f'<tr class="{cls}"><td><b>{name}</b></td><td>{sub}</td>'
+        f'<td class="n">{mic}</td>'
         f'<td class="n">{vina:.2f}</td><td class="n">{gbsa:.2f}</td>'
         f'<td class="n">{eel:+.1f}</td><td class="n">{glu:+.1f}</td>'
         f'<td class="n">{fmn:+.1f}</td><td class="n">{polar}</td>'
         f'<td>{verdict}</td></tr>')
-n, mic, vina, gbsa, eel, glu, fmn, polar = XCJ
+n, sub, mic, vina, gbsa, eel, glu, fmn, polar = XCJ
 rows.append(
-    f'<tr class="ref"><td>{n}</td><td class="n">{mic}</td>'
+    f'<tr class="ref"><td>{n}</td><td>{sub}</td><td class="n">{mic}</td>'
     f'<td class="n">{vina:.2f}</td><td class="n">{gbsa:.2f}</td>'
     f'<td class="n">{eel:+.1f}</td><td class="n">{glu:+.1f}</td>'
     f'<td class="n">{fmn:+.1f}</td><td class="n">{polar}</td>'
@@ -731,47 +740,96 @@ P.append(f"""
 <h2 id="findings">Key findings</h2>
 
 <div class="key">
-<h3>The MM/GBSA ranking reproduces the experimental potency order exactly</h3>
-<p>Measured: <b>20sa23 (MIC 1&nbsp;&micro;g/mL) &gt; 5sa23 (16) &gt; 17sa23
-(32)</b> against <i>S. aureus</i> ATCC&nbsp;29213, as reported in the source
-paper. MM/GBSA predicted <b>20sa23 (&minus;32.02) &gt; 5sa23 (&minus;17.89)
-&gt; 17sa23 (&minus;10.78) kcal/mol</b> &mdash; the same order, from the
-structures alone.</p>
-<p>The docking score did not reproduce it, and the count of close polar
-contacts gave the order backwards.</p>
+<h3>MM/GBSA reproduces the experimental potency order; the docking score does not</h3>
+<p>Measured against <i>S. aureus</i> ATCC&nbsp;29213, as reported in the source
+paper:<br>
+<b>20sa23 (1) &gt; 25sa23 (2) &gt; 22sa23 (4) &gt; 9sa23 (8) &gt; 5sa23 (16)
+&gt; 17sa23 (32&nbsp;&micro;g/mL)</b></p>
+<p>Predicted by MM/GBSA from the structures alone:<br>
+<b>20sa23 (&minus;32.0) &gt; 25sa23 (&minus;28.5) &gt; 22sa23 (&minus;23.4)
+&gt; 5sa23 (&minus;17.9) &gt; 9sa23 (&minus;11.8) &gt; 17sa23
+(&minus;10.8&nbsp;kcal/mol)</b></p>
+<p>Four of six positions are correct, including the three most potent and the
+least potent. One adjacent pair is transposed: 9sa23 and 5sa23 change places,
+and their measured MICs differ by a single twofold dilution, the smallest step
+an MIC assay reports. Spearman 0.94, Pearson 0.92 against
+log<sub>10</sub>(MIC).</p>
+<p>The docking score gave no relationship (Pearson 0.24), and the count of
+close polar contacts pointed the wrong way (&minus;0.87).</p>
+</div>
+
+<div class="key">
+<h3>The isomer pair: same atoms, different potency, predicted correctly</h3>
+<p>22sa23 and 25sa23 share the molecular formula
+C<sub>24</sub>H<sub>16</sub>F<sub>5</sub>N<sub>3</sub>O<sub>2</sub> and differ
+only in whether the aniline fluorine sits at position 4 or position 5 relative
+to the CF<sub>3</sub> group. Moving that one atom changes the Glu136
+electrostatic repulsion from <b>+32.5 to +14.2&nbsp;kcal/mol</b> and the
+binding energy from &minus;23.4 to &minus;28.5. The measured MICs are 4 and
+2&nbsp;&micro;g/mL respectively, in the predicted direction.</p>
+<p>Because the two molecules are otherwise identical &mdash; same atoms, same
+charge, same rotatable bonds &mdash; the difference can only be geometric, which
+makes this the cleanest single test in the study.</p>
 </div>
 
 <h3>Final comparison</h3>
 <table>
-<tr><th>Compound</th><th>MIC<br>&micro;g/mL</th><th>Vina<br>kcal/mol</th>
+<tr><th>Compound</th><th>Aniline</th><th>MIC<br>&micro;g/mL</th>
+<th>Vina<br>kcal/mol</th>
 <th>MM/GBSA<br>kcal/mol</th><th>EEL<br>kcal/mol</th>
 <th>Glu136<br>EEL</th><th>FMN<br>EEL</th><th>Polar<br>contacts</th>
-<th>Verdict</th></tr>
+<th></th></tr>
 {''.join(rows)}
 </table>
-<p style="font-size:14px;color:#555">Lower MIC means more potent. More negative
-energy means tighter predicted binding. Positive EEL means electrostatic
-repulsion. Per-residue values are from the neutral His143 calculation.</p>
+<p style="font-size:14px;color:#555">Sorted by measured potency. Lower MIC means
+more potent; more negative energy means tighter predicted binding; positive EEL
+means electrostatic repulsion. Per-residue values are from the neutral His143
+calculation. All six compounds share the same core, a 4-fluorophenyl pyrazole
+linked to benzoic acid, and differ only in the aniline substitution. Both
+3,5-disubstituted compounds sit near +13&nbsp;kcal/mol of Glu136 repulsion;
+every other compound is above +32.</p>
 
 <h3>Which prediction tracked potency</h3>
 <table>
-<tr><th>Prediction</th><th>Order produced</th><th>Against experiment</th></tr>
-<tr><td>MM/GBSA total energy</td><td>20sa23 &gt; 5sa23 &gt; 17sa23</td><td><b>Matches</b></td></tr>
-<tr><td>MM/GBSA electrostatic term</td><td>20sa23 &gt; 5sa23 &gt; 17sa23</td><td><b>Matches</b></td></tr>
-<tr><td>FMN electrostatic contribution</td><td>20sa23 &gt; 5sa23 &gt; 17sa23</td><td><b>Matches</b></td></tr>
-<tr><td>His143 electrostatic contribution</td><td>20sa23 &gt; 5sa23 &gt; 17sa23</td><td><b>Matches</b></td></tr>
-<tr><td>Vina docking score</td><td>5sa23 &gt; 20sa23 &gt; 17sa23</td><td>Differs</td></tr>
-<tr><td>Van der Waals term</td><td>5sa23 &gt; 17sa23 &gt; 20sa23</td><td>Differs</td></tr>
-<tr><td>Count of close polar contacts</td><td>17sa23 &gt; 5sa23 &gt; 20sa23</td><td>Reversed</td></tr>
+<tr><th>Prediction</th><th>Order produced</th>
+<th>Pearson r<br>vs log(MIC)</th><th>Spearman</th></tr>
+<tr><td><b>MM/GBSA total energy</b></td>
+<td>20 &gt; 25 &gt; 22 &gt; 5 &gt; 9 &gt; 17</td>
+<td class="n"><b>0.92</b></td><td class="n"><b>0.94</b></td></tr>
+<tr><td>MM/GBSA electrostatic term</td>
+<td>20 &gt; 25 &gt; 22 &gt; 5 &gt; 17 &gt; 9</td>
+<td class="n">0.89</td><td class="n">0.83</td></tr>
+<tr><td>FMN electrostatic contribution</td>
+<td>20 &gt; 25 &gt; 22 &gt; 5 &gt; 17 &gt; 9</td>
+<td class="n">0.89</td><td class="n">0.83</td></tr>
+<tr><td>His143 electrostatic contribution</td>
+<td>20 &gt; 25 &gt; 22 &gt; 5 &gt; 9 &gt; 17</td>
+<td class="n">0.88</td><td class="n">0.94</td></tr>
+<tr><td>Glu136 electrostatic contribution</td>
+<td>20 &gt; 25 &gt; 22 &gt; 17 &gt; 9 &gt; 5</td>
+<td class="n">0.84</td><td class="n">0.83</td></tr>
+<tr><td>Vina docking score</td>
+<td>22 &gt; 25 &gt; 5 &gt; 20 &gt; 17 &gt; 9</td>
+<td class="n">0.24</td><td class="n">0.37</td></tr>
+<tr><td>Van der Waals term</td>
+<td>22 &gt; 5 &gt; 9 &gt; 17 &gt; 25 &gt; 20</td>
+<td class="n">&minus;0.44</td><td class="n">&minus;0.49</td></tr>
+<tr class="worst"><td>Count of close polar contacts</td>
+<td>17 &gt; 22 &gt; 5 &gt; 9 &gt; 20 &gt; 25</td>
+<td class="n">&minus;0.87</td><td class="n">&minus;0.79</td></tr>
 </table>
+<p style="font-size:14px;color:#555">A working predictor gives a positive r:
+lower MIC together with more negative energy. Compound numbers abbreviated
+(20 = 20sa23, and so on).</p>
 
 <h3>Why the contact count points the wrong way</h3>
 <p>Counting contacts by distance alone treats any close nitrogen-oxygen pair as
 a favourable hydrogen bond. At pH&nbsp;7.4 the compounds' benzoate carries
 &minus;1 and Glu136 carries &minus;1, so a close approach between them is
-electrostatic repulsion, not a hydrogen bond. 17sa23 makes the most such
-contacts and is the least potent compound; 20sa23 makes the fewest and is the
-most potent. The AutoDock Vina scoring function contains no electrostatic term
+electrostatic repulsion, not a hydrogen bond. Across all six compounds the
+relationship is inverted (r = &minus;0.87): 17sa23 makes the most such contacts
+and is the least potent, while 20sa23 and 25sa23 make the fewest and are the
+two most potent. The AutoDock Vina scoring function contains no electrostatic term
 either, which is why it gave no useful signal. MM/GBSA models charge
 explicitly, and that is the difference.</p>
 
@@ -784,12 +842,15 @@ that enzyme in the same way.
 </div>
 
 <div class="caveat">
-<b>How far this can be taken.</b> Three compounds is a small set: a correct
-rank order has a one-in-six chance of arising at random, so the agreement is
-not statistical proof on its own. What supports it is that the ordering follows
-from a specific mechanism &mdash; an anionic pocket rejecting an anionic ligand
-&mdash; which is testable by docking more compounds from the same series. It is
-also worth noting that all three compounds remain electrostatically repelled by
+<b>How far this can be taken.</b> Six compounds is still a small set, and a
+correlation at this size carries limited statistical weight. What supports the
+result is that the ordering follows from a specific mechanism &mdash; an anionic
+pocket rejecting an anionic ligand, with the aniline substitution pattern
+determining how close the carboxylate comes to Glu136 and the FMN phosphate
+&mdash; and that this mechanism predicted the isomer pair correctly. Both sets
+of compounds were analysed and ranked before their measured values were
+consulted. It is also worth noting that all six compounds remain
+electrostatically repelled by
 this pocket relative to XCJ, so whether they inhibit FabK by binding here
 remains open. The source paper assigned the fatty acid biosynthesis pathway by
 CRISPRi, which identifies the pathway rather than the individual enzyme.
