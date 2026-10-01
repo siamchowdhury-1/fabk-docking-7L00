@@ -381,20 +381,21 @@ METHODS = [
          "&pi;-cation interactions and van der Waals contacts."),
         ("Files prepared",
          "The receptor <code>7L00_AB_protein_FMN.pdb</code> opens together "
-         "with the best pose of each compound: "
-         "<code>docking_focused_20sa23/20sa23_best.mol2</code>, "
-         "<code>docking_focused_5sa23/5sa23_best.mol2</code> and "
-         "<code>docking_focused_17sa23/17sa23_best.mol2</code>. Combined "
-         "receptor-ligand complexes are also available as single PDB files."),
+         "with the best pose of each of the five compounds, "
+         "<code>docking_focused_&lt;compound&gt;/&lt;compound&gt;_best.mol2</code>. "
+         "The minimised complexes used for the MM/GBSA energies are also "
+         "available as single PDB files, "
+         "<code>mmgbsa_focused/&lt;compound&gt;/complex_min.pdb</code>, each "
+         "containing protein, FMN and ligand together."),
         ("Planned, not yet performed",
          "The input files are prepared and listed above; the diagrams "
          "themselves have not yet been generated. They will provide the visual "
          "counterpart to the per-residue energies in section 6, which place "
-         "the carboxylate of 5sa23 and 17sa23 near Glu136 and the FMN "
-         "phosphate and that of 20sa23 away from both."),
-        ("For the write-up",
-         "Two-dimensional interaction diagrams were generated with BIOVIA "
-         "Discovery Studio Visualizer to analyse protein-ligand interactions."),
+         "the carboxylate of 5sa23 and 17sa23 closest to Glu136 and the FMN "
+         "phosphate, and that of 20sa23 and 25sa23 furthest from both."),
+        ("Note",
+         "No sentence is offered here for the manuscript, because the "
+         "diagrams do not yet exist. One will be written when they do."),
     ]),
     (9, "Comparison with measured antibacterial activity", [
         ("Definitions",
